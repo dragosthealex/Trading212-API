@@ -9,13 +9,15 @@ This module provides the low level functions with the service.
 
 import time
 import re
+from abc import ABCMeta, abstractmethod
 from datetime import datetime
 from bs4 import BeautifulSoup
 
 from tradingAPI.exceptions import CredentialsException, BaseExc
 from .glob import Glob
 from .links import path, urls
-from .utils import num, expect, get_pip, send_keys_human, w, click
+from .utils import num, expect, get_pip, send_keys_human, w, click, \
+    CFD_ORDER_MODES, format_ccy_price
 # exceptions
 from tradingAPI import exceptions
 import selenium.common.exceptions
@@ -42,24 +44,222 @@ class Stock(object):
 
 class Movement(object):
     """class-storing movement"""
-    def __init__(self, product, quantity, mode, price):
+    def __init__(self, product, quantity, buy_sell, price):
         self.product = product
         self.quantity = quantity
-        self.mode = mode
+        self.buy_sell = buy_sell
         self.price = price
+
+
+class OpenPositionWindow(metaclass=ABCMeta):
+    """Class for new position modal window"""
+    def __init__(self, api, name, order_mode):
+        self.api = api
+        self.name = name
+        self.buy_sell = None
+        self.order_mode = order_mode
+        self.order_control = None
+        self.state = 'initialized'
+        self.insfu = False
+        self.quantity = 0
+
+    def open(self):
+        """Open the new position modal and search for the product
+
+        Opens a "new position" window, looks for the name and selects it
+
+        Args:
+            name_counter (str): Ticker name
+        """
+
+        """open the new position window"""
+        if self.api.css1(path['add-mov']).is_displayed():
+            self.api.css1(path['add-mov']).click()
+        else:
+            self.api.css1('span.dataTable-no-data-action').click()
+        logger.debug("opened new position window")
+        # Type in the product
+        self.api.css1(path['search-box']).send_keys(self.name)
+        # Search and check we have something
+        result = self.get_result(0)
+        if result is None:
+            self.close()
+            raise exceptions.ProductNotFound(self.name)
+        click(result)
+        if self.api.is_css("div.widget_message"):
+            self.decode(self.api.css1("div.widget_message"))
+        self.state = 'open'
+        # Set the quantity order control element
+        self.set_order_control()
+
+    @abstractmethod
+    def set_order_control(self):
+        """Set order control div"""
+        pass
+
+    def _check_open(self):
+        if self.state == 'open':
+            return True
+        else:
+            raise exceptions.WindowException()
+
+    def close(self):
+        """Close the window"""
+        self._check_open()
+        self.api.css1(path['close']).click()
+        self.state = 'closed'
+        logger.debug(f'closed window for new position in {self.name}')
+
+    def confirm(self):
+        """confirm the movement"""
+        self._check_open()
+        self.get_price()
+        if not self.quantity or not self.buy_sell:
+            raise ValueError('Quantity and buy/sell has to be set')
+        self.api.css1(path['confirm-btn'], self.order_control).click()
+        widg = self.api.css("div.widget_message")
+        if widg:
+            self.decode(widg[0])
+            raise exceptions.WidgetException(widg)
+        if all(x for x in ['quantity', 'buy_sell'] if hasattr(self, x)):
+            self.api.movements.append(Movement(
+                self.name, self.quantity, self.buy_sell, self.price))
+            logger.info(f'{self.quantity} x {self.name} @ {self.price}'
+                        f' PLACED')
+        self.state = 'conclused'
+        logger.debug('confirmed movement')
+
+    def get_result(self, n=0):
+        """Get nth result from instruments search, indexed from 0
+
+        Args:
+            n (int): nth result to return
+
+        Returns:
+            (mixed): bs4 element if found, None otherwise
+        """
+        evalxpath = path['res'] + f"[{n + 1}]"
+        try:
+            instrument = self.api.xpath(evalxpath)[0]
+            return instrument
+        except Exception:
+            return None
+
+    def set_limit(self, category, limit_mode, value):
+        """set limit in movement window"""
+        self._check_open()
+        if (limit_mode not in ["unit", "value"] or category
+                not in ["gain", "loss", "both"]):
+            raise ValueError()
+        if not hasattr(self, 'stop_limit'):
+            self.stop_limit = {'gain': {}, 'loss': {}}
+            logger.debug("initialized stop_limit")
+        if category == 'gain':
+            self.api.xpath(
+                path['limit-gain-%s' % limit_mode])[0].fill(str(value))
+        elif category == 'loss':
+            self.api.xpath(
+                path['limit-loss-%s' % limit_mode])[0].fill(str(value))
+        if category != 'both':
+            self.stop_limit[category]['mode'] = limit_mode
+            self.stop_limit[category]['value'] = value
+        elif category == 'both':
+            self.api.xpath(
+                path['limit-gain-%s' % limit_mode])[0].fill(str(value))
+            self.api.xpath(
+                path['limit-loss-%s' % limit_mode])[0].fill(str(value))
+            for cat in ['gain', 'loss']:
+                self.stop_limit[cat]['mode'] = limit_mode
+                self.stop_limit[cat]['value'] = value
+        logger.debug("set limit")
+
+    def decode(self, message):
+        """decode text pop-up"""
+        title = self.api.css1("div.title", message).text
+        text = self.api.css1("div.text", message).text
+        if title == "Insufficient Funds":
+            self.insfu = True
+        elif title == "Maximum Quantity Limit":
+            raise exceptions.MaxQuantLimit(num(text))
+        elif title == "Minimum Quantity Limit":
+            raise exceptions.MinQuantLimit(num(text))
+        logger.debug("decoded message")
+
+    def decode_update(self, message, value, mult=0.1):
+        """decode and update the value"""
+        try:
+            msg_text = self.api.css1("div.text", message).text
+            return num(msg_text)
+        except Exception:
+            if msg_text.lower().find("higher") != -1:
+                value += value * mult
+                return value
+            else:
+                self.decode(message)
+                return None
+
+    def set_buy_sell(self, buy_sell):
+        """Set buy or sell
+
+        Args:
+            mode (str): 'buy' or 'sell'
+        """
+        self._check_open()
+        if buy_sell not in ['buy', 'sell']:
+            raise ValueError('mode needs to be "buy" or "sell"')
+        self.api.css1(path[buy_sell + '-btn']).click()
+        self.buy_sell = buy_sell
+        logger.debug(f'buy_sell set to {buy_sell}')
+
+    def get_quantity(self):
+        """Return current quantity
+
+        Returns:
+            (float): Current quantity
+        """
+        self._check_open()
+        quant = int(self.api.css1(path['quantity'], self.order_control)
+                    .get_property('value'))
+        self.quantity = quant
+        return quant
+
+    def set_quantity(self, quant):
+        """Set current quantity
+
+        Args:
+            quant (float): Quantity to set
+        """
+        self._check_open()
+        quant_input = self.api.css1(path['quantity'], self.order_control)
+        quant_input.clear()
+        quant_input.send_keys(quant)
+        self.quantity = quant
+        logger.debug(f'quantity set: {self.name} to {quant}')
+
+    def get_price(self, mode='buy'):
+        """get current price"""
+        if mode not in ['buy', 'sell']:
+            raise ValueError()
+        self._check_open()
+
+        price = format_ccy_price(self.api.css1(
+                f'div.buy-sell-control-container div.{mode}-price'
+        ).text)
+        self.price = price
+        return price
 
 
 class PurePosition(object):
     """class-storing position"""
-    def __init__(self, product, quantity, mode, price):
+    def __init__(self, product, quantity, buy_sell, price):
         self.product = product
         self.quantity = quantity
-        self.mode = mode
+        self.buy_sell = buy_sell
         self.price = price
 
     def __repr__(self):
         return ' - '.join([str(self.product), str(self.quantity),
-                           str(self.mode), str(self.price)])
+                           str(self.buy_sell), str(self.price)])
 
 
 class LowLevelAPI(object):
@@ -135,7 +335,7 @@ class LowLevelAPI(object):
     def xpath(self, xpath, dom=None):
         """xpath find function abbreviation"""
         dom = dom if dom else self.browser
-        return expect(dom.find_element_by_xpath, args=[xpath])
+        return expect(dom.find_elements_by_xpath, args=[xpath])
 
     def is_css(self, css_path, dom=None):
         """Check if there is an element by CSS path
@@ -182,13 +382,13 @@ class LowLevelAPI(object):
         Returns:
             (mixed): Element if it appears, false otherwise
         """
-        timeout = time.time() + 10
+        timeout = time.time() + 4
         while not self.is_css(css_path):
             if time.time() > timeout:
                 return False
         return self.css1(css_path)
 
-    def login(self, username, password, mode='invest', is_live=False):
+    def login(self, username, password, trading_mode='invest', is_live=False):
         """Login onto the platform, navigating to desired mode
 
         Args:
@@ -221,7 +421,7 @@ class LowLevelAPI(object):
             logger.info(f'logged in as {username}')
 
             # Navigate on corresponding mode
-            self.go_to_mode(mode, is_live)
+            self.go_to_mode(trading_mode, is_live)
 
             self._post_login_checks(is_live)
         except Exception as e:
@@ -242,7 +442,7 @@ class LowLevelAPI(object):
         if new_acc_modal:
             click(new_acc_modal)
 
-    def go_to_mode(self, mode='invest', is_live=False):
+    def go_to_mode(self, trading_mode='invest', is_live=False):
         """Navigate to desired mode of trading
 
         Args:
@@ -259,250 +459,80 @@ class LowLevelAPI(object):
             self.get(url=urls['demo'])
             self.is_live = False
 
-        if mode == 'cfd':
+        if trading_mode == 'cfd':
             pass
-        elif mode == 'invest':
+        elif trading_mode == 'invest':
             pass
-        elif mode == 'isa':
+        elif trading_mode == 'isa':
             pass
         else:
             raise BaseExc(f'Invalid mode: {mode}')
         # Do modal checks again
         self._post_login_checks(is_live)
+        self.trading_mode = trading_mode
         return True
 
     def get_bottom_info(self, info):
+        """Get information regarding current status
+
+        Args:
+            info (str): Information piece. Choose from 'free_funds',
+                'blocked_funds', 'account_value', 'live_result', 'used_margin'.
+                'used_margin' only for CFD page
+
+        Returns:
+
+        """
         accepted_values = {
             'free_funds': 'equity-free',
+            'blocked_funds': 'equity-blocked',
             'account_value': 'equity-total',
             'live_result': 'equity-ppl',
             'used_margin': 'equity-margin'}
         try:
             info_label = accepted_values[info]
-            val = self.css1("div#%s span.equity-item-value" % info_label).text
+            val = self.css1(f'div#{info_label} span.equity-item-value').text
             return num(val)
         except KeyError as e:
             raise exceptions.BaseExc(e)
 
-    def get_price(self, name):
-        soup = BeautifulSoup(
-            self.css1("div.scrollable-area-content").html, "html.parser")
-        for product in soup.select("div.tradebox"):
-            fullname = product.select("span.instrument-name")[0].text.lower()
-            if name.lower() in fullname:
-                mark_closed_list = [x for x in product.select(
-                    "div.quantity-list-input-wrapper") if x.select(
-                    "div.placeholder")[0].text.lower().find("close") != -1]
-                if mark_closed_list:
-                    sell_price = product.select("div.tradebox-price-sell")[0]\
-                        .text
-                    return float(sell_price)
-                else:
-                    return False
-
-    class MovementWindow(object):
+    class OpenCFDPositionWindow(OpenPositionWindow):
         """add movement window"""
-        def __init__(self, api, product):
-            self.api = api
-            self.product = product
-            self.state = 'initialized'
-            self.insfu = False
+        def __init__(self, api, name, order_mode):
+            """Init a modal window for opening position
 
-        def open(self, name_counter=None):
-            """open the window"""
-            if self.api.css1(path['add-mov']).visible:
-                self.api.css1(path['add-mov']).click()
-            else:
-                self.api.css1('span.dataTable-no-data-action').click()
-            logger.debug("opened window")
-            self.api.css1(path['search-box']).fill(self.product)
-            if self.get_result(0) is None:
-                self.api.css1(path['close']).click()
-                raise exceptions.ProductNotFound(self.product)
-            result, product = self.search_res(self.product, name_counter)
-            result.click()
-            if self.api.is_css("div.widget_message"):
-                self.decode(self.api.css1("div.widget_message"))
-            self.product = product
-            self.state = 'open'
+            Args:
+                api:
+                name:
+                order_mode:
+            """
+            if order_mode not in list(CFD_ORDER_MODES):
+                raise ValueError(f'Order mode invalid for {name}')
+            super().__init__(api=api, name=name, order_mode=order_mode)
 
-        def _check_open(self):
-            if self.state == 'open':
-                return True
-            else:
-                raise exceptions.WindowException()
-
-        def close(self):
-            """close a movement"""
-            self._check_open()
-            self.api.css1(path['close']).click()
-            self.state = 'closed'
-            logger.debug("closed window")
-
-        def confirm(self):
-            """confirm the movement"""
-            self._check_open()
-            self.get_price()
-            self.api.css1(path['confirm-btn']).click()
-            widg = self.api.css("div.widget_message")
-            if widg:
-                self.decode(widg[0])
-                raise exceptions.WidgetException(widg)
-            if all(x for x in ['quantity', 'mode'] if hasattr(self, x)):
-                self.api.movements.append(Movement(
-                    self.product, self.quantity, self.mode, self.price))
-                logger.debug("%s movement appended to the list" % self.product)
-            self.state = 'conclused'
-            logger.debug("confirmed movement")
-
-        def search_res(self, res, check_counter=None):
-            """search for a res"""
-            logger.debug("searching result")
-            result = self.get_result(0)
-            name = self.get_research_name(result)
-            x = 0
-            while not self.check_name(res, name, counter=check_counter):
-                name = self.get_research_name(self.get_result(x))
-                if name is None:
-                    self.api.css1(path['close']).click()
-                    raise exceptions.ProductNotFound(res)
-                logger.debug(name)
-                if self.check_name(res, name, counter=check_counter):
-                    return self.get_result(x)
-                x += 1
-            logger.debug("found product at position %d" % (x + 1))
-            return result, name
-
-        def check_name(self, name, string, counter=None):
-            """if both in string return False"""
-            name = name.lower()
-            string = string.lower()
-            if counter is None:
-                if name in string:
-                    return True
-                else:
-                    return False
-            counter = counter.lower()
-            if name in string and counter in string:
-                logger.debug("check_name: counter found in string")
-                return False
-            elif name in string and counter not in string:
-                return True
-            else:
-                return False
-
-        def get_research_name(self, res):
-            """return result name"""
-            if res is None:
-                return None
-            return self.api.css1("span.instrument-name", res).text
-
-        def get_result(self, pos):
-            """get pos result, where 0 is first"""
-            evalxpath = path['res'] + f"[{pos + 1}]"
-            try:
-                res = self.api.xpath(evalxpath)[0]
-                return res
-            except Exception:
-                return None
-
-        def set_limit(self, category, mode, value):
-            """set limit in movement window"""
-            self._check_open()
-            if (mode not in ["unit", "value"] or category
-                    not in ["gain", "loss", "both"]):
-                raise ValueError()
-            if not hasattr(self, 'stop_limit'):
-                self.stop_limit = {'gain': {}, 'loss': {}}
-                logger.debug("initialized stop_limit")
-            if category == 'gain':
-                self.api.xpath(
-                    path['limit-gain-%s' % mode])[0].fill(str(value))
-            elif category == 'loss':
-                self.api.xpath(
-                    path['limit-loss-%s' % mode])[0].fill(str(value))
-            if category != 'both':
-                self.stop_limit[category]['mode'] = mode
-                self.stop_limit[category]['value'] = value
-            elif category == 'both':
-                self.api.xpath(
-                    path['limit-gain-%s' % mode])[0].fill(str(value))
-                self.api.xpath(
-                    path['limit-loss-%s' % mode])[0].fill(str(value))
-                for cat in ['gain', 'loss']:
-                    self.stop_limit[cat]['mode'] = mode
-                    self.stop_limit[cat]['value'] = value
-            logger.debug("set limit")
-
-        def decode(self, message):
-            """decode text pop-up"""
-            title = self.api.css1("div.title", message).text
-            text = self.api.css1("div.text", message).text
-            if title == "Insufficient Funds":
-                self.insfu = True
-            elif title == "Maximum Quantity Limit":
-                raise exceptions.MaxQuantLimit(num(text))
-            elif title == "Minimum Quantity Limit":
-                raise exceptions.MinQuantLimit(num(text))
-            logger.debug("decoded message")
-
-        def decode_update(self, message, value, mult=0.1):
-            """decode and update the value"""
-            try:
-                msg_text = self.api.css1("div.text", message).text
-                return num(msg_text)
-            except Exception:
-                if msg_text.lower().find("higher") != -1:
-                    value += value * mult
-                    return value
-                else:
-                    self.decode(message)
-                    return None
+        def set_order_control(self):
+            """Set order control div"""
+            if self.order_mode not in CFD_ORDER_MODES:
+                raise ValueError(f'invalid order mode: {self.order_mode}')
+            order_control_css = f'{self.order_mode.lower()}-order'
+            (self.api.xpath(f"//span[@data-tab='{order_control_css}']")[0]
+             .click())
+            self.order_control = self.api.css1(f'#{order_control_css}')
 
         def get_mov_margin(self):
-            """get the margin of the movement"""
+            """Get the margin information"""
             self._check_open()
-            return num(self.api.css1("span.cfd-order-info-item-value").text)
-
-        def set_mode(self, mode):
-            """set mode (buy or sell)"""
-            self._check_open()
-            if mode not in ["buy", "sell"]:
-                raise ValueError()
-            self.api.css1(path[mode + '-btn']).click()
-            self.mode = mode
-            logger.debug("mode set")
-
-        def get_quantity(self):
-            """gte current quantity"""
-            self._check_open()
-            quant = int(num(self.api.css1(path['quantity']).value))
-            self.quantity = quant
-            return quant
-
-        def set_quantity(self, quant):
-            """set quantity"""
-            self._check_open()
-            self.api.css1(path['quantity']).fill(str(int(quant)))
-            self.quantity = quant
-            logger.debug("quantity set")
-
-        def get_price(self, mode='buy'):
-            """get current price"""
-            if mode not in ['buy', 'sell']:
-                raise ValueError()
-            self._check_open()
-            price = num(self.api.css1(
-                "div.orderdialog div.tradebox-price-%s" % mode).text)
-            self.price = price
-            return price
+            if self.order_mode == CFD_ORDER_MODES.MARKET:
+                return format_ccy_price(self.api.css1('div.order-costs',
+                                                      self.order_control).text)
+            return 0
 
         def get_unit_value(self):
             """get unit value of stock based on margin, memoized"""
             # find in the collection
             try:
                 unit_value = Glob().theCollector.collection['unit_value']
-                unit_value_res = unit_value[self.product]
+                unit_value_res = unit_value[self.name]
                 logger.debug("unit_value found in the collection")
                 return unit_value_res
             except KeyError:
@@ -510,7 +540,7 @@ class LowLevelAPI(object):
             pip = get_pip(mov=self)
             quant = 1 / pip
             if hasattr(self, 'quantity'):
-                old_quant == self.quantity
+                old_quant = self.quantity
             self.set_quantity(quant)
             # update the site
             time.sleep(0.5)
@@ -520,12 +550,12 @@ class LowLevelAPI(object):
                 self.set_quantity(old_quant)
             unit_val = margin / quant
             self.unit_value = unit_val
-            Glob().unit_valueHandler.add_val({self.product: unit_val})
+            Glob().unit_valueHandler.add_val({self.name: unit_val})
             return unit_val
 
-    def new_mov(self, name):
+    def new_cfd_pos_window(self, name, order_mode):
         """factory method pattern"""
-        return self.MovementWindow(self, name)
+        return self.OpenCFDPositionWindow(self, name, order_mode)
 
     class Position(PurePosition):
         """position object"""
@@ -536,15 +566,20 @@ class LowLevelAPI(object):
                 self.soup_data = BeautifulSoup(html_div, 'html.parser')
             else:
                 self.soup_data = html_div
-            self.product = self.soup_data.select("td.name")[0].text
-            self.quantity = num(self.soup_data.select("td.quantity")[0].text)
+            product = self.soup_data.select("td.name")[0].text
+            quantity = num(self.soup_data.select("td.quantity")[0].text)
             if ("direction-label-buy" in
                     self.soup_data.select("td.direction")[0].span['class']):
-                self.mode = 'buy'
+                mode = 'buy'
             else:
-                self.mode = 'sell'
-            self.price = num(self.soup_data.select("td.averagePrice")[0].text)
+                mode = 'sell'
+            price = num(self.soup_data.select("td.averagePrice")[0].text)
+
+            # Init parent
+            super().__init__(product, quantity, mode, price)
+
             self.margin = num(self.soup_data.select("td.margin")[0].text)
+
             self.id = self.find_id()
 
         def update(self, soup):
@@ -596,7 +631,7 @@ class LowLevelAPI(object):
             mov_list = [x for x in self.api.movements
                         if x.product == self.product and
                         x.quantity == self.quantity and
-                        x.mode == self.mode]
+                        x.mode == self.buy_sell]
             if not mov_list:
                 logger.debug("fail: mov not found")
                 return None

@@ -35,7 +35,7 @@ class API(LowLevelAPI):
             raise ValueError("need at least one quantity")
         # ~ MAIN ~
         # open new window
-        mov = self.new_mov(product)
+        mov = self.new_pos_window(product)
         mov.open()
         mov.set_mode(mode)
         # set quantity

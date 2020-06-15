@@ -9,6 +9,7 @@ This module provides utility functions.
 
 import time
 import re
+from collections import namedtuple
 
 import numpy as np
 
@@ -18,6 +19,11 @@ from .glob import Glob
 # logging
 import logging
 logger = logging.getLogger('tradingAPI.utils')
+
+
+# Constants
+OrderModes = namedtuple('OrderModes', ['MARKET', 'LIMIT_STOP', 'OCO'])
+CFD_ORDER_MODES = OrderModes('MARKET', 'LIMIT_STOP', 'OCO')
 
 
 def expect(func, args, times=7, sleep_t=0.5):
@@ -72,7 +78,7 @@ def get_pip(mov=None, api=None, name=None):
         if name is None:
             logger.error("need a name")
             raise ValueError()
-        mov = api.new_mov(name)
+        mov = api.new_pos_window(name)
         mov.open()
     if mov is not None:
         mov._check_open()
@@ -148,3 +154,15 @@ def click(element):
     w()
     element.click()
     w()
+
+
+def format_ccy_price(text) -> float:
+    """Format prices read as text with ccy in front of them
+
+    Args:
+        text (str): String with prices
+
+    Returns:
+        (float): The price as float
+    """
+    return float(re.sub(r'[^0-9.]', '', text))
