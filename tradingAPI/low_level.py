@@ -11,9 +11,11 @@ import time
 import re
 from datetime import datetime
 from bs4 import BeautifulSoup
+
+from tradingAPI.exceptions import CredentialsException, BaseExc
 from .glob import Glob
-from .links import path
-from .utils import num, expect, get_pip
+from .links import path, urls
+from .utils import num, expect, get_pip, send_keys_human, w, click
 # exceptions
 from tradingAPI import exceptions
 import selenium.common.exceptions
@@ -70,7 +72,14 @@ class LowLevelAPI(object):
         Glob()
 
     def launch(self, headless=False):
-        """launch browser and virtual display, first of all to be launched"""
+        """launch browser and virtual display, first of all to be launched
+
+        Returns:
+            (bool): True if launched successfully
+
+        Raises:
+            BrowserException: If failed to launch
+        """
         options = Options()
         options.add_argument('--disable-gpu')
         options.add_argument('--disable-extensions')
@@ -82,14 +91,18 @@ class LowLevelAPI(object):
             options.add_argument("--headless")
         try:
             self.browser = webdriver.Chrome(options=options)
-            logger.debug(f"Chromium launched launched")
+            logger.debug('Chromium launched launched')
         except Exception:
-            raise exceptions.BrowserException('Chromium', "failed to launch")
+            raise exceptions.BrowserException('Chromium', 'failed to launch')
         return True
 
     def shutdown(self):
-        """Close the driver"""
-        self.browser.close()
+        """Close the driver, logging out"""
+        try:
+            self.browser.close()
+        except:
+            raise exceptions.BrowserException('Chromium', "not started")
+        return True
 
     def css(self, css_path, dom=None):
         """css find function abbreviation"""
@@ -101,15 +114,23 @@ class LowLevelAPI(object):
         dom = dom if dom else self.browser
         return self.css(css_path, dom)[0]
 
-    def search_name(self, name, dom=None):
-        """name find function abbreviation"""
+    def search_names(self, name, dom=None):
+        """Return list of elements matching name passed
+
+        Args:
+            name (str): Name of the html element
+            dom (WebElement): DOM element, defaults to root
+
+        Returns:
+            (list <WebElement>): List of matching elements
+        """
         dom = dom if dom else self.browser
         return expect(dom.find_elements_by_name, args=[name])
 
-    def search_name1(self, name, dom=None):
+    def search_name(self, name, dom=None):
         """Return first result by name"""
         dom = dom if dom else self.browser
-        return self.search_name(name, dom)[0]
+        return self.search_names(name, dom)[0]
 
     def xpath(self, xpath, dom=None):
         """xpath find function abbreviation"""
@@ -123,7 +144,7 @@ class LowLevelAPI(object):
             (bool) True if element is present in dom
         """
         dom = dom if dom else self.browser
-        return len(self.css(css_path, dom)) > 1
+        return len(self.css(css_path, dom)) > 0
 
     def is_xpath(self, xpath, dom=None):
         """Check if there is an element by Xpath
@@ -132,63 +153,122 @@ class LowLevelAPI(object):
             (bool) True if element is present in xpath
         """
         dom = dom if dom else self.browser
-        return len(self.xpath(xpath, dom)) > 1
+        return len(self.xpath(xpath, dom)) > 0
 
-    def login(self, username, password, mode="demo"):
-        """Login onto the platform, going to the 'mode'
+    def get(self, url):
+        """Connect to the URL through 'GET' request
+
+        Args:
+            url (str): URL to connect to
+
+        Raises:
+            (WebDriverException): If connection timed out
+        """
+        try:
+            w()
+            logger.debug(f'visiting {url}')
+            self.browser.get(url)
+            logger.debug(f'connected to {url}')
+            w()
+        except selenium.common.exceptions.WebDriverException:
+            logger.critical('connection timed out')
+            raise
+
+    def wait_for_element(self, css_path):
+        """Wait for a css path to appear
+
+        Useful to check popups/modals after navigating to a new url
+
+        Returns:
+            (mixed): Element if it appears, false otherwise
+        """
+        timeout = time.time() + 10
+        while not self.is_css(css_path):
+            if time.time() > timeout:
+                return False
+        return self.css1(css_path)
+
+    def login(self, username, password, mode='invest', is_live=False):
+        """Login onto the platform, navigating to desired mode
 
         Args:
             username (str): Plaintext username
             password (str): Plaintext password
-            mode (str): 'demo', 'cfd', 'invest', 'isa'
+            mode (str): 'cfd', 'invest', 'isa'. Default 'invest'
+            live (bool): Whether live trading or demo. Default False
 
         Returns:
             (bool): True if login successful, otherwise False
         """
-        url = "https://trading212.com/en/login"
+        # Access login page
+        url = urls['login']
+        self.get(url)
         try:
-            logger.debug(f"visiting %s" % url)
-            self.browser.get(url)
-            logger.debug(f"connected to %s" % url)
-        except selenium.common.exceptions.WebDriverException:
-            logger.critical("connection timed out")
-            raise
-        try:
-            self.search_name("login[username]").fill(username)
-            self.search_name("login[password]").fill(password)
-            self.css1(path['log']).click()
-            # define a timeout for logging in
+            username_input = self.search_name("login[username]")
+            pass_input = self.search_name("login[password]")
+            # Fill input
+            send_keys_human(username_input, username)
+            send_keys_human(pass_input, password)
+            click(self.css1(path['login-submit']))
+
+            # define a timeout for logging in, checking each second
             timeout = time.time() + 30
             while not self.is_css(path['logo']):
                 if time.time() > timeout:
                     logger.critical("login failed")
                     raise CredentialsException(username)
-            time.sleep(1)
-            logger.info(f"logged in as {username}")
-            # check if it's a weekend
-            if mode == "demo" and datetime.now().isoweekday() in range(5, 8):
-                timeout = time.time() + 10
-                while not self.is_css(path['alert-box']):
-                    if time.time() > timeout:
-                        logger.warning("weekend trading alert-box not closed")
-                        break
-                if self.is_css(path['alert-box']):
-                    self.css1(path['alert-box']).click()
-                    logger.debug("weekend trading alert-box closed")
+                time.sleep(1)
+            logger.info(f'logged in as {username}')
+
+            # Navigate on corresponding mode
+            self.go_to_mode(mode, is_live)
+
+            self._post_login_checks(is_live)
         except Exception as e:
             logger.critical("login failed")
-            raise exceptions.BaseExc(e)
+            raise BaseExc(e)
         return True
 
-    def logout(self):
-        """logout func (quit browser)"""
-        try:
-            self.browser.quit()
-        except Exception:
-            raise exceptions.BrowserException(self.brow_name, "not started")
-            return False
-        self.vbro.stop()
-        logger.info("logged out")
+    def _post_login_checks(self, is_live=False):
+        """Do checks for modals after login"""
+        # check if it's a weekend
+        if not is_live and datetime.now().isoweekday() in range(5, 8):
+            alert_box = self.wait_for_element(path['alert-box'])
+            if alert_box:
+                click(alert_box)
+                logger.debug("weekend trading alert-box closed")
+        # Check new account modal
+        new_acc_modal = self.wait_for_element(path['new-acc-modal'])
+        if new_acc_modal:
+            click(new_acc_modal)
+
+    def go_to_mode(self, mode='invest', is_live=False):
+        """Navigate to desired mode of trading
+
+        Args:
+            mode (str): 'cfd', 'invest', 'isa'. Default 'invest'
+            is_live (bool): Whether live trading or demo. Default False
+
+        Returns:
+            (bool): True if navigated successfully
+        """
+        if is_live:
+            self.get(url=urls['live'])
+            self.is_live = True
+        else:
+            self.get(url=urls['demo'])
+            self.is_live = False
+
+        if mode == 'cfd':
+            pass
+        elif mode == 'invest':
+            pass
+        elif mode == 'isa':
+            pass
+        else:
+            raise BaseExc(f'Invalid mode: {mode}')
+        # Do modal checks again
+        self._post_login_checks(is_live)
         return True
 
     def get_bottom_info(self, info):

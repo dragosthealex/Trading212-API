@@ -10,10 +10,11 @@ This module provides info about pathes.
 import os.path
 
 path = {
-    'login-btn': "#login-button",
-    'log': "input.btn-head",
+    'login-submit': 'input.button-login',
     'logo': "div.nav_logo",
     'alert-box': "span.weekend-trading-close",
+    'new-acc-modal': r'div.eq-onboarding-popup div.close-icon',
+
     'add-mov': "span.open-dialog-icon.svg-icon-holder",
     'search-box': "div.searchbox input",
     'res':
@@ -45,6 +46,12 @@ path = {
     'trade-box': '//div[@id="tradePanel"]/div[5]/div[3]/div[1]' +
         '/div[2]/div[2]/span',
     'back-btn': 'div.back-button',
+}
+
+urls = {
+    'login': 'http://live.trading212.com/',
+    'demo': 'http://demo.trading212.com/',
+    'live': r'https://trading212.com/en/login'
 }
 
 file_path = {

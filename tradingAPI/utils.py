@@ -9,6 +9,9 @@ This module provides utility functions.
 
 import time
 import re
+
+import numpy as np
+
 from tradingAPI import exceptions
 from .glob import Glob
 
@@ -115,3 +118,33 @@ def get_pip(mov=None, api=None, name=None):
     pip = get_number_unit(best_price)
     Glob().pipHandler.add_val({mov.product: pip})
     return pip
+
+
+def w_type():
+    """Waits a few ms between each typed character"""
+    time.sleep(np.random.uniform(0.1, 0.15))
+
+
+def w():
+    """Watis a few more ms - between each activity"""
+    time.sleep(np.random.uniform(0.2, 0.3))
+
+
+def send_keys_human(element, string):
+    """Send keys to a WebElement input waiting some time between"""
+    w()
+    element.clear()
+    for ch in string:
+        w_type()
+        element.send_keys(ch)
+
+
+def click(element):
+    """Click an element, waiting before and after
+
+    Args:
+        element (WebElement): DOM element
+    """
+    w()
+    element.click()
+    w()
