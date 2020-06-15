@@ -12,8 +12,8 @@ mov_logger = logging.getLogger('mover')
 
 class API(LowLevelAPI):
     """Interface object"""
-    def __init__(self, brow='firefox'):
-        super().__init__(brow)
+    def __init__(self):
+        super().__init__()
         self.preferences = []
         self.stocks = []
 

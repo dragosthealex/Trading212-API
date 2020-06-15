@@ -10,15 +10,15 @@ This module provides the low level functions with the service.
 import time
 import re
 from datetime import datetime
-from pyvirtualdisplay import Display
 from bs4 import BeautifulSoup
-from splinter import Browser
 from .glob import Glob
 from .links import path
 from .utils import num, expect, get_pip
 # exceptions
 from tradingAPI import exceptions
 import selenium.common.exceptions
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
 
 # logging
 import logging
@@ -62,78 +62,93 @@ class PurePosition(object):
 
 class LowLevelAPI(object):
     """low level api to interface with the service"""
-    def __init__(self, brow="firefox"):
-        self.brow_name = brow
+    def __init__(self):
         self.positions = []
         self.movements = []
         self.stocks = []
         # init globals
         Glob()
 
-    def launch(self):
+    def launch(self, headless=False):
         """launch browser and virtual display, first of all to be launched"""
+        options = Options()
+        options.add_argument('--disable-gpu')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--profile-directory=Default')
+        options.add_argument('--incognito')
+        options.add_argument('--disable-plugins-discovery')
+        options.add_argument('--disable-blink-features=AutomationControlled')
+        if headless:
+            options.add_argument("--headless")
         try:
-            # init virtual Display
-            self.vbro = Display()
-            self.vbro.start()
-            logger.debug("virtual display launched")
+            self.browser = webdriver.Chrome(options=options)
+            logger.debug(f"Chromium launched launched")
         except Exception:
-            raise exceptions.VBroException()
-        try:
-            self.browser = Browser(self.brow_name)
-            logger.debug(f"browser {self.brow_name} launched")
-        except Exception:
-            raise exceptions.BrowserException(
-                self.brow_name, "failed to launch")
+            raise exceptions.BrowserException('Chromium', "failed to launch")
         return True
+
+    def shutdown(self):
+        """Close the driver"""
+        self.browser.close()
 
     def css(self, css_path, dom=None):
         """css find function abbreviation"""
-        if dom is None:
-            dom = self.browser
-        return expect(dom.find_by_css, args=[css_path])
+        dom = dom if dom else self.browser
+        return expect(dom.find_elements_by_css_selector, args=[css_path])
 
     def css1(self, css_path, dom=None):
         """return the first value of self.css"""
-        if dom is None:
-            dom = self.browser
-
-        def _css1(path, domm):
-            """virtual local func"""
-            return self.css(path, domm)[0]
-
-        return expect(_css1, args=[css_path, dom])
+        dom = dom if dom else self.browser
+        return self.css(css_path, dom)[0]
 
     def search_name(self, name, dom=None):
         """name find function abbreviation"""
-        if dom is None:
-            dom = self.browser
-        return expect(dom.find_by_name, args=[name])
+        dom = dom if dom else self.browser
+        return expect(dom.find_elements_by_name, args=[name])
+
+    def search_name1(self, name, dom=None):
+        """Return first result by name"""
+        dom = dom if dom else self.browser
+        return self.search_name(name, dom)[0]
 
     def xpath(self, xpath, dom=None):
         """xpath find function abbreviation"""
-        if dom is None:
-            dom = self.browser
-        return expect(dom.find_by_xpath, args=[xpath])
+        dom = dom if dom else self.browser
+        return expect(dom.find_element_by_xpath, args=[xpath])
 
-    def elCss(self, css_path, dom=None):
-        """check if element is present by css"""
-        if dom is None:
-            dom = self.browser
-        return expect(dom.is_element_present_by_css, args=[css_path])
+    def is_css(self, css_path, dom=None):
+        """Check if there is an element by CSS path
 
-    def elXpath(self, xpath, dom=None):
-        """check if element is present by css"""
-        if dom is None:
-            dom = self.browser
-        return expect(dom.is_element_present_by_xpath, args=[xpath])
+        Returns:
+            (bool) True if element is present in dom
+        """
+        dom = dom if dom else self.browser
+        return len(self.css(css_path, dom)) > 1
+
+    def is_xpath(self, xpath, dom=None):
+        """Check if there is an element by Xpath
+
+        Returns:
+            (bool) True if element is present in xpath
+        """
+        dom = dom if dom else self.browser
+        return len(self.xpath(xpath, dom)) > 1
 
     def login(self, username, password, mode="demo"):
-        """login function"""
-        url = "https://trading212.com/it/login"
+        """Login onto the platform, going to the 'mode'
+
+        Args:
+            username (str): Plaintext username
+            password (str): Plaintext password
+            mode (str): 'demo', 'cfd', 'invest', 'isa'
+
+        Returns:
+            (bool): True if login successful, otherwise False
+        """
+        url = "https://trading212.com/en/login"
         try:
             logger.debug(f"visiting %s" % url)
-            self.browser.visit(url)
+            self.browser.get(url)
             logger.debug(f"connected to %s" % url)
         except selenium.common.exceptions.WebDriverException:
             logger.critical("connection timed out")
@@ -144,7 +159,7 @@ class LowLevelAPI(object):
             self.css1(path['log']).click()
             # define a timeout for logging in
             timeout = time.time() + 30
-            while not self.elCss(path['logo']):
+            while not self.is_css(path['logo']):
                 if time.time() > timeout:
                     logger.critical("login failed")
                     raise CredentialsException(username)
@@ -153,11 +168,11 @@ class LowLevelAPI(object):
             # check if it's a weekend
             if mode == "demo" and datetime.now().isoweekday() in range(5, 8):
                 timeout = time.time() + 10
-                while not self.elCss(path['alert-box']):
+                while not self.is_css(path['alert-box']):
                     if time.time() > timeout:
                         logger.warning("weekend trading alert-box not closed")
                         break
-                if self.elCss(path['alert-box']):
+                if self.is_css(path['alert-box']):
                     self.css1(path['alert-box']).click()
                     logger.debug("weekend trading alert-box closed")
         except Exception as e:
@@ -226,7 +241,7 @@ class LowLevelAPI(object):
                 raise exceptions.ProductNotFound(self.product)
             result, product = self.search_res(self.product, name_counter)
             result.click()
-            if self.api.elCss("div.widget_message"):
+            if self.api.is_css("div.widget_message"):
                 self.decode(self.api.css1("div.widget_message"))
             self.product = product
             self.state = 'open'
@@ -483,7 +498,7 @@ class LowLevelAPI(object):
                 # wait until it's been closed
             # set a timeout
             timeout = time.time() + 10
-            while self.api.elCss(self.close_tag):
+            while self.api.is_css(self.close_tag):
                 time.sleep(0.1)
                 if time.time() > timeout:
                     raise TimeoutError("failed to close pos %s" % self.id)

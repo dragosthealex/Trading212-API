@@ -1,0 +1,27 @@
+2020-06-13 18:09:26 - DEBUG - tradingAPI.globals - initialized observer
+2020-06-13 18:09:26 - DEBUG - tradingAPI.globals - initialized pipHandler
+2020-06-13 18:09:26 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:09:26 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:09:26 - DEBUG - tradingAPI.globals - initialized unit_valueHandler
+2020-06-13 18:09:26 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:09:26 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:09:26 - DEBUG - tradingAPI.globals - initialized observables
+2020-06-13 18:09:26 - DEBUG - tradingAPI.low_level - visiting https://trading212.com/it/login
+2020-06-13 18:09:26 - ERROR - tradingAPI.exceptions - browser CRITICAL not started
+2020-06-13 18:52:09 - DEBUG - tradingAPI.globals - initialized observer
+2020-06-13 18:52:09 - DEBUG - tradingAPI.globals - initialized pipHandler
+2020-06-13 18:52:09 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:52:09 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:52:09 - DEBUG - tradingAPI.globals - initialized unit_valueHandler
+2020-06-13 18:52:09 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:52:09 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:52:09 - DEBUG - tradingAPI.globals - initialized observables
+2020-06-13 18:53:18 - DEBUG - tradingAPI.globals - initialized observer
+2020-06-13 18:53:18 - DEBUG - tradingAPI.globals - initialized pipHandler
+2020-06-13 18:53:18 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:53:18 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:53:18 - DEBUG - tradingAPI.globals - initialized unit_valueHandler
+2020-06-13 18:53:18 - DEBUG - tradingAPI.saver - yaml: None
+2020-06-13 18:53:18 - DEBUG - tradingAPI.saver - observer notified
+2020-06-13 18:53:18 - DEBUG - tradingAPI.globals - initialized observables
+2020-06-13 18:53:18 - ERROR - tradingAPI.exceptions - virtual display failed to launch
