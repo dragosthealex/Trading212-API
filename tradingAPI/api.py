@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
-from .links import path
+from .links import dommap
 # exceptions
 from tradingAPI import exceptions
-from .low_level import LowLevelAPI, Stock
+from .low_level import LowLevelAPI
+from tradingAPI.base import Stock
 
 # logging
 import logging
@@ -75,7 +76,8 @@ class API(LowLevelAPI):
 
     def checkPos(self):
         """check all positions"""
-        soup = BeautifulSoup(self.css1(path['movs-table']).html, 'html.parser')
+        soup = BeautifulSoup(self.css1(dommap['movs-table']).html,
+                             'html.parser')
         poss = []
         for label in soup.find_all("tr"):
             pos_id = label['id']
@@ -102,7 +104,7 @@ class API(LowLevelAPI):
             logger.debug("no preferences")
             return None
         soup = BeautifulSoup(
-            self.xpath(path['stock-table'])[0].html, "html.parser")
+            self.xpath(dommap['stock-table'])[0].html, "html.parser")
         count = 0
         # iterate through product in left panel
         for product in soup.select("div.tradebox"):
@@ -122,7 +124,7 @@ class API(LowLevelAPI):
                 continue
             sell_price = product.select("div.tradebox-price-sell")[0].text
             buy_price = product.select("div.tradebox-price-buy")[0].text
-            sent = int(product.select(path['sent'])[0].text.strip('%')) / 100
+            sent = int(product.select(dommap['sent'])[0].text.strip('%')) / 100
             stock.new_rec([sell_price, buy_price, sent])
             count += 1
         logger.debug(f"added %d stocks" % count)
@@ -136,7 +138,7 @@ class API(LowLevelAPI):
         self.preferences.clear()
         tradebox_num = len(self.css('div.tradebox'))
         for i in range(tradebox_num):
-            self.xpath(path['trade-box'])[0].right_click()
+            self.xpath(dommap['trade-box'])[0].right_click()
             self.css1('div.item-trade-contextmenu-list-remove').click()
         logger.info("cleared preferences")
 
@@ -146,19 +148,19 @@ class API(LowLevelAPI):
             logger.debug("no preferences")
             return None
         self.preferences.extend(prefs)
-        self.css1(path['search-btn']).click()
+        self.css1(dommap['search-btn']).click()
         count = 0
         for pref in self.preferences:
-            self.css1(path['search-pref']).fill(pref)
-            self.css1(path['pref-icon']).click()
+            self.css1(dommap['search-pref']).fill(pref)
+            self.css1(dommap['pref-icon']).click()
             btn = self.css1('div.add-to-watchlist-popup-item .icon-wrapper')
             if not self.css1('svg', btn)['class'] is None:
                 btn.click()
                 count += 1
             # remove window
-            self.css1(path['pref-icon']).click()
+            self.css1(dommap['pref-icon']).click()
         # close finally
-        self.css1(path['back-btn']).click()
-        self.css1(path['back-btn']).click()
+        self.css1(dommap['back-btn']).click()
+        self.css1(dommap['back-btn']).click()
         logger.debug("updated %d preferences" % count)
         return self.preferences

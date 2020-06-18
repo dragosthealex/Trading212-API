@@ -9,12 +9,15 @@ This module provides info about pathes.
 
 import os.path
 
-path = {
+dommap = {
     # Login
     'login-submit': 'input.button-login',
     'logo': "div.nav_logo",
     'alert-box': "span.weekend-trading-close",
     'new-acc-modal': r'div.eq-onboarding-popup div.close-icon',
+    # Account
+    'acc-menu': 'div.account-menu-button',
+    'acc-items': 'div.account-types-item',
     # Open Position Window modal
     'add-mov': "span.open-dialog-icon.svg-icon-holder",
     'search-box': "div.searchbox input",
@@ -31,6 +34,8 @@ path = {
     'limit-loss-value':
         '//*[@id="smartorder"]/div[1]/div[3]/div/div[3]/div[3]/div[6]/input',
     'confirm-btn': "div.confirm-button",
+    'review-order': 'div.review-order-button',
+    'send-order': 'div.send-order-button',
 
     'data-table': "tbody.table-body.dataTable-show-currentprice-arrows",
     'search-btn': "#navigation-search-button",

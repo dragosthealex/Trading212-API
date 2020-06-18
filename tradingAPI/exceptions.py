@@ -12,14 +12,6 @@ class BaseExc(BaseException):
         raise exc
 
 
-class VBroException(Exception):
-    """virtual display exception"""
-    def __init__(self):
-        err = "virtual display failed to launch"
-        logger.error(err)
-        super().__init__(err)
-
-
 class BrowserException(Exception):
     """selenium browser exception"""
     def __init__(self, brow, msg):
@@ -76,5 +68,12 @@ class MarketClosed(Exception):
 class ProductNotFound(Exception):
     def __init__(self, product_name):
         err = "%s not found" % product_name
+        logger.error(err)
+        super().__init__(err)
+
+
+class ParsingException(Exception):
+    def __init__(self, obj, exc):
+        err = f'{obj} could not be parsed: {exc}'
         logger.error(err)
         super().__init__(err)

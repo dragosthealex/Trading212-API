@@ -6,7 +6,8 @@ tradingAPI.utils
 
 This module provides utility functions.
 """
-
+import datetime
+import json
 import time
 import re
 from collections import namedtuple
@@ -22,8 +23,19 @@ logger = logging.getLogger('tradingAPI.utils')
 
 
 # Constants
-OrderModes = namedtuple('OrderModes', ['MARKET', 'LIMIT_STOP', 'OCO'])
-CFD_ORDER_MODES = OrderModes('MARKET', 'LIMIT_STOP', 'OCO')
+CfdOrderTypes = namedtuple('CfdOrderTypes', ['MARKET', 'LIMIT_STOP', 'OCO'])
+CFD_ORDER_TYPES = CfdOrderTypes('MARKET', 'LIMIT_STOP', 'OCO')
+OrderTypes = namedtuple('OrderTypes', ['MARKET', 'LIMIT', 'STOP', 'STOP_LIMIT'])
+ORDER_TYPES = OrderTypes('MARKET', 'LIMIT', 'STOP', 'STOP_LIMIT')
+OrderStatus = namedtuple('OrderStatus', ['PLACING', 'PLACED', 'FILLED',
+                                         'PART_FILLED', 'CANCELLED'])
+ORDER_STATUS = OrderStatus('PLACING', 'PLACED', 'FILLED', 'PART_FILLED',
+                           'CANCELLED')
+TradingModes = namedtuple('TradingModes', ['CFD', 'INVEST', 'ISA'])
+TRADING_MODES = TradingModes('CFD', 'INVEST', 'ISA')
+
+BUY = 'buy'
+SELL = 'sell'
 
 
 def expect(func, args, times=7, sleep_t=0.5):
@@ -156,7 +168,7 @@ def click(element):
     w()
 
 
-def format_ccy_price(text) -> float:
+def format_float(text) -> float or None:
     """Format prices read as text with ccy in front of them
 
     Args:
@@ -165,4 +177,11 @@ def format_ccy_price(text) -> float:
     Returns:
         (float): The price as float
     """
-    return float(re.sub(r'[^0-9.]', '', text))
+    text = re.sub(r'[^0-9.]', '', text)
+    if not text:
+        return None
+    return float(text)
+
+
+def get_timestamp():
+    return datetime.datetime.now()
