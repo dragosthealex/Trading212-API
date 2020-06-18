@@ -18,6 +18,13 @@ class Serializable(object):
 
         return json.dumps(data, default=json_func)
 
+    @staticmethod
+    def from_dict(dict_data, class_name):
+        return class_name(**dict_data)
+
+    def to_dict(self):
+        return self.__dict__
+
     def __repr__(self):
         return json.dumps(self.__dict__, default=lambda o: str(o))
 
@@ -37,11 +44,13 @@ class Stock(object):
 
 class Instrument(Serializable):
     """Class storing an instrument"""
-    def __init__(self, name, short_name, symbol):
+    def __init__(self, name, short_name, symbol, exchange=None,
+                 fractional=False):
         self.name = name
         self.short_name = short_name
         self.symbol = symbol
-        self.exchange = None
+        self.exchange = exchange
+        self.fractional = fractional
 
 
 class Order(Serializable):
@@ -118,7 +127,12 @@ class InvestMarketOrder(Order):
 # TODO: more of these
 ORDER_CLASS_MAP = {
     ORDER_TYPES.MARKET: InvestMarketOrder,
-    CFD_ORDER_TYPES.MARKET: CFDMarketOrder
+    ORDER_TYPES.LIMIT: Order,
+    ORDER_TYPES.STOP: Order,
+    ORDER_TYPES.STOP_LIMIT: Order,
+    CFD_ORDER_TYPES.MARKET: CFDMarketOrder,
+    CFD_ORDER_TYPES.LIMIT_STOP: Order,
+    CFD_ORDER_TYPES.OCO: Order,
 }
 
 

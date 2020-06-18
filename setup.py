@@ -11,7 +11,7 @@ setup(
         'pyyaml'
     ],
     include_package_data=True,
-    package_data={'': ['*.ini', 'logs/*.ini']},
+    package_data={'': ['*.ini', 'logs/*.ini', 'data/*_instruments.csv']},
     zip_safe=False,
     author="Federico Lolli",
     author_email="federico123579@gmail.com",

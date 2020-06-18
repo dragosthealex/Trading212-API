@@ -7,7 +7,7 @@ tradingAPI.utils
 This module provides utility functions.
 """
 import datetime
-import json
+import os
 import time
 import re
 from collections import namedtuple
@@ -36,6 +36,14 @@ TRADING_MODES = TradingModes('CFD', 'INVEST', 'ISA')
 
 BUY = 'buy'
 SELL = 'sell'
+
+# Directories
+ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
+DATA_DIR = os.path.join(ROOT_DIR, 'data')
+
+INVEST_INSTRUMENTS_CSV = os.path.join(DATA_DIR, 'INVEST_instruments.csv')
+ISA_INSTRUMENTS_CSV = os.path.join(DATA_DIR, 'ISA_instruments.csv')
+CFD_INSTRUMENTS_CSV = os.path.join(DATA_DIR, 'CFD_instruments.csv')
 
 
 def expect(func, args, times=7, sleep_t=0.5):

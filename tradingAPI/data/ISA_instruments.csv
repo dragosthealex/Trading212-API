@@ -1,0 +1,3534 @@
+name,short_name,symbol,exchange,fractional
+Amazon.com Inc.,Amazon,AMZN,NASDAQ,True
+Apple Inc.,Apple,AAPL,NASDAQ,True
+Netflix Inc.,Netflix,NFLX,NASDAQ,True
+"Tesla, Inc.",Tesla,TSLA,NASDAQ,True
+Wirecard AG,Wirecard,WDI,Deutsche Börse Xetra,True
+Alphabet Inc. Class A,Alphabet,,NASDAQ,True
+Barclays PLC,Barclays,BARC,London Stock Exchange,True
+Boeing Co.,Boeing,BA,NYSE,True
+"Facebook, Inc.",Facebook,FB,NASDAQ,True
+Microsoft Corp.,Microsoft,MSFT,NASDAQ,True
+Alibaba Group,Alibaba,BABA,NYSE,True
+BP PLC,BP,BP,London Stock Exchange,True
+McDonald's Corp.,McDonald's,MCD,NYSE,True
+Royal Dutch Shell PLC - Class A,Royal,,London Stock Exchange,True
+The Coca Cola Co.,Coca-Cola,KO,NYSE,True
+Beyond Meat Inc.,Beyond,BYND,NASDAQ,True
+Lloyds Banking Group PLC,Lloyds,,London Stock Exchange,True
+"Nike, Inc.",Nike,NKE,NYSE,True
+NIO Inc,NIO,NIO,NYSE,True
+Snap Inc.,Snap,SNAP,NYSE,True
+The Walt Disney Co.,Walt,DIS,NYSE,True
+Vanguard S&P 500 ETF,Vanguard,,London Stock Exchange,True
+easyJet PLC,easyJet,EZJ,London Stock Exchange,True
+Nikola Corporation,Nikola,,NASDAQ,True
+Nvidia Corp.,Nvidia,NVDA,NASDAQ,True
+"PayPal Holdings, Inc.",PayPal,PYPL,NASDAQ,True
+"Peloton Interactive, Inc.",Peloton,,NASDAQ,True
+Tesco PLC,Tesco,TSCO,London Stock Exchange,True
+AstraZeneca PLC,AstraZeneca,AZN,London Stock Exchange,True
+Aston Martin Lagonda Global Holdings Plc,Aston,AML,London Stock Exchange,True
+Bayerische Motoren Werke AG,BMW,BMW,Deutsche Börse Xetra,True
+Deutsche Lufthansa AG,Deutsche,,Deutsche Börse Xetra,True
+"Hertz Global Holdings, Inc.",Hertz,HTZ,NYSE,False
+GlaxoSmithKline PLC,GlaxoSmithKline,,London Stock Exchange,True
+Greggs PLC,Greggs,GRG,London Stock Exchange,True
+Sony Corporation ADR,Sony,SNE,NYSE,True
+"Zoom Video Communications, Inc.",Zoom,ZM,NASDAQ,True
+Adidas AG,Adidas,ADS,Deutsche Börse Xetra,True
+Aurora Cannabis Inc,Aurora,,NYSE,True
+Bayer AG,Bayer,BAYN,Deutsche Börse Xetra,True
+Electronic Arts,Electronic,EA,NASDAQ,True
+HSBC Holdings PLC,HSBC,,London Stock Exchange,True
+Twitter Inc.,Twitter,TWTR,NYSE,True
+Visa Inc.,Visa,V,NYSE,True
+Ford Motor,Ford,F,NYSE,True
+"Uber Technologies, Inc.",Uber,,NYSE,True
+Canopy Growth Corp,Canopy,,NYSE,True
+Johnson & Johnson,Johnson,,NYSE,True
+Mercedes-Benz,Daimler,DAI,Deutsche Börse Xetra,True
+Rolls-Royce Holdings PLC,Rolls-Royce,,London Stock Exchange,True
+Mastercard Inc.,Mastercard,MA,NYSE,True
+Ocado Group PLC,Ocado,OCDO,London Stock Exchange,True
+Volkswagen AG - Preferred Stock,Volkswagen,VOW3,Deutsche Börse Xetra,True
+Alphabet Inc. Class C,Alphabet,,NASDAQ,True
+Vanguard FTSE 100 UCITS ETF (GBP) Distributing,Vanguard,,London Stock Exchange,True
+"Vislink Technologies, Inc.",Vislink,,NASDAQ,True
+"Slack Technologies, Inc",Slack,WORK,NYSE,True
+Walmart Inc,Walmart,WMT,NYSE,True
+"Advanced Micro Devices, Inc.",Advanced,,NASDAQ,True
+Cineworld Group PLC,Cineworld,,London Stock Exchange,True
+"Genius Brands International, Inc.",Genius,GNUS,NASDAQ,False
+iShares Global Clean Energy UCITS ETF,iShares,,London Stock Exchange,True
+Pfizer Inc.,Pfizer,PFE,NYSE,True
+Vodafone Group PLC,Vodafone,,London Stock Exchange,True
+boohoo.com plc,boohoo.com,BOO,London Stock Exchange,True
+FedEx Corporation,FedEx,FDX,NYSE,True
+J D Wetherspoon PLC,J,,London Stock Exchange,True
+Porsche Automobil Holding SE,Porsche,PAH3,Deutsche Börse Xetra,True
+eBay Inc.,eBay,EBAY,NASDAQ,False
+JD Sports Fashion PLC,JD,,London Stock Exchange,True
+Premier Oil PLC,Premier,PMO,London Stock Exchange,True
+Royal Dutch Shell PLC - Class A,Royal,,Netherlands,True
+"Adobe Systems, Inc.",Adobe,,NASDAQ,True
+International Business Machines Corporation,IBM,,NYSE,True
+Exxon Mobil Corp.,Exxon,XOM,NYSE,True
+Siemens AG,Siemens,SIE,Deutsche Börse Xetra,True
+BASF SE,BASF,BAS,Deutsche Börse Xetra,True
+Cinedigm Corp.,Cinedigm,CIDM,NASDAQ,False
+SAP SE,SAP,SAP,Deutsche Börse Xetra,True
+Ryanair Holdings plc,Ryanair,RYA,London Stock Exchange,True
+Unilever PLC,Unilever,ULVR,London Stock Exchange,True
+Cisco Systems,Cisco,CSCO,NASDAQ,True
+Warner Music Group Corp.,Warner,WMG,NASDAQ,False
+"Village Farms International, Inc",Village,,NASDAQ,True
+"Berkshire Hathaway, Inc. Class B",Berkshire,,NYSE,True
+International Consolidated Airlines Group SA,IAG,IAG,London Stock Exchange,True
+iShares UK Property UCITS ETF,iShares,,London Stock Exchange,True
+Oracle Corp.,Oracle,ORCL,NYSE,True
+"Shopify, Inc.",Shopify,SHOP,NYSE,True
+"Square, Inc.",Square,SQ,NYSE,True
+Airbus Group SE,Airbus,AIR,Euronext Paris,True
+Allianz SE,Allianz,ALV,Deutsche Börse Xetra,True
+American Airlines Group Inc.,American,,NASDAQ,True
+AT&T Inc.,AT&T,T,NYSE,True
+"Ideanomics, Inc.",Ideanomics,IDEX,NASDAQ,False
+Marks & Spencer Group PLC,Marks,,London Stock Exchange,True
+Royal Mail PLC,Royal,RMG,London Stock Exchange,True
+"Arena Pharmaceuticals, Inc.",Arena,,NASDAQ,False
+E.ON SE,E.ON,EOAN,Deutsche Börse Xetra,True
+Royal Dutch Shell PLC - Class B,Royal,,London Stock Exchange,True
+Bank of America Corp.,Bank,,NYSE,True
+Rightmove PLC,Rightmove,RMV,London Stock Exchange,True
+Wells Fargo & Company,Wells,WFC,NYSE,True
+Aphria Inc,Aphria,APHA,NYSE,True
+Carnival PLC,Carnival,CCL,London Stock Exchange,True
+SuperDry PLC,SuperDry,SDRY,London Stock Exchange,True
+"Tilray, Inc.",Tilray,TLRY,NASDAQ,True
+"Delta Air Lines, Inc.",Delta,DAL,NYSE,True
+Deutsche Bank AG,Deutsche,,Deutsche Börse Xetra,True
+Domino's Pizza Group PLC,Domino's,,London Stock Exchange,True
+Spotify Technology S.A.,Spotify,SPOT,NYSE,True
+TUI AG,TUI,TUI1,Deutsche Börse Xetra,True
+Procter & Gamble,Procter,,NYSE,True
+Deutsche Telekom AG,Deutsche,,Deutsche Börse Xetra,True
+JPMorgan Chase & Co.,JPMorgan,,NYSE,True
+"Virgin Galactic Holdings, Inc.",Virgin,SPCE,NYSE,True
+"Pliant Therapeutics, Inc.",Pliant,,NASDAQ,False
+Continental AG,Continental,CON,Deutsche Börse Xetra,True
+Corbus Pharmaceuticals Holding,Corbus,,NASDAQ,True
+J Sainsbury PLC,J,SBRY,London Stock Exchange,True
+Vanguard FTSE Emerging Markets UCITS ETF,Vanguard,,London Stock Exchange,True
+"XpresSpa Group, Inc.",XpresSpa,XSPA,NASDAQ,False
+GW Pharmaceuticals plc ADR,GW,,NASDAQ,True
+Micron Technology,Micron,,NASDAQ,True
+Intel Corp.,Intel,INTC,NASDAQ,True
+Metro Bank PLC,Metro,MTRO,London Stock Exchange,True
+iShares Physical Gold ETC,iShares,,London Stock Exchange,True
+Starbucks Corp.,Starbucks,SBUX,NASDAQ,True
+"Moderna, Inc.",Moderna,MRNA,NASDAQ,True
+SPDR S&P UK Dividend Aristocrats ETF,SPDR,,London Stock Exchange,True
+Diageo PLC,Diageo,DGE,London Stock Exchange,True
+Verizon Communications,Verizon,VZ,NYSE,True
+British American Tobacco PLC,British,,London Stock Exchange,True
+WisdomTree WTI Crude Oil ETC,WisdomTree,,Deutsche Börse Xetra,True
+National Grid PLC,National,NG,London Stock Exchange,True
+Vanguard FTSE All-World High Dividend Yield UCITS ETF,Vanguard,,London Stock Exchange,True
+American Express Co,American,,NYSE,True
+General Electric,General,,NYSE,True
+Merck & Co.,Merck,MRK,NYSE,True
+Vanguard FTSE All-World UCITS ETF,Vanguard,,London Stock Exchange,True
+General Motors,General,,NYSE,True
+Gilead Sciences,Gilead,,NASDAQ,True
+iShares Core DAX UCITS ETF (DE),iShares,,Deutsche Börse Xetra,True
+WisdomTree Physical Gold,WisdomTree,,London Stock Exchange,True
+Cronos Group Inc,Cronos,CRON,NASDAQ,True
+SSE PLC,SSE,SSE,London Stock Exchange,True
+BT Group PLC,BT,BT,London Stock Exchange,True
+Next PLC,Next,NXT,London Stock Exchange,True
+Abbott Laboratories,Abbott,,NYSE,True
+"AbbVie, Inc.",AbbVie,ABBV,NYSE,True
+United Health Group Inc.,United,,NYSE,True
+Macy's Inc.,Macy's,M,NYSE,True
+Salesforce.com,Salesforce,CRM,NYSE,True
+BAE Systems PLC,BAE,BA.,London Stock Exchange,True
+Carnival Corp.,Carnival,CCL,NYSE,True
+Aegon NV,Aegon,AGN,Netherlands,True
+"Pinterest, Inc.",Pinterest,PINS,NYSE,True
+Royal Caribbean Cruises,Royal,,NYSE,True
+"Nel, ASA",Nel,D7G,Deutsche Börse Xetra,True
+Eli Lilly and Company,Eli,LLY,NYSE,True
+"United Airlines Holdings, Inc.",United,UAL,NASDAQ,True
+Associated British Foods PLC,Associated,,London Stock Exchange,True
+iShares Core FTSE 100 UCITS ETF GBP (Dist),iShares,,London Stock Exchange,True
+Royal Bank of Scotland Group PLC,Royal,,London Stock Exchange,True
+Taylor Wimpey PLC,Taylor,TW.,London Stock Exchange,True
+Halliburton Co.,Halliburton,HAL,NYSE,True
+Luckin Coffee Inc.,Luckin,LK,NASDAQ,True
+Intu Properties PLC,Intu,,London Stock Exchange,True
+Tullow Oil PLC,Tullow,TLW,London Stock Exchange,True
+ASOS Plc,ASOS,ASC,London Stock Exchange,True
+Barratt Developments PLC,Barratt,,London Stock Exchange,True
+Medtronic Inc.,Medtronic,MDT,NYSE,True
+Whitbread PLC,Whitbread,WTB,London Stock Exchange,True
+"Etsy, Inc.",Etsy,ETSY,NASDAQ,True
+ITM Power PLC,ITM,ITM,London Stock Exchange,True
+Vonovia SE,Vonovia,VNA,Deutsche Börse Xetra,True
+"Cloudflare, Inc.",Cloudflare,NET,NYSE,True
+Gym Group PLC/The,Gym,GYM,London Stock Exchange,True
+TUI Group,TUI,TUI,London Stock Exchange,True
+Chevron Corporation,Chevron,CVX,NYSE,True
+Banco Santander SA,Banco,,London Stock Exchange,True
+Heineken NV,Heineken,HEIA,Netherlands,True
+Koninklijke Ahold Delhaize NV,Ahold,,Netherlands,True
+Legal & General Group PLC,Legal,,London Stock Exchange,True
+Manchester United Ltd.,Manchester,,NYSE,False
+"Palo Alto Networks, Inc.",Palo,,NYSE,False
+William Hill PLC,William,WMH,London Stock Exchange,True
+Air France - KLM SA,Air,,Euronext Paris,False
+Glencore PLC,Glencore,GLEN,London Stock Exchange,True
+Total SA,Total,FP,Euronext Paris,True
+3M Company,3M,MMM,NYSE,True
+"Activision Blizzard, Inc.",Activision,,NASDAQ,True
+Aviva PLC,Aviva,AV,London Stock Exchange,True
+Greatland Gold plc,Greatland,,London Stock Exchange,False
+LVMH Louis Vuitton Moet Hennessy SE,LVMH,MC,Euronext Paris,True
+"Norwegian Cruise Line Holdings, Ltd.",Norwegian,,NYSE,False
+Virgin Money UK plc,Virgin,VMUK,London Stock Exchange,True
+Persimmon PLC,Persimmon,PSN,London Stock Exchange,True
+"SmileDirectClub, Inc.",SmileDirectClub,,NASDAQ,True
+Valaris plc,Valaris,VAL,NYSE,True
+Citigroup Inc.,Citigroup,C,NYSE,True
+Costco Wholesale Corporation,Costco,COST,NASDAQ,True
+Imperial Brands PLC,Imperial,,London Stock Exchange,True
+Royal Dutch Shell PLC - Class A,Royal,,Deutsche Börse Xetra,True
+Callon Petroleum Company,Callon,,NYSE,False
+CVS Health Corporation,CVS,CVS,NYSE,True
+Forum Merger II Corporation,Forum,,NASDAQ,False
+Games Workshop Group PLC,Games,,London Stock Exchange,True
+Goldman Sachs Group,Goldman,,NYSE,True
+Inditex SA,Inditex,ITX,Bolsa de Madrid,True
+Marston's PLC,Marston's,MARS,London Stock Exchange,True
+Realty Income Corporation,Realty,O,NYSE,True
+Airbus SE,Airbus,AIR,Deutsche Börse Xetra,True
+"Amgen, Inc.",Amgen,AMGN,NASDAQ,True
+Ballard Power Systems Inc,Ballard,,NASDAQ,True
+iShares S&P 500 UCITS ETF USD (Dist),iShares,,London Stock Exchange,True
+"Morgan Stanley, Inc.",Morgan,,NYSE,True
+Repsol SA,Repsol,REP,Bolsa de Madrid,True
+Vanguard FTSE Developed Europe UCITS ETF (EUR) Distributing,Vanguard,,London Stock Exchange,True
+iShares S&P 500 Information Technology Sector UCITS ETF,iShares,,London Stock Exchange,True
+Southwest Airlines Co.,Southwest,,NYSE,True
+Invesco EQQQ NASDAQ-100 UCITS ETF,Invesco,,London Stock Exchange,True
+Phillips 66,Phillips,PSX,NYSE,True
+"Qualcomm, Inc.",Qualcomm,QCOM,NASDAQ,True
+"DexCom, Inc.",DexCom,DXCM,NASDAQ,True
+EOG Resources,EOG,,NYSE,False
+Sanofi SA,Sanofi,SAN,Euronext Paris,True
+Card Factory PLC,Card,CARD,London Stock Exchange,True
+iShares Core MSCI World UCITS ETF USD Accumulating,iShares,,Deutsche Börse Xetra,False
+Adyen NV,Adyen,ADYEN,Netherlands,True
+MGM Resorts International,MGM,MGM,NYSE,False
+"Novavax, Inc.",Novavax,NVAX,NASDAQ,True
+PepsiCo Inc.,PepsiCo,PEP,NASDAQ,True
+Volkswagen AG,Volkswagen,VOW,Deutsche Börse Xetra,True
+Moneysupermarket.com Group PLC,MoneySuperMarket,,London Stock Exchange,True
+British Land Co PLC/The,British,,London Stock Exchange,True
+Nestle SA,Nestle,NESN,SIX Swiss,False
+Vanguard FTSE 100 UCITS ETF (GBP) Accumulating,Vanguard,,London Stock Exchange,False
+"Biocept, Inc.",Biocept,BIOC,NASDAQ,False
+Centrica PLC,Centrica,CNA,London Stock Exchange,True
+Nintendo Co Ltd.,Nintendo,NTO,Deutsche Börse Xetra,False
+Occidental Petroleum Corporation,Occidental,,NYSE,True
+Wm Morrison Supermarkets PLC,Morrisons,MRW,London Stock Exchange,True
+First Solar Inc,First,FSLR,NASDAQ,False
+Fraport AG Frankfurt Airport Services Worldwide,Fraport,,Deutsche Börse Xetra,True
+iShares European Property Yield UCITS ETF EUR (Dist),iShares,,London Stock Exchange,True
+"Roku, Inc.",Roku,ROKU,NASDAQ,True
+The Medical Cannabis and Wellness UCITS ETF - Acc,The,,Deutsche Börse Xetra,True
+Chesapeake Energy,Chesapeake,,NYSE,True
+"Inovio Pharmaceuticals, Inc.",Inovio,,NASDAQ,True
+BioNTech Se,BioNTech,BNTX,NASDAQ,True
+Halfords Group PLC,Halfords,,London Stock Exchange,True
+Kosmos Energy Ltd.,Kosmos,,NYSE,True
+"Livongo Health, Inc.",Livongo,LVGO,NASDAQ,True
+Lyft Inc.,Lyft,LYFT,NASDAQ,True
+United Parcel Service,United,,NYSE,True
+Vanguard FTSE 250 UCITS ETF (GBP) Accumulating,Vanguard,,London Stock Exchange,False
+HSBC FTSE 100 UCITS ETF,HSBC,,London Stock Exchange,False
+iShares Physical Gold ETC,iShares,,London Stock Exchange,False
+Telefonica SA,Telefonica,TEF,Bolsa de Madrid,True
+"Under Armour, Inc. Class A",Under,UAA,NYSE,True
+Capita PLC,Capita,CPI,London Stock Exchange,True
+National Express Group PLC,National,,London Stock Exchange,True
+Novartis AG,Novartis,NOVN,SIX Swiss,False
+"Trade Desk, Inc.",Trade,TTD,NASDAQ,True
+Barrick Gold Corporation,Barrick,GOLD,NYSE,True
+JD.com,JD.com,JD,NASDAQ,True
+Kinder Morgan,Kinder,,NYSE,False
+WH Smith PLC,WH,SMWH,London Stock Exchange,True
+"Anthem, Inc.",Anthem,ANTM,NYSE,True
+Gazprom PJSC,Gazprom,OGZD,London Stock Exchange,True
+Highland Gold Mining,Highland,,London Stock Exchange,True
+Immunomedics Inc,Immunomedics,,NASDAQ,False
+iShares Dow Jones U.S. Select Dividend EUR UCITS ETF,iShares,,Deutsche Börse Xetra,False
+Nokia Corporation ADR,Nokia,NOK,NYSE,True
+TripAdvisor,TripAdvisor,TRIP,NASDAQ,False
+Bank of Montreal,Bank,,NYSE,True
+ITV PLC,ITV,ITV,London Stock Exchange,True
+"Plug Power, Inc.",Plug,PLUG,NASDAQ,True
+Wizz Air Holdings Plc,Wizz,,London Stock Exchange,True
+Autodesk Inc.,Autodesk,ADSK,NASDAQ,False
+"Avis Budget Group, Inc.",Avis,,NASDAQ,True
+"DocuSign, Inc.",DocuSign,DOCU,NASDAQ,False
+"Zoetis, Inc.",Zoetis,ZTS,NYSE,True
+Iberdrola SA,Iberdrola,IBE,Bolsa de Madrid,True
+"Lakeland Industries, Inc.",Lakeland,,NASDAQ,True
+Powerhouse Energy Group plc,Powerhouse,,London Stock Exchange,False
+Raytheon Technologies Corp.,Raytheon,,NYSE,True
+Renault SA,Renault,RNO,Euronext Paris,True
+"Royal Gold, Inc.",Royal,RGLD,NASDAQ,False
+Ted Baker PLC,Ted,TED,London Stock Exchange,True
+PIMCO Short-Term High Yield Corporate Bond Index Source UCITS ETF GBP (Hedged),PIMCO,,London Stock Exchange,True
+"Teladoc, Inc.",Teladoc,TDOC,NYSE,True
+Vanguard U.K. Gilt UCITS ETF,Vanguard,,London Stock Exchange,True
+Burberry Group PLC,Burberry,,London Stock Exchange,True
+Philip Morris International Inc,Philip,PM,NYSE,True
+Rio Tinto PLC,Rio,RIO,London Stock Exchange,True
+Roche Holding AG Participation,Roche,ROG,SIX Swiss,False
+Dart Group PLC,Dart,DTG,London Stock Exchange,True
+Lockheed Martin Corporation,Lockheed,,NYSE,True
+Waste Management Inc.,Waste,,NYSE,True
+"BioCryst Pharmaceuticals, Inc.",BioCryst,,NASDAQ,False
+"Blue Apron Holdings, Inc.",Blue,,NYSE,True
+Borussia Dortmund GmbH & Co KGaA,Borussia,,Deutsche Börse Xetra,True
+Commerzbank AG,Commerzbank,CBK,Deutsche Börse Xetra,True
+"Enphase Energy, Inc.",Enphase,,NASDAQ,True
+Ferrari N.V.,Ferrari,RACE,NYSE,False
+"Groupon, Inc.",Groupon,GRPN,NASDAQ,False
+Hikma Pharmaceuticals PLC,Hikma,,London Stock Exchange,False
+"Marriott International, Inc.",Marriott,,NASDAQ,True
+Petra Diamonds Ltd,Petra,,London Stock Exchange,True
+Scottish Mortgage Investment Trust plc,Scottish,,London Stock Exchange,True
+Apache Corporation,Apache,APA,NYSE,False
+ConocoPhillips,ConocoPhillips,COP,NYSE,False
+"Fitbit, Inc.",Fitbit,FIT,NYSE,True
+Hewlett-Packard Co,Hewlett-Packard,,NYSE,False
+"MFA Financial, Inc.",MFA,MFA,NYSE,False
+Nostrum Oil & Gas PLC,Nostrum,,London Stock Exchange,True
+Restaurant Group PLC,Restaurant,,London Stock Exchange,True
+Tencent Music Entertainment Group ADR,Tencent,,NYSE,False
+Travis Perkins PLC,Travis,TPK,London Stock Exchange,False
+Xtrackers S&P 500 2x Inverse Daily Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,True
+Auto Trader Group PLC,Auto,,London Stock Exchange,False
+B&M European Value Retail SA,B&M,,London Stock Exchange,True
+Marathon Oil Corp.,Marathon,MRO,NYSE,False
+Melia Hotels International SA,Melia,MEL,Bolsa de Madrid,True
+Revolve Group LLC,Revolve,RVLV,NYSE,True
+Bunzl PLC,Bunzl,BNZL,London Stock Exchange,False
+Firstgroup PLC,Firstgroup,FGP,London Stock Exchange,False
+FRASERS GROUP PLC,Frasers,FRAS,London Stock Exchange,False
+"FuelCell Energy, Inc.",FuelCell,,NASDAQ,True
+HSBC S&P 500 UCITS ETF,HSBC,,London Stock Exchange,False
+"Invesco Mortgage Capital, Inc.",Invesco,,NYSE,False
+iRobot Corporation,iRobot,IRBT,NASDAQ,True
+iShares STOXX Europe 600 Oil & Gas UCITS ETF (DE),iShares,,Deutsche Börse Xetra,True
+Prudential PLC,Prudential,PRU,London Stock Exchange,True
+Sage Group PLC/The,Sage,SGE,London Stock Exchange,False
+WPP PLC,WPP,WPP,London Stock Exchange,True
+Zalando SE,Zalando,ZAL,Deutsche Börse Xetra,True
+Ashtead Group PLC,Ashtead,,London Stock Exchange,True
+"Dell Technologies, Inc.",Dell,,NYSE,True
+Gulf Keystone Petroleum Ltd,Gulf,,London Stock Exchange,True
+ING Groep NV,ING,INGA,Netherlands,True
+Kingfisher PLC,Kingfisher,KGF,London Stock Exchange,False
+Lithium Americas Corp.,Lithium,,NYSE,True
+Oxford Instruments PLC,Oxford,,London Stock Exchange,False
+Royalty Pharma plc,Royalty,,NASDAQ,False
+"Tyson Foods, Inc.",Tyson,TSN,NYSE,True
+Ubisoft Entertainment SA,Ubisoft,UBI,Euronext Paris,True
+Wayfair Inc,Wayfair,W,NYSE,False
+Britvic PLC,Britvic,BVIC,London Stock Exchange,False
+Mitchells & Butlers PLC,Mitchells,,London Stock Exchange,True
+NRG Energy,NRG,NRG,NYSE,False
+"Take-Two Interactive Software, Inc.",Take-Two,TTWO,NASDAQ,True
+VEON Ltd.,VEON,VEON,NASDAQ,False
+"Banco Bilbao Vizcaya Argentaria, S.A.",Banco,,Bolsa de Madrid,True
+"Caterpillar, Inc.",Caterpillar,CAT,NYSE,True
+Coca-Cola European Partners plc,Coca-Cola,,NYSE,False
+Fiat Chrysler Automobiles N.V.,Fiat,,NYSE,False
+Hexo Corp,Hexo,HEXO,NYSE,False
+iShares Developed Markets Property Yield ETF USD Dist,iShares,,London Stock Exchange,True
+Kroger Co.,Kroger,KR,NYSE,True
+London Stock Exchange Group PLC,London,,London Stock Exchange,True
+"Spirit Airlines, Inc.",Spirit,SAVE,NYSE,False
+thyssenkrupp AG,thyssenkrupp,TKA,Deutsche Börse Xetra,True
+VanEck Vectors Video Gaming and eSports UCITS ETF USD Accumulating,VanEck,,London Stock Exchange,True
+WisdomTree Physical Silver ETC,WisdomTree,,London Stock Exchange,True
+Admiral Group PLC,Admiral,ADM,London Stock Exchange,True
+Airtel Africa PLC,Airtel,AAF,London Stock Exchange,True
+"Altria Group, Inc.",Altria,MO,NYSE,True
+Babcock International Group PLC,Babcock,,London Stock Exchange,False
+Bristol-Myers Squibb,Bristol-Myers,,NYSE,True
+Caixabank SA,Caixabank,CABK,Bolsa de Madrid,True
+Compass Group PLC,Compass,,London Stock Exchange,True
+De La Rue PLC,De,DLAR,London Stock Exchange,False
+Evraz PLC,Evraz,EVR,London Stock Exchange,True
+"Fastly, Inc.",Fastly,FSLY,NYSE,True
+John Menzies PLC,John,MNZS,London Stock Exchange,True
+Linde PLC,Linde,LIN,Deutsche Börse Xetra,False
+Mylan Inc.,Mylan,MYL,NASDAQ,False
+Siemens Gamesa Renewable Energy SA,Gamesa,SGRE,Bolsa de Madrid,False
+"Vertex Pharmaceuticals, Inc.",Vertex,,NASDAQ,True
+"Aaron's, Inc.",Aaron's,AAN,NYSE,True
+Banco de Sabadell SA,Banco,,Bolsa de Madrid,True
+"CrowdStrike, Inc.",CrowdStrike,CRWD,NASDAQ,True
+Devon Energy Corp.,Devon,DVN,NYSE,False
+Direct Line Insurance Group PLC,Direct,,London Stock Exchange,True
+"Foot Locker, Inc.",Foot,FL,NYSE,True
+Home Depot,Home,HD,NYSE,True
+HUGO BOSS AG,HUGO,BOSS,Deutsche Börse Xetra,True
+"Lululemon Athletica, Inc",Lululemon,,NASDAQ,True
+Melrose Industries PLC,Melrose,,London Stock Exchange,True
+MTU Aero Engines AG,MTU,,Deutsche Börse Xetra,True
+Pets at Home Group Plc,Pets,,London Stock Exchange,True
+Peugeot SA,Peugeot,UG,Euronext Paris,True
+RWE AG,RWE,RWE,Deutsche Börse Xetra,False
+Severn Trent PLC,Severn,SVT,London Stock Exchange,True
+Simon Property Group Inc.,Simon,,NYSE,True
+Takeaway.com Holding BV,Takeaway.com,,Netherlands,True
+The Clorox Company,Clorox,,NYSE,True
+AA PLC,AA,AA,London Stock Exchange,True
+Aena SME SA,Aena,AENA,Bolsa de Madrid,False
+AstraZeneca plc ADR,AstraZeneca,AZN,NYSE,False
+Coca-Cola HBC AG,Coca-Cola,,London Stock Exchange,True
+FDM Group Holdings PLC,FDM,,London Stock Exchange,False
+Garena,Sea,SE,NYSE,True
+Reckitt Benckiser Group PLC,Reckitt,,London Stock Exchange,True
+Stobart Group Ltd,Stobart,STOB,London Stock Exchange,True
+Telefonaktiebolaget LM Ericsson ADR,Ericsson,ERIC,NASDAQ,True
+Toyota Motor Corporation ADR,Toyota,,NYSE,False
+AMS AG,ams,AMS,SIX Swiss,False
+AXA SA,AXA,CS,Euronext Paris,True
+Best of the Best PLC,Best,,London Stock Exchange,False
+"BlackRock, Inc.",BlackRock,BLK,NYSE,True
+Credit Suisse Group AG,Credit,CSGN,SIX Swiss,False
+"Datadog, Inc.",Datadog,DDOG,NASDAQ,True
+DraftKings Inc.,DraftKings,DKNG,NASDAQ,True
+GoPro Inc,GoPro,GPRO,NASDAQ,True
+Invesco S&P 500 High Dividend Low Volatility GBX UCITS ETF Distributing,Invesco,,London Stock Exchange,True
+iShares Electric Vehicles and Driving Technology UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+Kier Group PLC,Kier,KIE,London Stock Exchange,True
+Liberty Global Plc Class A,Liberty,,NASDAQ,False
+Macerich,Macerich,MAC,NYSE,False
+Meggitt PLC,Meggitt,MGGT,London Stock Exchange,True
+Merck KGaA,Merck,MRK,Deutsche Börse Xetra,False
+"Park Hotels & Resorts, Inc.",Park,,NYSE,True
+Pharming Group NV,Pharming,,Netherlands,True
+Redrow PLC,Redrow,RDW,London Stock Exchange,True
+Smith & Nephew PLC,Smith,,London Stock Exchange,False
+Tiffany & Co.,Tiffany,TIF,NYSE,False
+Trainline plc,Trainline,TRN,London Stock Exchange,False
+Twilio Inc.,Twilio,TWLO,NYSE,True
+Xetra-Gold ETF,Xetra-Gold,4GLD,Deutsche Börse Xetra,True
+"Alteryx, Inc.",Alteryx,AYX,NYSE,True
+"Arcimoto, Inc.",Arcimoto,FUV,NASDAQ,False
+Bayerische Motoren Werke AG - Preferred stock,BMW,,Deutsche Börse Xetra,True
+Deka DAX,Deka,ETFDAX,Deutsche Börse Xetra,False
+Delivery Hero AG,Delivery,DHER,Deutsche Börse Xetra,False
+Experian PLC,Experian,EXPN,London Stock Exchange,True
+"Fortinet, Inc.",Fortinet,FTNT,NASDAQ,False
+Gold Bullion Securities Ltd,Gold,GBSS,London Stock Exchange,False
+Greencoat UK Wind PLC/Funds,Greencoat,,London Stock Exchange,True
+Hilton Worldwide Holdings Inc.,Hilton,,NYSE,False
+Infineon Technologies AG,Infineon,,Deutsche Börse Xetra,True
+InterContinental Hotels Group PLC,InterContinental,,London Stock Exchange,True
+Investec PLC,Investec,INVP,London Stock Exchange,True
+JetBlue Airways Corporation,JetBlue,,NASDAQ,False
+Lyxor EURO STOXX 50 Daily (-2x) Inverse UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+NewRiver REIT PLC,NewRiver,,London Stock Exchange,False
+Softcat PLC,Softcat,SCT,London Stock Exchange,True
+Sysco Corp.,Sysco,SYY,NYSE,True
+Taiwan Semiconductor Manufacturing ADR,Taiwan,,NYSE,True
+TeamViewer AG,TeamViewer,TMV,Deutsche Börse Xetra,True
+Vanguard Global Aggregate Bond UCITS ETF,Vanguard,,London Stock Exchange,True
+Baidu Class A,Baidu,BIDU,NASDAQ,True
+"Booking Holdings, Inc.",Booking,,NASDAQ,True
+"Co-Diagnostics, Inc.","Co-Diagnostics
+CODX",,NASDAQ,False
+Dollar Tree,Dollar,DLTR,NASDAQ,False
+Dow Inc.,Dow,DOW,NYSE,True
+"Genprex, Inc.",Genprex,GNPX,NASDAQ,False
+"Grubhub, Inc.",Grubhub,GRUB,NYSE,False
+HomeServe PLC,HomeServe,HSV,London Stock Exchange,False
+Illumina Inc,Illumina,ILMN,NASDAQ,False
+Invesco PowerShares Source Physical Gold ETC (P-ETC),Invesco,,London Stock Exchange,False
+Lookers PLC,Lookers,LOOK,London Stock Exchange,True
+Lyxor S&P 500 VIX Futures Enhanced EUR Roll UCITS ETF,Lyxor,,Deutsche Börse Xetra,False
+Revolution Bars Group Plc,Revolution,,London Stock Exchange,True
+Societe Generale SA,Societe,,Euronext Paris,True
+"SolarEdge Technologies, Inc.",SolarEdge,,NASDAQ,True
+UBS Group AG,UBS,UBSG,SIX Swiss,False
+Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C,Xtrackers,,London Stock Exchange,False
+ABB Ltd,ABB,ABBN,SIX Swiss,False
+Accenture plc,Accenture,ACN,NYSE,True
+ASML Holding NV,ASML,ASML,Netherlands,True
+Ceres Power Holdings PLC,Ceres,,London Stock Exchange,True
+Deutsche Post AG,Deutsche,DPW,Deutsche Börse Xetra,True
+Hollywood Bowl Group PLC,Hollywood,,London Stock Exchange,True
+iShares NASDAQ 100 UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+Kodal Minerals PLC,Kodal,KOD,London Stock Exchange,False
+Puma SE,Puma,PUM,Deutsche Börse Xetra,False
+Sasol Ltd.,Sasol,SSL,NYSE,False
+Savills PLC,Savills,SVS,London Stock Exchange,False
+Stagecoach Group PLC,Stagecoach,,London Stock Exchange,True
+Stryker Corporation,Stryker,SYK,NYSE,True
+Target Corp.,Target,TGT,NYSE,True
+Universal Corporation SHS,Universal,,NYSE,False
+"VBI Vaccines, Inc.",VBI,VBIV,NASDAQ,False
+Xaar PLC,Xaar,XAR,London Stock Exchange,False
+ABN AMRO Group NV,ABN,,Netherlands,True
+"AIG, Inc.",AIG,AIG,NYSE,True
+Akzo Nobel NV,Akzo,AKZA,Netherlands,True
+Bankia SA,Bankia,BKIA,Bolsa de Madrid,True
+BNP Paribas SA,BNP,BNP,Euronext Paris,True
+"Coty, Inc.",Coty,COTY,NYSE,False
+"Digital Turbine, Inc.",Digital,APPS,NYSE,False
+Dixons Carphone PLC,Dixons,,London Stock Exchange,False
+DS Smith PLC,DS,SMDS,London Stock Exchange,True
+Expedia Inc.,Expedia,EXPE,NASDAQ,False
+Foxtons Group PLC,Foxtons,FOXT,London Stock Exchange,False
+G4S PLC,G4S,GFS,London Stock Exchange,True
+Hammerson PLC,Hammerson,HMSO,London Stock Exchange,True
+Hotel Chocolat Group PLC,Hotel,,London Stock Exchange,False
+"Mercado Libre, Inc.",Mercado,MELI,NASDAQ,False
+Muenchener Rueckversicherungs-Gesellschaft AG in Muenchen,Munich,MUV2,Deutsche Börse Xetra,False
+"Pinduoduo, Inc.",Pinduoduo,PDD,NASDAQ,False
+Premier Foods PLC,Premier,PFD,London Stock Exchange,False
+"Remark Holdings, Inc.",Remark,,NASDAQ,False
+Rosneft Oil Company,Rosneft,ROSN,London Stock Exchange,False
+Senvion SA,Senvion,SEN,Deutsche Börse Xetra,True
+SIG PLC,SIG,SHI,London Stock Exchange,True
+"Sonos, Inc.","Sonos,",SONO,NASDAQ,False
+SPDR FTSE EPRA Europe ex UK Real Estate UCITS ETF (Acc),SPDR,,Deutsche Börse Xetra,False
+St James's Place PLC,St,,London Stock Exchange,True
+Teva Pharmaceutical Industries Ltd. ADR,Teva,,NYSE,True
+The Renewables Infrastructure Group Ltd,The,,London Stock Exchange,True
+TJX Companies Inc.,TJX,,NYSE,True
+Vanguard USD Treasury Bond UCITS ETF (USD) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Xerox Corp.,Xerox,XRX,NYSE,False
+Zurich Insurance Group AG,Zurich,,SIX Swiss,False
+Zynga Inc.,Zynga,ZNGA,NASDAQ,True
+Amadeus IT,Amadeus,AMS,Bolsa de Madrid,True
+Brookfield Renewable Partners LP,Brookfield,,NYSE,True
+Carl Zeiss Meditec AG,Carl,,Deutsche Börse Xetra,False
+"Cloudera, Inc.",Cloudera,CLDR,NYSE,False
+"Cocrystal Pharma, Inc.",Cocrystal,,NASDAQ,False
+Colgate-Palmolive,Colgate-Palmolive,,NYSE,True
+Energean Oil & Gas PLC,Energean,,London Stock Exchange,False
+"Five9, Inc.",Five9,FIVN,NASDAQ,False
+Freeport-McMoRan Inc.,Freeport-McMoRan,,NYSE,False
+Garmin Ltd.,Garmin,GRMN,NASDAQ,False
+Good Energy Group PLC,Good,GOOD,London Stock Exchange,False
+Hermès International S.A.,Hermes,RMS,Euronext Paris,True
+Hormel Foods Corp.,Hormel,HRL,NYSE,True
+Howden Joinery Group PLC,Howden,,London Stock Exchange,False
+Invesco S&P 500 High Dividend Low Volatility USD UCITS ETF Distributing,Invesco,,London Stock Exchange,True
+iShares Core MSCI World UCITS ETF USD Accumulating,iShares,,London Stock Exchange,True
+Koninklijke Philips NV,Koninklijke,,Netherlands,True
+Logitech International S.A.,Logitech,,NASDAQ,False
+Marathon Petroleum,Marathon,,NYSE,False
+Novo Nordisk A/S ADR,Novo,NVO,NYSE,False
+Rio Tinto PLC ADR,Rio,RIO,NYSE,False
+Sixt SE,Sixt,SIX2,Deutsche Börse Xetra,True
+Skyworks Solutions Inc.,Skyworks,,NASDAQ,False
+SMA Solar Technology AG,SMA,,Deutsche Börse Xetra,False
+Tate & Lyle PLC,Tate,TATE,London Stock Exchange,False
+Walgreens Boots Alliance,Walgreens,,NASDAQ,True
+Xtrackers ShortDAX x2 Daily Swap UCITS ETF,Xtrackers,,Deutsche Börse Xetra,True
+Alliance Pharma PLC,Alliance,,London Stock Exchange,True
+Anglo American PLC,Anglo,,London Stock Exchange,True
+Anheuser-Busch InBev SA/NV,Anheuser-Busch,,NYSE,False
+Avast PLC,Avast,AVST,London Stock Exchange,True
+BB Biotech AG,BB,BION,SIX Swiss,False
+Berkeley Group Holdings PLC,Berkeley,,London Stock Exchange,False
+"Biogen, Inc.",Biogen,BIIB,NASDAQ,True
+Cabot Oil & Gas,Cabot,,NYSE,False
+Centamin PLC,Centamin,CEY,London Stock Exchange,True
+Comcast Class A Comm.,Comcast,CMCSA,NASDAQ,True
+CTS Eventim AG & Co KGaA,CTS,EVD,Deutsche Börse Xetra,False
+Dollar General,Dollar,DG,NYSE,False
+Forterra PLC,Forterra,FORT,London Stock Exchange,False
+Hostelworld Group Plc,Hostelworld,,London Stock Exchange,False
+Ibstock PLC,Ibstock,IBST,London Stock Exchange,False
+iShares EURO STOXX Banks 30-15 UCITS ETF (DE),iShares,,Deutsche Börse Xetra,True
+iShares S&P Gold Producers EUR UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,True
+iShares UK Dividend UCITS ETF GBP (Dist),iShares,,London Stock Exchange,False
+Lamprell PLC,Lamprell,LAM,London Stock Exchange,True
+Learning Technologies Group PLC,Learning,,London Stock Exchange,False
+"Liberty TripAdvisor Holdings , Inc. - Class A",Liberty,,NASDAQ,True
+M&G PLC,MNG,MNG,London Stock Exchange,True
+McCarthy & Stone PLC,McCarthy,,London Stock Exchange,False
+Mitie Group PLC,Mitie,MTO,London Stock Exchange,False
+Newmont Mining Corp.,Newmont,,NYSE,False
+Nordstrom,Nordstrom,JWN,NYSE,False
+On The Beach Group plc,On,OTB,London Stock Exchange,False
+Pearson PLC,Pearson,PSON,London Stock Exchange,True
+Phoenix Group Holdings,Phoenix,,London Stock Exchange,False
+Pitney-Bowes,Pitney-Bowes,PBI,NYSE,False
+Plus500 Ltd.,Plus500,PLUS,London Stock Exchange,False
+Polo Ralph Lauren Corp.,Polo,,NYSE,False
+Regeneron Pharmaceuticals Inc,Regeneron,,NASDAQ,False
+Segro PLC,Segro,SGRO,London Stock Exchange,False
+Spire Healthcare Group PLC,Spire,,London Stock Exchange,False
+Telefonica Deutschland Holding AG,Telefonica,O2D,Deutsche Börse Xetra,True
+U.S. Bancorp,U.S.,USB,NYSE,True
+Vanguard FTSE 250 UCITS ETF (GBP) Distributing,Vanguard,,London Stock Exchange,True
+Vornado Realty Trust,Vornado,,NYSE,False
+"World Wrestling Entertainment, Inc.",World,,NYSE,False
+"XBiotech, Inc.",XBiotech,XBIT,NASDAQ,False
+AFC Energy Plc,AFC,AFC,London Stock Exchange,True
+"Alaska Air Group, Inc.",Alaska,,NYSE,False
+AO World PLC,AO,AO.,London Stock Exchange,False
+Avantium Holding BV,Avantium,,Netherlands,False
+"Bankinter, S.A.",Bankinter,BKT,Bolsa de Madrid,True
+Bellway PLC,Bellway,BWY,London Stock Exchange,False
+"Cirrus Logic, Inc.",Cirrus,CRUS,NASDAQ,False
+Compagnie Generale des Etablissements Michelin SCA,Michelin,ML,Euronext Paris,True
+Dropbox Inc,Dropbox,DBX,NASDAQ,True
+"Enbridge, Inc.",Enbridge,ENB,NYSE,True
+Energous Corporation,Energous,WATT,NASDAQ,False
+Engie SA,Engie,ENGI,Euronext Paris,True
+"EPAM Systems, Inc.",EPAM,EPAM,NYSE,False
+Fresenius SE & Co KGaA,Fresenius,FRE,Deutsche Börse Xetra,False
+Fugro NV,Fugro,FUR,Netherlands,True
+GCP Student Living PLC,GCP,,London Stock Exchange,False
+Halma PLC,Halma,HLMA.,London Stock Exchange,True
+Harley-Davidson,Harley-Davidson,,NYSE,False
+Hasbro Inc.,Hasbro,HAS,NASDAQ,False
+HeidelbergCement AG,HeidelbergCement,,Deutsche Börse Xetra,False
+Honeywell International Inc,Honeywell,HON,NYSE,True
+"iBio, Inc.",iBio,IBIO,NASDAQ,False
+"iQIYI, Inc.",iQIYI,IQ,NASDAQ,False
+iShares China Large Cap ETF Disttributing,iShares,,London Stock Exchange,False
+iShares Core S&P 500 EUR UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MDAX UCITS ETF (DE),iShares,,Deutsche Börse Xetra,False
+iShares MSCI World UCITS ETF (USD) Distributing,iShares,,Deutsche Börse Xetra,True
+iShares S&P 500 Information Technology Sector EUR UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+"Jiayin Group, Inc.",Jiayin,JFIN,NASDAQ,False
+L’Oreal SA,L’Oreal,OR,Euronext Paris,True
+Murphy Oil,Murphy,MUR,NYSE,False
+PayPoint PLC,PayPoint,PAY,London Stock Exchange,True
+"Penn National Gaming, Inc.",Penn,,NASDAQ,False
+Spirent Communications PLC,Spirent,,London Stock Exchange,False
+"Tailored Brands, Inc.",Tailored,,NYSE,False
+Texas Instruments,Texas,,NASDAQ,True
+Tritax Big Box REIT plc,Tritax,,London Stock Exchange,True
+Unilever NV,Unilever,UNA,Netherlands,True
+Vodafone Group,Vodafone,,NASDAQ,True
+"Vroom, Inc.",Vroom,VRM,NASDAQ,False
+Wincanton PLC,Wincanton,WIN,London Stock Exchange,False
+Yamana Gold Inc,Yamana,AUY,NYSE,True
+"Zscaler, Inc",Zscaler,ZS,NASDAQ,False
+Air Liquide SA,Air,AI,Euronext Paris,True
+"Axon Enterprise, Inc.",Axon,,NASDAQ,False
+British American Tobacco plc ADR,British,,NYSE,False
+Carrefour SA,Carrefour,CA,Euronext Paris,True
+Compagnie de Saint Gobain SA,Saint,SGO,Euronext Paris,True
+Dada Nexus Limited,Dada,DADA,NASDAQ,False
+Danone SA,Danone,BN,Euronext Paris,True
+Deutsche Boerse AG,Deutsche,,Deutsche Börse Xetra,True
+Dunelm Group PLC,Dunelm,DNLM,London Stock Exchange,False
+"Eventbrite, Inc Class A",Eventbrite,EB,NYSE,False
+Farfetch Ltd.,Farfetch,FTCH,NYSE,False
+Fiverr International Ltd,Fiverr,,NYSE,True
+Gem Diamonds Ltd,Gem,,London Stock Exchange,False
+Grifols SA,Grifols,GRF,Bolsa de Madrid,False
+Hargreaves Lansdown PLC,Hargreaves,,London Stock Exchange,False
+HSS Hire Group PLC,HSS,,London Stock Exchange,False
+InMode Ltd.,InMode,INMD,NASDAQ,False
+iShares USD Treasury Bond 7-10yr UCITS ETF USD (Dist),iShares,,London Stock Exchange,True
+Johnson Matthey PLC,Johnson,,London Stock Exchange,False
+Micro Focus International PLC,Micro,,London Stock Exchange,True
+Morgan Sindall Group PLC,Morgan,,London Stock Exchange,True
+Oryzon Genomics SA,Oryzon,,Bolsa de Madrid,False
+"Planet Fitness, Inc.",Planet,PLNT,NYSE,False
+Polymetal International PLC,Polymetal,POLY,London Stock Exchange,False
+ProSiebenSat.1 Media SE,ProSiebenSat.1,,Deutsche Börse Xetra,False
+Red Electrica Corporacion SA,Red,,Bolsa de Madrid,False
+Safran SA,Safran,SAF,Euronext Paris,True
+Saga PLC,Saga,SAGA,London Stock Exchange,True
+Serco Group PLC,Serco,SRP,London Stock Exchange,False
+Sika AG,Sika,SIKA,SIX Swiss,False
+Sirius XM Holdings Inc,Sirius,,NASDAQ,True
+SPDR FTSE UK All Share UCITS ETF (Acc),SPDR,,London Stock Exchange,False
+SunPower Corporation,SunPower,SPWR,NASDAQ,False
+The Wendy's Co.,The,WEN,NASDAQ,False
+"Thermo Fisher Scientific, Inc.",Thermo,TMO,NYSE,True
+Trivago NV - ADR,Trivago,TRVG,NASDAQ,False
+UNITE Group PLC/The,UNITE,UTG,London Stock Exchange,False
+Vanguard FTSE All-World UCITS ETF (USD) Accumulating,Vanguard,,Deutsche Börse Xetra,True
+Varta AG,Varta,VAR1,Deutsche Börse Xetra,False
+Xtrackers S&P 500 Inverse Daily UCITS ETF,Xtrackers,,London Stock Exchange,False
+Accor SA,Accor,AC,Euronext Paris,True
+"Aspen Technology, Inc.",Aspen,,NASDAQ,False
+Atlassian Corp Plc,Atlassian,TEAM,NASDAQ,True
+Bacanora Lithium plc,Bacanora,,London Stock Exchange,True
+Bahamas Petroleum PLC,Bahamas,,London Stock Exchange,False
+Balfour Beatty PLC,Balfour,BBY,London Stock Exchange,False
+BHP Group PLC,BHP,BLT,London Stock Exchange,True
+Biotest AG,Biotest,BIO3,Deutsche Börse Xetra,False
+"Bonanza Creek Energy, Inc.",Bonanza,,NYSE,False
+Briggs & Stratton Corporation,Briggs,,NYSE,False
+Canaan Inc,Canaan,CAN,NASDAQ,False
+China Unicom Hong Kong Ltd.,China,CHU,NYSE,False
+Computacenter PLC,Computacenter,,London Stock Exchange,False
+Deutsche Pfandbriefbank AG,Deutsche,,Deutsche Börse Xetra,True
+Deutsche Wohnen AG,Deutsche,,Deutsche Börse Xetra,False
+"Editas Medicine, Inc.",Editas,,NASDAQ,True
+Enagas,Enagas,ENG,Bolsa de Madrid,False
+Evotec AG,Evotec,EVT,Deutsche Börse Xetra,False
+GameStop Corp.,GameStop,GME,NYSE,False
+"Gannet Co, Inc.",Gannet,GCI,NYSE,False
+Heidelberger Druckmaschinen AG,Heidelberger,,Deutsche Börse Xetra,True
+Herbalife Nutrition Ltd,Herbalife,HLF,NYSE,False
+"HUYA, Inc.","HUYA,",HUYA,NYSE,False
+Indivior PLC,Indivior,INDV,London Stock Exchange,True
+"Intuitive Surgical, Inc.",Intuitive,,NASDAQ,True
+iShares S&P 500 Information Technology Sector UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+JinkoSolar Holding Co Ltd.,JinkoSolar,,NYSE,False
+K+S AG,K+S,SDF,Deutsche Börse Xetra,False
+Kraft Heinz Co,Kraft,KHC,NASDAQ,True
+Leverage Shares 2x Facebook ETP,2x,FB2,London Stock Exchange,False
+Levi Strauss & Co Class A,Levi,,NYSE,False
+Lowe’s Companies Inc,Lowe's,,NYSE,True
+Marvell Technology Group Ltd.,Marvell,,NASDAQ,True
+Microchip Technology,Microchip,,NASDAQ,False
+Monster Beverage,Monster,,NASDAQ,False
+Mothercare PLC,Mothercare,MTC,London Stock Exchange,False
+N Brown Group PLC,N,,London Stock Exchange,True
+Naturgy Energy Group SA,Naturgy,,Bolsa de Madrid,False
+NextEra Energy,NextEra,,NYSE,True
+"NGM Biopharmaceuticals, Inc.",NGM,,NASDAQ,False
+Orange SA,Orange,ORA,Euronext Paris,True
+Polypipe Group plc,Polypipe,,London Stock Exchange,False
+PostNL NV,PostNL,PNL,Netherlands,True
+Rheinmetall AG,Rheinmetall,RHM,Deutsche Börse Xetra,False
+Sodexo SA,Sodexo,SW,Euronext Paris,True
+TalkTalk Telecom Group PLC,TalkTalk,,London Stock Exchange,False
+Valero Energy,Valero,VLO,NYSE,True
+Vanguard USD Corporate 1-3 Year Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vinci SA,Vinci,DG,Euronext Paris,True
+Williams Companies,Williams,,NYSE,False
+"Young & Co,'s Brewery plc",Young,,London Stock Exchange,False
+Appian Corporation,Appian,APPN,NASDAQ,False
+Applegreen plc,Applegreen,APGN,London Stock Exchange,True
+"Applied Materials, Inc.",Applied,,NASDAQ,True
+Basic-Fit NV,Basic-Fit,BFIT,Netherlands,True
+Big Yellow Group PLC,Big,,London Stock Exchange,False
+"BlackBerry, Ltd.",BlackBerry,BB,NYSE,True
+"Broadcom, Inc",Broadcom,AVGO,NASDAQ,True
+City of London Investment Group PLC,City,,London Stock Exchange,False
+Costain Group PLC,Costain,COST,London Stock Exchange,True
+"Domino's Pizza, Inc.",Domino's,,NYSE,False
+DouYu International Holdings ADR,DouYu,,NASDAQ,False
+Draegerwerk AG & Co KGaA,Draegerwerk,DRW3,Deutsche Börse Xetra,False
+Duke Energy Corporation,Duke,DUK,NYSE,True
+Dynavax Technologies Corp.,Dynavax,,NASDAQ,False
+Endesa SA,Endesa,ELE,Bolsa de Madrid,False
+EnQuest PLC,EnQuest,ENQ,London Stock Exchange,False
+Fidelity China Special Situations PLC,Fidelity,FCSS,London Stock Exchange,False
+First Majestic Silver Corp.,First,,NYSE,True
+Fuller Smith & Turner PLC,Fuller,,London Stock Exchange,False
+Global Ports Holding plc,Global,GPH,London Stock Exchange,False
+HSBC MSCI China USD UCITS ETF Distributing,HSBC,,London Stock Exchange,True
+Immuron Limited,Immuron,IMRN,NASDAQ,False
+Informa PLC,Informa,INF,London Stock Exchange,False
+Inpixon Common Stock,Inpixon,INPX,NASDAQ,True
+Intermediate Capital Group PLC,Intermediate,,London Stock Exchange,False
+iShares Core S&P 500 UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares NASDAQ 100 UCITS ETF,iShares,,London Stock Exchange,False
+Jupiter Fund Management PLC,Jupiter,,London Stock Exchange,False
+Kellogg Company,Kellogg,K,NYSE,False
+Kohl's Corp.,Kohl's,KSS,NYSE,False
+Lam Research,Lam,LRCX,NASDAQ,False
+LyondellBasell Industries N.V.,LyondellBasell,LYB,NYSE,True
+Mapfre SA,Mapfre,MAP,Bolsa de Madrid,False
+Mediclinic International PLC,Mediclinic,MDC,London Stock Exchange,False
+MERLIN Properties SOCIMI SA,Merlin,,Bolsa de Madrid,False
+Molson Coors Brewing Co.,Molson,,NYSE,False
+"Mondelez International, Inc.",Mondelez,MDLZ,NASDAQ,True
+Nemetschek SE,Nemetschek,NEM,Deutsche Börse Xetra,False
+Nordic American Tankers Limited,Nordic,,NYSE,True
+OrganiGram Holdings,OrganiGram,OGI,NASDAQ,False
+Petroleo Brasileiro S.A. ADR,Petroleo,,NYSE,False
+Playtech Plc,Playtech,PTEC,London Stock Exchange,False
+"Restaurant Brands International, Inc.",Restaurant,,NYSE,False
+Royal Dutch Shell PLC - Class B,Royal,,Netherlands,True
+RPS Group PLC,RPS,RPS,London Stock Exchange,False
+Schneider Electric SE,Schneider,,Euronext Paris,True
+"ServiceNow, Inc.",ServiceNow,NOW,NYSE,False
+SSP Group Plc,SSP,SSPG,London Stock Exchange,True
+Standard Chartered PLC,Standard,,London Stock Exchange,False
+Standard Life Aberdeen PLC,Standard,,London Stock Exchange,False
+Sylvania Platinum Ltd.,Sylvania,,London Stock Exchange,True
+Synaptics Incorporated,Synaptics,SYNA,NASDAQ,True
+The Union Pacific Corporation,Union,UNP,NYSE,True
+Topps Tiles PLC,Topps,TPT,London Stock Exchange,False
+Transocean,Transocean,RIG,NYSE,True
+Uniper SE,Uniper,UN01,Deutsche Börse Xetra,False
+United Utilities Group PLC,United,,London Stock Exchange,False
+Urban Outfitters,Urban,,NASDAQ,False
+Vanguard S&P 500 UCITS ETF USD Accumulating,Vanguard,,London Stock Exchange,False
+Yum! Brands Inc.,Yum!,YUM,NYSE,True
+888 Holdings PLC,888,888,London Stock Exchange,False
+Acerinox,Acerinox,ACX,Bolsa de Madrid,False
+ACS Actividades de Construccion y Servicios SA,ACS,,Bolsa de Madrid,False
+Akoustis Technologies Inc,Akoustis,,NASDAQ,False
+American Tower Corporation,American,,NYSE,True
+"American Water Works Co, Inc.",American,,NYSE,False
+Amundi Index MSCI Emerging Markets SRI - UCITS ETF DR (A),Amundi,,London Stock Exchange,False
+Beiersdorf AG,Beiersdorf,BEI,Deutsche Börse Xetra,False
+Biffa PLC,Biffa,BIFF,London Stock Exchange,False
+Biomarin Pharmaceutical Inc,Biomarin,,NASDAQ,False
+Blue Prism Group PLC,Blue,PRSM,London Stock Exchange,True
+Cardlytics Inc,Cardlytics,CDLX,NASDAQ,False
+Cellnex Telecom SA,Cellnex,,Bolsa de Madrid,False
+"Chewy, Inc.",Chewy,CHWY,NYSE,False
+Chipotle Mexican Grill,Chipotle,,NYSE,True
+Clipper Logistics PLC,Clipper,,London Stock Exchange,False
+Codemasters Group Holdings plc,Codemasters,,London Stock Exchange,False
+Connect Group PLC,Connect,,London Stock Exchange,False
+Countrywide PLC,Countrywide,CWD,London Stock Exchange,True
+Credit Agricole SA,Credit,,Euronext Paris,True
+Crispr Therapeutics AG,Crispr,,NASDAQ,True
+Crown Castle Int'l Corp.,Crown,CCI,NYSE,True
+Danaher Corporation,Danaher,DHR,NYSE,True
+Drax Group PLC,Drax,DRX,London Stock Exchange,False
+EssilorLuxottica SA,Essilor,EL,Euronext Paris,True
+Estee Lauder Cos.,Estee,EL,NYSE,True
+Evonik Industries AG,Evonik,,Deutsche Börse Xetra,False
+Flutter Entertainment PLC,Flutter,,London Stock Exchange,True
+Geospace Technologies Corporation,Geospace,,NASDAQ,False
+"Global Payments, Inc.",Global,,NYSE,False
+Goodyear Tire & Rubber,Goodyear,,NASDAQ,False
+"Guardant Health, Inc.",Guardant,,NASDAQ,True
+GVC Holdings PLC,GVC,GVC,London Stock Exchange,False
+Hamborner REIT AG,Hamborner,,Deutsche Börse Xetra,False
+"Heat Biologics, Inc.",Heat,HTBX,NASDAQ,False
+HSBC MSCI China GBX UCITS ETF Distributing,HSBC,,London Stock Exchange,True
+Hyve Group PLC,Hyve,HYVE,London Stock Exchange,True
+"IDEXX Laboratories, Inc.",IDEXX,,NASDAQ,False
+Indra Sistemas SA,Indra,IDR,Bolsa de Madrid,False
+Intellia Therapeutics Inc,Intellia,,NASDAQ,False
+IQE plc,IQE,IQE,London Stock Exchange,False
+iShares £ Index-Linked Gilts UCITS ETF GBP (Dist),iShares,,London Stock Exchange,False
+iShares FTSE 100 ETF GBP Acc,iSh,,London Stock Exchange,False
+iShares J.P. Morgan USD EM Bond UCITS ETF Distributing,iShares,,London Stock Exchange,True
+"Karyopharm Therapeutics, Inc.",Karyopharm,,NASDAQ,False
+Kefi Minerals PLC,Kefi,KEFI,London Stock Exchange,True
+Kering SA,Kering,KER,Euronext Paris,True
+KUKA AG,KUKA,KU2,Deutsche Börse Xetra,False
+"LTC Properties, Inc",LTC,LTC,NYSE,True
+Marshalls PLC,Marshalls,MSLH,London Stock Exchange,False
+Mediaset Espana Comunicacion SA,Mediaset,TL5,Bolsa de Madrid,False
+Moody's Corp,Moody's,MCO,NYSE,True
+National Oilwell Varco Inc.,National,,NYSE,False
+NCC Group PLC,NCC,NCC,London Stock Exchange,False
+"New York Mortgage Trust, Inc.",New,,NYSE,False
+NortonLifeLock Inc,NortonLifeLock,,NASDAQ,False
+"Okta, Inc.",Okta,OKTA,NASDAQ,True
+Pembina Pipeline Corporation,Pembina,,NYSE,True
+Pendragon PLC,Pendragon,PDG,London Stock Exchange,False
+Pennon Group PLC,Pennon,PNN,London Stock Exchange,True
+Pernod Ricard SA,Pernod,RI,Euronext Paris,True
+Primary Health Properties PLC,Primary,,London Stock Exchange,True
+Qorvo Inc.,Qorvo,QRVO,NASDAQ,False
+Rentokil Initial PLC,Rentokil,RTO,London Stock Exchange,False
+"Riot Blockchain, Inc.",Riot,,NASDAQ,False
+Schaeffler AG,Schaeffler,SHA,Deutsche Börse Xetra,False
+Schlumberger Ltd.,Schlumberger,SLB,NYSE,False
+Six Flags Entertainment Corporation,Six,,NYSE,True
+Sixt SE,Sixt,SIX3,Deutsche Börse Xetra,False
+SPDR Bloomberg Barclays U.S. TIPS UCITS ETF (Dist),SPDR,,London Stock Exchange,True
+Splunk Inc.,Splunk,SPLK,NASDAQ,False
+"Stitch Fix, Inc.",Stitch,SFIX,NASDAQ,False
+"Suncor Energy, Inc.",Suncor,SU,NYSE,False
+"Super Micro Computer, Inc.",Super,,NYSE,False
+Symrise AG,Symrise,SY1,Deutsche Börse Xetra,False
+Talanx AG,Talanx,TLX,Deutsche Börse Xetra,False
+"The Boston Beer Company, Inc.",The,,NYSE,False
+"The Michaels Companies, Inc.",The,,NASDAQ,False
+Thomas Cook Group PLC,Thomas,,London Stock Exchange,False
+TI Fluid Systems PLC,TI,,London Stock Exchange,True
+Turtle Beach Corporation,Turtle,HEAR,NASDAQ,False
+Vanguard FTSE Emerging Markets GBP UCITS ETF (USD) Accumulating,Vanguard,,London Stock Exchange,False
+Vanguard S&P 500 UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Emerging Markets Government Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vectura Group PLC,Vectura,VEC,London Stock Exchange,False
+VERBIO Vereinigte BioEnergie AG,VERBIO,VBK,Deutsche Börse Xetra,False
+VIACOMCBS INC,VIACOMCBS,VIAC,NASDAQ,False
+WestRock Company,WestRock,WRK,NYSE,True
+WisdomTree Physical Palladium ETC,WisdomTree,,Deutsche Börse Xetra,True
+Wynn Resorts Ltd.,Wynn,WYNN,NASDAQ,False
+Xtrackers Physical Silver ETC (EUR),Xtrackers,,Deutsche Börse Xetra,False
+ZoomInfo Technologies Inc.,ZoomInfo,ZI,NASDAQ,False
+"1Life Healthcare, Inc.",1Life,,NASDAQ,False
+3D Systems Corporation,3D,DDD,NYSE,False
+Aareal Bank AG,Aareal,ARL,Deutsche Börse Xetra,True
+Abercrombie & Fitch Company,Abercrombie,,NYSE,False
+"ABIOMED, Inc.",ABIOMED,ABMD,NASDAQ,False
+Adaptive Biotechnologies Corp.,Adaptive,,NASDAQ,True
+AGNC Investment Corp,AGNC,,NASDAQ,True
+Alpha Pro Tech Ltd,Alpha,APT,NYSE,False
+Amur Minerals Corporation,Amur,AMC,London Stock Exchange,True
+Antofagasta PLC,Antofagasta,ANTO,London Stock Exchange,False
+Argos Resources Ltd,Argos,,London Stock Exchange,False
+Arrow Global Group PLC,Arrow,,London Stock Exchange,False
+Assura PLC,Assura,AGR,London Stock Exchange,False
+"Avinger, Inc.",Avinger,AVGR,NASDAQ,False
+Aviva PLC 8.375% PRF,Aviva,,London Stock Exchange,False
+Begbies Traynor Group plc,Begbies,,London Stock Exchange,False
+Best Buy Co. Inc.,Best,BBY,NYSE,True
+Bilfinger SE,Bilfinger,GBF,Deutsche Börse Xetra,False
+"Bilibili, Inc.",Bilibili,BILI,NASDAQ,False
+Bloom Energy Corp.,Bloom,BE,NYSE,True
+BNP Paribas Easy STOXX Europe 600 UCITS ETF,BNP,,Deutsche Börse Xetra,False
+Boskalis Westminster,Boskalis,,Netherlands,True
+Braemar Shipping Services PLC,Braemar,,London Stock Exchange,False
+Brookfield Property Partners L.P.,Brookfield,,NASDAQ,True
+Canada Goose Holdings Inc,Canada,GOOS ,NYSE,False
+Canadian National Railway Company,Canadian,,NYSE,False
+Capital One Financial,Capital,,NYSE,False
+Cardinal Health Inc.,Cardinal,,NYSE,True
+Charles Schwab Corp.,Charles,,NYSE,False
+"Charter Communications, Inc Class A",Charter,,NASDAQ,True
+Chemring Group PLC,Chemring,,London Stock Exchange,False
+"China Pharma Holdings, Inc.",China,,NYSE,False
+Churchill Capital Corp III,Churchill,,NYSE,False
+Compagnie Financiere Richemont SA,Richemont,CFR,SIX Swiss,False
+CompuGroup Medical SE,CompuGroup,,Deutsche Börse Xetra,False
+ConvaTec Group PLC,ConvaTec,,London Stock Exchange,False
+Corning Inc.,Corning,GLW,NYSE,True
+Countryside Properties PLC,Countryside,,London Stock Exchange,False
+Covestro AG,Covestro,1COV,Deutsche Börse Xetra,False
+Cranswick PLC,Cranswick,CWK,London Stock Exchange,False
+Croda International PLC,Croda,,London Stock Exchange,False
+CropEnergies AG,CropEnergies,CE2,Deutsche Börse Xetra,False
+Dave & Busters's Entertainment Inc.,Dave,,NASDAQ,False
+DCP Midstream LP,DCP,,NYSE,False
+Deere & Co.,Deere,DE,NYSE,False
+Deutsche EuroShop AG,Deutsche,,Deutsche Börse Xetra,False
+Deutz AG,Deutz,DEZ,Deutsche Börse Xetra,False
+DFS Furniture PLC,DFS,DFS,London Stock Exchange,False
+DMG Mori AG,DMG,GIL,Deutsche Börse Xetra,False
+"DuPont de Nemours, Inc",DuPont,DD,NYSE,False
+Ecolab Inc.,Ecolab,ECL,NYSE,True
+Eldorado Resorts LLC,Eldorado,,NASDAQ,True
+ELF Beauty Inc,ELF,ELF,NYSE,True
+Endo International plc,Endo,,NASDAQ,False
+Energy Transfers Partners,Energy,,NYSE,True
+Enterprise Products Partners LP,Enterprise,,NYSE,True
+EPR Properties REIT,EPR,,NYSE,True
+Equinor ASA,Equinor,EQNR,NYSE,False
+Equinox Gold Corporation,Equinox,EQX,NYSE,False
+Ferguson PLC,Ferguson,FERG,London Stock Exchange,False
+Ferratum Oyj,Ferratum,FRU,Deutsche Börse Xetra,False
+Ferrovial SA,Ferrovial,FER,Bolsa de Madrid,False
+Foresight Solar Fund Ltd,Foresight,,London Stock Exchange,True
+Fox Corporation Class A,Fox,FOXA,NASDAQ,False
+Fresenius Medical Care AG & Co KGaA,Fresenius,,Deutsche Börse Xetra,False
+Galliford Try PLC,Galliford,GFRD,London Stock Exchange,False
+Gamma Communications PLC,Gamma,,London Stock Exchange,False
+Gap Inc.,Gap,GPS,NYSE,False
+General Mills Inc.,General,GIS,NYSE,True
+"Gfl Environmental Holdings, Inc.",Gfl,,NYSE,True
+Healthpeak Properties Inc,Healthpeak,,NYSE,False
+Henkel AG & Co KGaA,Henkel,HEN,Deutsche Börse Xetra,False
+Hewlett Packard Enterprise Company,Hewlett,,NYSE,True
+Hilton Food Group PLC,Hilton,,London Stock Exchange,False
+Hutchison China MediTech Limited,Hutchison,,London Stock Exchange,False
+Inchcape PLC,Inchcape,INCH,London Stock Exchange,False
+Inmobiliaria Colonial SOCIMI SA,Inmobiliaria,,Bolsa de Madrid,False
+"Innovative Industrial Properties, Inc.",Innovative,,NYSE,False
+Integumen PLC,Integumen,SKIN,London Stock Exchange,True
+International Personal Finance PLC,International,,London Stock Exchange,False
+Invesco S&P 500 UCITS ETF Acc,Invesco,,London Stock Exchange,False
+InVitae Corporation,InVitae,NVTA,NYSE,True
+iShares Dow Jones Asia Pacific Select Dividend 30 UCITS ETF DE,iShares,,Deutsche Börse Xetra,False
+iShares EUR Govt Bond 3-5yr UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares FTSE MIB UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares Global Water GBX UCITS ETF USD Distributing,iShares,,London Stock Exchange,False
+iShares MSCI World Small Cap UCITS ETF USD,iShares,,London Stock Exchange,True
+iShares S&P 500 Health Care Sector UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+Itau Unibanco Banco Holding SA,Itau,,NYSE,False
+John Laing Environmental Assets Group Ltd,J.,JLEN,London Stock Exchange,False
+John Wood Group PLC,John,,London Stock Exchange,False
+JPMorgan European Investment Trust PLC,JPMorgan,,London Stock Exchange,False
+Koninklijke BAM Groep NV,Koninklijke,,Netherlands,True
+Krones AG,Krones,KRN,Deutsche Börse Xetra,False
+La Francaise des Jeux SA,La,,Euronext Paris,True
+Leverage Shares 2x Microsoft Corporation ETP,2x,2MSF,London Stock Exchange,False
+Lyxor MSCI India UCITS ETF C-EUR,Lyxor,,Deutsche Börse Xetra,False
+Main Street Capital Corporation,Main,,NYSE,True
+"Match Group, Inc.",Match,MTCH,NASDAQ,False
+"Moneygram International, Inc.",Moneygram,,NASDAQ,False
+"Monolithic Power Systems, Inc.",Monolithic,,NASDAQ,False
+Moss Bros Group PLC,Moss,,London Stock Exchange,False
+Motorpoint group PLC,Motorpoint,,London Stock Exchange,False
+Naked Wines plc,Naked,WINE,London Stock Exchange,False
+Northern Electric PLC 8.061% PRF,Northern,,London Stock Exchange,False
+Northrop Grumman Corp.,Northrop,,NYSE,False
+Omnicom Group,Omnicom,,NYSE,False
+Oxford Lane Capital Corporation,Oxford,,NASDAQ,False
+Pan American Silver Corporation,Pan,,NASDAQ,False
+"PNC Financial Services Group, Inc.",PNC,,NYSE,True
+Premier African Minerals Ltd,Premier,,London Stock Exchange,False
+Provident Financial PLC,Provident,,London Stock Exchange,False
+Randstad Holding NV,Randstad,,Netherlands,True
+Rank Group PLC,Rank,RNK,London Stock Exchange,False
+Renewi PLC,Renewi,RWI,London Stock Exchange,False
+S&P Global Inc.,S&P,SPGI,NYSE,False
+Sanofi SA ADR,Sanofi,SNY,NASDAQ,False
+Sartorius AG,Sartorius,SRT3,Deutsche Börse Xetra,False
+Seanergy Maritime Holdings Corporation,Seanergy,,NASDAQ,False
+Senior PLC,Senior,SNR,London Stock Exchange,False
+SGL Carbon SE,SGL,SGL,Deutsche Börse Xetra,False
+Shaftesbury PLC,Shaftesbury,SHB,London Stock Exchange,False
+Simply Good Foods Co.,Simply,,NASDAQ,False
+Smiths Group PLC,Smiths,SMIN,London Stock Exchange,False
+SPDR S&P 400 U.S. Mid Cap UCITS ETF (Acc),SPDR,,London Stock Exchange,False
+SPDR S&P Euro Dividend Aristocrats UCITS ETF (Dist),SPDR,,London Stock Exchange,False
+"Spirit Aerosystems Holdings, Inc.",Spirit,,NYSE,False
+Strix Group plc,Strix,KETL,London Stock Exchange,False
+"T-Mobile US, Inc.",T-Mobile,TMUS,NASDAQ,True
+"The GEO Group, Inc.",The,,NYSE,False
+The Royal Bank of Canada,Royal,,NYSE,False
+Toronto-Dominion Bank,"Toronto-Dominion
+TD",,NYSE,False
+UBS ETF (LU) MSCI World Socially Responsible GBX UCITS ETF (USD) A-dis,UBS,,London Stock Exchange,False
+United States Steel Corporation,United,,NYSE,False
+Vanguard Euro STOXX 50 EUR UCITS ETF (EUR) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard FTSE All-World GBP UCITS ETF (USD) Accumulating,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Japan UCITS ETF,Vanguard,,London Stock Exchange,True
+"Veritone, Inc.",Veritone,VERI,NASDAQ,False
+Weibo Corporation,Weibo,WB,NASDAQ,False
+Western Digital,Western,,NASDAQ,True
+Wuestenrot & Wuerttembergische AG,WUW,WUW,Deutsche Börse Xetra,False
+"WW International, Inc.",WW,,NASDAQ,False
+Xtrackers MSCI World Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+"Yum China Holdings, Inc.",Yum,,NYSE,False
+AAR Corporation,AAR,,NYSE,True
+Accell Group,Accell,ACCEL,Netherlands,True
+Acciona,Acciona,ANA,Bolsa de Madrid,False
+Adecco Group AG Class N,Adecco,,SIX Swiss,False
+ADLER Real Estate AG,ADLER,,Deutsche Börse Xetra,False
+ADVA Optical Networking SE,ADVA,ADV,Deutsche Börse Xetra,False
+AFLAC Inc.,AFLAC,AFL,NYSE,True
+"Air Products and Chemicals, Inc.",Air,,NYSE,True
+Albemarle Corporation,Albemarle,ALB,NYSE,False
+Alfen Beheer B.V.,Alfen,ALFEN,Netherlands,False
+alstria office REIT-AG,Alstria,AOX,Deutsche Börse Xetra,False
+American Shared Hospital Services,American,,NYSE,False
+"Amicus Therapeutics, Inc.",Amicus,,NASDAQ,False
+AMUNDI NASDAQ-100 UCITS ETF - EUR,AMUNDI,,Deutsche Börse Xetra,False
+"AngloGold Ashanti Ltd, ADR",AngloGold,,NYSE,True
+Applied Graphene Materials plc,Applied,,London Stock Exchange,False
+ArcelorMittal S.A.,ArcelorMittal,MT,Netherlands,True
+Argo Blockchain plc,Argo,,London Stock Exchange,True
+Arista Networks,Arista,,NYSE,False
+ASML Holding NV ADR,ASML,,NASDAQ,True
+"Athersys, Inc.",Athersys,ATHX,NASDAQ,False
+Aurubis AG,Aurubis,NDA,Deutsche Börse Xetra,False
+"Baozun, Inc.",Baozun,BZUN,NASDAQ,False
+Bechtle AG,Bechtle,BC8,Deutsche Börse Xetra,False
+Bed Bath & Beyond,Bed,,NASDAQ,True
+BGEO Group PLC,BGEO,BGEO,London Stock Exchange,False
+"Big Lots, Inc.",Big,BIG,NYSE,False
+Bijou Brigitte AG,Bijou,BIJ,Deutsche Börse Xetra,False
+BMO Real Estate Investments Ltd,BMO,,London Stock Exchange,False
+Boston Scientific,Boston,,NYSE,False
+Bouygues SA,Bouygues,EN,Euronext Paris,True
+Brewin Dolphin Holdings PLC,Brewin,,London Stock Exchange,False
+California Resources Corporation,California,,NYSE,False
+CANCOM SE,CANCOM,COK,Deutsche Börse Xetra,False
+Capri Holdings Limited,Capri,,NYSE,False
+Carmax Inc.,Carmax,KMX,NYSE,False
+Carvana Co.,Carvana,CVNA,NYSE,False
+"Catalyst Pharmaceuticals, Inc.",Catalyst,,NASDAQ,False
+Chesnara PLC,Chesnara,CSN,London Stock Exchange,False
+"China Biologic Products Holdings, Inc.",China,,NASDAQ,False
+Circassia Pharmaceuticals Plc,Circassia,,London Stock Exchange,False
+"Colony Capital , Inc. Class A",Colony,,NYSE,False
+comdirect bank AG,comdirect,,Deutsche Börse Xetra,False
+Constellation Brands,Constellation,,NYSE,False
+Coupa Software Incorporated,Coupa,,NASDAQ,True
+db Xtrackers S&P 500 UCITS ETF,db,,London Stock Exchange,False
+Denny's Corporation,Denny's,,NASDAQ,False
+Discover Financial Services,Discover,,NYSE,False
+Discovery Com Class A,Discovery,,NASDAQ,False
+Emerson Electric Co,Emerson,,NYSE,True
+Empiric Student Property PLC,Empiric,,London Stock Exchange,False
+Encavis AG,Encavis,CAP,Deutsche Börse Xetra,False
+ENCE Energia y Celulosa SA,ENCE,ENC,Bolsa de Madrid,False
+"Equinix, Inc.",Equinix,EQIX,NASDAQ,False
+Eve Sleep Limited,Eve,EVE,London Stock Exchange,True
+Evoqua Water Technologies Corp.,Evoqua,AQUA,NYSE,False
+"Fidelity National Information Services, Inc.",Fidelity,,NYSE,True
+ForFarmers NV,ForFarmers,FFARM,Netherlands,True
+Fresnillo PLC,Fresnillo,FRES,London Stock Exchange,True
+Frontier Developments plc,Frontier,,London Stock Exchange,False
+FS KKR Capital Corporation,FS,,NYSE,False
+GFT Technologies SE,GFT,,Deutsche Börse Xetra,False
+GlaxoSmithKline plc ADR,"GlaxoSmithKline
+GSK",,NYSE,False
+Go-Ahead Group PLC,Go-Ahead,,London Stock Exchange,False
+Gocompare.Com Group PLC,Gocompare.Com,,London Stock Exchange,False
+GoDaddy Inc.,GoDaddy,GDDY,NYSE,False
+"GSX Techedu, Inc. Class A",GSX,,NYSE,True
+"Guess?, Inc.",Guess?,GES,NYSE,False
+"H&R Block, Inc.",H&R,HRB,NYSE,False
+Hapag-Lloyd AG,Hapag-Lloyd,,Deutsche Börse Xetra,True
+Heineken Holding NV,Heineken,,Netherlands,True
+Henkel AG & Co KGaA,Henkel,HEN3,Deutsche Börse Xetra,False
+HOCHTIEF AG,HOCHTIEF,HOT,Deutsche Börse Xetra,False
+Hunting PLC,Hunting,HTG,London Stock Exchange,False
+Hyatt Hotels Corporation,Hyatt,H,NYSE,False
+Impax Environmental Markets PLC,Impax,,London Stock Exchange,False
+Intercontinental Exchange,Intercontinental,,NYSE,False
+Invesco Physical Gold - USD - Accumulating,Invesco,,London Stock Exchange,False
+iShares Automation & Robotics USD UCITS ETF USD (Dist),iShares,,London Stock Exchange,True
+iShares Core S&P 500 UCITS ETF USD Accumulating,iShares,,London Stock Exchange,True
+iShares MSCI World ESG Enhanced GBP UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares S&P Small Cap 600 UCITS ETF USD (Dist),iShares,,Deutsche Börse Xetra,False
+Jacobs Engineering Group,Jacobs,,NYSE,False
+Jazz Pharmaceuticals PLC,Jazz,,NASDAQ,False
+Jungheinrich AG,Jungheinrich,JUN3,Deutsche Börse Xetra,False
+Kainos Group PLC,Kainos,KNOS,London Stock Exchange,False
+Keurig Dr Pepper Inc.,Keurig,,NYSE,True
+Kimberly-Clark,Kimberly-Clark,,NYSE,True
+"KKR & Co, Inc.",KKR,KKR,NYSE,False
+LANXESS AG,LANXESS,LXS,Deutsche Börse Xetra,False
+LEG Immobilien AG,LEG,,Deutsche Börse Xetra,False
+Leverage Shares 2x Amazon ETP,2x,2AMZ,London Stock Exchange,False
+"Live Nation Entertainment, Inc.",Live,,NYSE,False
+Livent Corporation,Livent,LTHM,NYSE,False
+LPKF Laser & Electronics AG,LPKF,LPK,Deutsche Börse Xetra,False
+Lyxor Commodities Thomson Reuters/Core Commodity CRB TR UCITS ETF,Lyxor,,Deutsche Börse Xetra,False
+Markel Corporation,Markel,MKL,NYSE,False
+"MarketAxess Holdings, Inc.",MarketAxess,MKTX,NYSE,False
+Marsh & McLennan,Marsh,,NYSE,False
+MetLife Inc.,MetLife,MET,NYSE,False
+Metro AG,Metro,B4B,Deutsche Börse Xetra,True
+Motorola Solutions Inc.,Motorola,,NYSE,True
+"NantHealth, Inc.",NantHealth,NH,NASDAQ,False
+"NetEase, Inc.",NetEase,NTES,NASDAQ,False
+"NMI Holdings, Inc.",NMI,NMIH,NASDAQ,False
+Noble Energy Inc.,Noble,NBL,NYSE,False
+Nordex SE,Nordex,NDX1,Deutsche Börse Xetra,True
+"Omega Healthcare Investors, Inc.",Omega,,NYSE,False
+"ONEOK, Inc.",ONEOK,OKE,NYSE,True
+OneSavings Bank PLC,OneSavings,,London Stock Exchange,False
+OSRAM Licht AG,OSRAM,OSR,Deutsche Börse Xetra,False
+paragon AG,Paragon,PGN,Deutsche Börse Xetra,False
+Petrofac Ltd,Petrofac,PFC,London Stock Exchange,False
+Petropavlovsk PLC,Petropavlovsk,POG,London Stock Exchange,False
+Pharos Energy PLC,Pharos,PHAR,London Stock Exchange,False
+Ping Identity Corporation,Ping,PING,NASDAQ,False
+PNE Wind AG,PNE,PNE3,Deutsche Börse Xetra,False
+PPL Corp.,PPL,PPL,NYSE,False
+PVH Corp.,PVH,PVH,NYSE,False
+Rational AG,Rational,RAA,Deutsche Börse Xetra,False
+Sabre Corporation,Sabre,SABR,NASDAQ,False
+"SeaChange International, Inc.",SeaChange,,NASDAQ,False
+Seagate Technology,Seagate,STX,NASDAQ,True
+Severfield PLC,Severfield,SFR,London Stock Exchange,False
+SLM Solutions Group AG,SLM,AM3D,Deutsche Börse Xetra,False
+Snap-On Inc.,Snap-On,SNA,NYSE,False
+"Sorrento Therapeutics, Inc.",Sorrento,,NASDAQ,False
+"Southwest Gas Holdings, Inc.",Southwest,,NYSE,False
+SPDR S&P U.S. Dividend Aristocrats UCITS ETF,SPDR,,London Stock Exchange,True
+Stock Spirits Group PLC,Stock,,London Stock Exchange,False
+"Stratasys, Ltd.",Stratasys,SSYS,NASDAQ,False
+Swatch Group I,Swatch,UHR,SIX Swiss,False
+Swiss Re AG,Swiss,SREN,SIX Swiss,False
+Syncona Ltd,Syncona,SYNC,London Stock Exchange,False
+The Hershey Company,The,,NYSE,False
+"Thor Industries, Inc.",Thor,,NYSE,False
+Tom Tailor Holding AG,Tom,,Deutsche Börse Xetra,False
+"Top Ships, Inc.",Top,TOPS,NASDAQ,False
+TT Electronics plc,TT,TTG,London Stock Exchange,False
+"Ubiquiti, Inc.",Ubiquiti,UI,NYSE,False
+United Internet AG,United,,Deutsche Börse Xetra,False
+Unum Group,Unum,UNM,NYSE,False
+Vanguard FTSE All-World UCITS ETF (USD) Accumulating,Vanguard,,London Stock Exchange,True
+Vanguard Global Value Factor UCITS USD,Vanguard,,London Stock Exchange,True
+Veeva Systems Inc. - Class A,Veeva,,NYSE,False
+Vipshop Holdings Ltd.,Vipshop,,NYSE,False
+VISTRY GROUP PLC,Vistry,VTY,London Stock Exchange,False
+"Vivint Solar, Inc.",Vivint,VSLR,NYSE,True
+"VMware, Inc.",VMware,VMW,NYSE,True
+Wheaton Precious Metals Corp.,Wheaton,,NYSE,False
+Wipro Limited,Wipro,WIT,NYSE,False
+WisdomTree NASDAQ 100 3x Daily Short,WisdomTree,,London Stock Exchange,False
+WisdomTree Physical Platinum ETC,WisdomTree,,Deutsche Börse Xetra,True
+WisdomTree Physical Swiss Gold UCITS,WisdomTree,,London Stock Exchange,False
+Workspace Group PLC,Workspace,,London Stock Exchange,False
+Xilinx Inc.,Xilinx,XLNX,NASDAQ,False
+Xtrackers ESG MSCI Emerging Markets UCITS ETF 1C,Xtrackers,,London Stock Exchange,False
+"ZIOPHARM Oncology, Inc.",ZIOPHARM,,NASDAQ,False
+"2U, Inc.",2U,TWOU,NASDAQ,False
+A.G. Barr PLC,A.G.,BAG,London Stock Exchange,False
+ADO Properties SA,ADO,,Deutsche Börse Xetra,False
+"AgeX Therapeutics, Inc.",AgeX,,NYSE,False
+Agnico Eagle Mines Limited,Agnico,,NYSE,True
+Air Lease Corporation,Air,AL,NYSE,False
+Akamai Technologies Inc.,Akamai,,NASDAQ,True
+Align Technology Inc,Align,,NASDAQ,False
+"Allied Healthcare Products, Inc.",Allied,,NASDAQ,False
+"Allscripts Healthcare Solutions, Inc.",Allscripts,MDRX,NASDAQ,False
+"AMC Entertainment Holdings, Inc.",AMC,,NYSE,False
+AmerisourceBergen Corp.,AmerisourceBergen,,NYSE,False
+"ANSYS, Inc.",ANSYS,ANSS,NASDAQ,True
+Archer-Daniels-Midland Co.,Archer-Daniels-Midland,,NYSE,True
+AudioCodes Ltd.,AudioCodes,AUDC,NASDAQ,False
+AVEVA Group PLC,AVEVA,AVV,London Stock Exchange,False
+Baker Hughes Company,Baker,BKR,NYSE,False
+Baxter International Inc.,Baxter,,NYSE,False
+BayWa AG,BayWa,BYW6,Deutsche Börse Xetra,False
+bet-at-home.com AG,bet,,Deutsche Börse Xetra,False
+Beter Bed Holding NV,Beter,,Netherlands,True
+"BioLife Solutions, Inc.",BioLife,,NASDAQ,False
+Bioventix PLC,Bioventix,BVXP,London Stock Exchange,False
+BlackRock Income and Growth Investment Trust PLC,BlackRock,,London Stock Exchange,False
+Blink Charging Co.,Blink,BLNK,NASDAQ,False
+Bodycote PLC,Bodycote,BOY,London Stock Exchange,False
+"Box, Inc.","Box,",BOX,NYSE,False
+BP PLC 9% PRF,BP,BP.B,London Stock Exchange,False
+Breedon Group plc,Breedon,BREE,London Stock Exchange,False
+"BridgeBio Pharma, Inc.",BridgeBio,,NASDAQ,False
+Brookfield Infrastructure Partners L.P.,Brookfield,,NYSE,True
+Builders FirstSource Inc,Builders,,NASDAQ,False
+Cabot Microelectronics Corporation,Cabot,,NASDAQ,False
+"Cadence Design Systems, Inc.",Cadence,,NASDAQ,False
+Cairn Homes PLC,Cairn,CRN ,London Stock Exchange,False
+"Camping World Holdings, Inc.",Camping,,NYSE,False
+Canadian Natural Resources Ltd.,Canadian,,NYSE,False
+Canadian Solar Inc,Canadian,,NASDAQ,False
+Capitala Finance Corp,Capitala,,NASDAQ,False
+Carrier Global Corporation,Carrier,CARR,NYSE,False
+Central Asia Metals plc,Central,,London Stock Exchange,False
+CENTROTEC Sustainable AG,CENTROTEC,,Deutsche Börse Xetra,False
+Cigna Corporation,Cigna,CI,NYSE,True
+"Cinemark Holdings, Inc",Cinemark,,NYSE,False
+Clarkson PLC,Clarkson,CKN,London Stock Exchange,False
+CLS Holdings PLC,CLS,CLI,London Stock Exchange,False
+CMC Markets PLC,CMC,CMCX,London Stock Exchange,False
+Cognizant Technology Sol.,Cognizant,,NASDAQ,False
+Core Laboratories NV,Core,,Netherlands,True
+CRH PLC,CRH,CRH,London Stock Exchange,False
+Cyberark Software Ltd.,Cyberark,,NASDAQ,False
+db Physical Gold Euro Hedged ETC,db,,Deutsche Börse Xetra,False
+Deka DAXplus Maximum Dividend UCITS ETF,Deka,,Deutsche Börse Xetra,False
+Delphi Technologies plc,Delphi,,NYSE,False
+Deutsche Beteiligungs AG,Deutsche,,Deutsche Börse Xetra,False
+Dialog Semiconductor PLC,Dialog,,Deutsche Börse Xetra,False
+Diploma PLC,Diploma,DPLM,London Stock Exchange,True
+Dotdigital Group plc,Dotdigital,,London Stock Exchange,False
+DRDGOLD Limited,DRDGOLD,DRD,NYSE,False
+Dufry AG,Dufry,DUFN,SIX Swiss,False
+"Ebix, Inc.",Ebix,EBIX,NASDAQ,False
+Edison Int'l,Edison,EIX,NYSE,False
+Elementis PLC,Elementis,ELM,London Stock Exchange,False
+"EMCOR Group, Inc.",EMCOR,,NYSE,False
+Essentra PLC,Essentra,ESNT,London Stock Exchange,False
+Eurocommercial Properties NV,Eurocommercial,,Netherlands,True
+Exelon Corp.,Exelon,EXC,NYSE,False
+Ferrexpo PLC,Ferrexpo,FXPO,London Stock Exchange,False
+Fevertree Drinks plc,Fevertree,FEVR,London Stock Exchange,False
+"FireEye, Inc.",FireEye,FEYE,NASDAQ,False
+"Fluidra, S.A.",Fluidra,FDR,Bolsa de Madrid,False
+Fluor Corp.,Fluor,FLR,NYSE,False
+Franco-Nevada Corporation,Franco-Nevada,,NYSE,False
+Freenet AG,Freenet,FNTN,Deutsche Börse Xetra,False
+Galapagos NV,Galapagos,GLPG,Netherlands,True
+Georgia Healthcare Group PLC,Georgia,,London Stock Exchange,False
+Gerresheimer AG,Gerresheimer,GXI,Deutsche Börse Xetra,False
+Givaudan SA,Givaudan,GIVN,SIX Swiss,False
+Gladstone Commercial Corp.,Gladstone,,NASDAQ,False
+"Global Water Resources, Inc.",Global,,NASDAQ,False
+GrandVision NV,GrandVision,GVNV,Netherlands,True
+Great Ajax Corporation,Great,,NYSE,False
+Great Portland Estates PLC,Great,,London Stock Exchange,False
+Greencoat Renewables plc,Greencoat,,London Stock Exchange,False
+GreenSky LLC,GreenSky,GSKY,NASDAQ,False
+Hannover Rueck SE,Hannover,,Deutsche Börse Xetra,False
+Hastings Group Holdings PLC,Hastings,,London Stock Exchange,False
+Hays PLC,Hays,HAS,London Stock Exchange,True
+Hella KGaA Hueck & Co,Hella,HLE,Deutsche Börse Xetra,True
+Hiscox Ltd,Hiscox,HSX,London Stock Exchange,False
+Hornbach Holding AG & Co KGaA,Hornbach,,Deutsche Börse Xetra,False
+Howmet Aerospace Inc,Howmet,,NYSE,False
+"HubSpot, Inc.",HubSpot,HUBS,NYSE,False
+IG Group Holdings PLC,IG,,London Stock Exchange,False
+International Paper Co.,International,,NYSE,False
+Intertrust NV,Intertrust,INTER,Netherlands,True
+Invesco Bloomberg Commodity UCITS ETF,Invesco,,London Stock Exchange,False
+Invesco S&P 500 UCITS ETF Acc,Invesco,,London Stock Exchange,False
+Iron Mountain Inc.,Iron,IRM,NYSE,True
+iShares Core MSCI EM IMI EUR UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares Core MSCI EM IMI UCITS ETF USD Accumulating,iShares,,London Stock Exchange,True
+iShares Core UK Gilts UCITS ETF,iShares,,London Stock Exchange,False
+iShares Global Government Bond UCITS ETF,iShares,,London Stock Exchange,False
+iShares MSCI World Islamic UCITS ETF GBX (Dist),iShares,,London Stock Exchange,False
+iShares STOXX Europe 600 Banks UCITS ETF (DE),iShares,,Deutsche Börse Xetra,False
+iShares STOXX Europe Select Dividend 30 UCITS ETF,iShares,,Deutsche Börse Xetra,False
+IWG PLC,IWG,IWG,London Stock Exchange,False
+Ixico plc,Ixico,IXI,London Stock Exchange,False
+Jabil Inc.,Jabil,JBL,NYSE,False
+Jenoptik AG,Jenoptik,JEN,Deutsche Börse Xetra,False
+Johnson Controls International PLC,Johnson,,NYSE,False
+Jumia Technologies AG,Jumia,,NYSE,True
+KAZ Minerals PLC,KAZ,KAZ,London Stock Exchange,False
+Keywords Studios PLC,Keywords,,London Stock Exchange,False
+KION Group AG,KION,KGX,Deutsche Börse Xetra,False
+KLA Corporation,KLA,KLAC,NASDAQ,False
+Koenig & Bauer AG,Koenig,,Deutsche Börse Xetra,False
+Koninklijke DSM NV,Koninklijke,,Netherlands,True
+Kuehne + Nagel International AG,Kuehne,,SIX Swiss,False
+KWS Saat SE,KWS,KWS,Deutsche Börse Xetra,False
+Las Vegas Sands Corp,Las,,NYSE,False
+Leverage Shares 2x Alphabet ETP,2x,2GOO,London Stock Exchange,False
+Leverage Shares 2x Goldman Sachs ETP,2x,,London Stock Exchange,False
+Leverage Shares 2x Goldman Sachs ETP,2x,,London Stock Exchange,False
+"Liberty TripAdvisor Holdings, Inc. - Class B",Liberty,,NASDAQ,False
+LondonMetric Property PLC,LondonMetric,,London Stock Exchange,False
+MAN SE,MAN,MAN,Deutsche Börse Xetra,False
+Maxar Technologies Inc,Maxar,,NYSE,True
+"Medical Properties Trust, Inc.",Medical,,NYSE,True
+Medigene AG,Medigene,MDG1,Deutsche Börse Xetra,False
+"Momenta Pharmaceuticals, Inc.",Momenta,,NASDAQ,False
+"Monarch Casino & Resort, Inc.",Monarch,,NASDAQ,False
+Mondi PLC,Mondi,MNDI,London Stock Exchange,False
+"MongoDB, Inc.",MongoDB,MDB,NASDAQ,True
+Mynaric AG,Mynaric,M0Y,Deutsche Börse Xetra,False
+"NantKwest, Inc.",NantKwest,NK,NASDAQ,False
+National Beverage Corp.,National,,NASDAQ,False
+NewLink Genetics Corp.,NewLink,,NASDAQ,False
+NextEra Energy Partners LP,NextEra,,NYSE,True
+Norfolk Southern Corp.,Norfolk,,NYSE,False
+"NovaGold Resources, Inc.",NovaGold,,NYSE,False
+"Now, Inc.",Now,DNOW,NYSE,False
+"NuVasive, Inc.",NuVasive,NUVA,NASDAQ,False
+"Oasis Midstream Partners, LP",Oasis,,NASDAQ,False
+Old Republic International Corporation,Old,,NYSE,False
+"OneConnect Financial Technology, Co.",OneConnect,,NYSE,False
+"Pagerduty, Inc",Pagerduty,PD,NYSE,False
+Peabody Energy Corp,Peabody,,NYSE,False
+PIMCO Euro Short Maturity Source UCITS ETF,PIMCO,,Deutsche Börse Xetra,False
+Playa Hotels & Resorts NV,Playa,,NASDAQ,False
+"Polaris Industries, Inc.",Polaris,,NYSE,False
+Porvair PLC,Porvair,PRV,London Stock Exchange,False
+PPG Industries,PPG,PPG,NYSE,True
+"Precision BioSciences, Inc.",Precision,,NASDAQ,False
+Progressive Corp.,Progressive,PGR,NYSE,False
+"Progyny, Inc.",Progyny,PGNY,NASDAQ,False
+Prospect Capital Corporation,Prospect,,NYSE,True
+Prudential Financial,Prudential,,NYSE,True
+PSI AG Gesellschaft Fuer Produkte und Systeme der Informationstechnologie,PSI,PSAN,Deutsche Börse Xetra,False
+Quantum Corporation,Quantum,QMCO,NYSE,False
+Reach plc,Reach,RCH,London Stock Exchange,False
+"RealNetworks, Inc.",RealNetworks,RNWK,NASDAQ,False
+Redde Northgate PLC,Redde,,London Stock Exchange,False
+Redhill Biopharma Ltd.,Redhill,,NASDAQ,False
+RELX PLC,RELX,REL,London Stock Exchange,True
+RIB Software AG,RIB,RIB,Deutsche Börse Xetra,False
+Rocket Internet SE,Rocket,,Deutsche Börse Xetra,False
+Rockwell Automation Inc.,Rockwell,,NYSE,False
+"Sally Beauty Holdings, Inc.",Sally,,NYSE,False
+Salzgitter AG,Salzgitter,SZG,Deutsche Börse Xetra,False
+"Schrodinger, LLC",Schrodinger,SDGR,NASDAQ,False
+Scout24 AG,Scout24,G24,Deutsche Börse Xetra,False
+Secure Trust Bank plc,Secure,,London Stock Exchange,False
+Silence Therapeutics PLC,Silence,,London Stock Exchange,False
+"SINTX Technologies, Inc.",SINTX,,NASDAQ,False
+Sixt Leasing SE,Sixt,LNSX,Deutsche Börse Xetra,False
+Softing AG,Softing,SYT,Deutsche Börse Xetra,False
+Software AG,Software,SOW,Deutsche Börse Xetra,False
+Solar Senior Capital Ltd,Solar,,NASDAQ,False
+Southern Copper Corporation,Southern,,NYSE,False
+SPDR MSCI World EUR UCITS ETF USD Accumulating,SPDR,,Deutsche Börse Xetra,True
+Spirax-Sarco Engineering PLC,Spirax-Sarco,,London Stock Exchange,True
+"Sportsman's Warehouse Holdings, Inc.",Sportsman's,,NASDAQ,False
+Standard Life UK Smaller Co Trust,Standard,,London Stock Exchange,False
+"StarTek, Inc.",StarTek,SRT,NYSE,False
+StoneCo Ltd.,StoneCo,STNE,NASDAQ,True
+STORE Capital Corporation,STORE,STOR,NYSE,True
+"Suburban Propane Partners, L.P.",Suburban,,NYSE,False
+"Sunesis Pharmaceuticals, Inc.",Sunesis,,NASDAQ,False
+Swiss Life Holding AG,Swiss,SLHN,SIX Swiss,False
+Swisscom AG,Swisscom,SCMN,SIX Swiss,False
+TAG Immobilien AG,TAG,,Deutsche Börse Xetra,False
+TechnipFMC PLC,TechnipFMC,FTI,Euronext Paris,True
+Telecom Plus PLC,Telecom,TEP,London Stock Exchange,False
+"Teradyne, Inc.",Teradyne,TER,NASDAQ,False
+Thales Group,Thales,HO,Euronext Paris,True
+The Bank of Nova Scotia,Bank,,NYSE,False
+The Blackstone Group LP,The,,NYSE,False
+"The Rubicon Project, Inc.",The,,NYSE,False
+"TherapeuticsMD, Inc.","TherapeuticsMD
+TXMD",,NASDAQ,False
+Tissue Regenix Group Plc,Tissue,,London Stock Exchange,False
+TLG Immobilien AG,TLG,,Deutsche Börse Xetra,False
+Travelzoo,Travelzoo,TZOO,NASDAQ,False
+UDG Healthcare plc,UDG,,London Stock Exchange,False
+Ultra Electronics Holdings PLC,Ultra,,London Stock Exchange,False
+United Microelectronics,United,,NYSE,False
+Universal Display Corporation,Universal,,NASDAQ,False
+"Universal Insurance Holdings, Inc.",Universal,,NYSE,False
+Urban & Civic PLC,Urban,UANC,London Stock Exchange,False
+Vanguard FTSE All-World USD UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Developed Asia Pacific ex Japan UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,True
+Vanguard FTSE Devoleped World UCITS ETF USD Accumulation,Vanguard,,London Stock Exchange,False
+Vanguard FTSE North America EUR UCITS ETF (USD) Distributing,Vanguard,,Deutsche Börse Xetra,True
+Vanguard FTSE North America GBP UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,True
+Veolia Environnement VE SA,Veolia,VIE,Euronext Paris,True
+VinaCapital Vietnam Opportunity Fund Ltd.,VinaCapital,,London Stock Exchange,False
+"Vir Biotechnology, Inc.",Vir,,NASDAQ,False
+Vivendi SA,Vivendi,VIV,Euronext Paris,True
+Vonage Holdings Corporation,Vonage,,NYSE,False
+Vulcan Materials,Vulcan,,NYSE,False
+W. P. Carey Inc.,W.,WPC,NYSE,False
+"W. W. Grainger, Inc.",W.,,NYSE,False
+Wacker Neuson SE,Wacker,,Deutsche Börse Xetra,False
+Warehouse REIT plc,Warehouse,,London Stock Exchange,False
+Watches of Switzerland Group plc,Watches,,London Stock Exchange,False
+"West Pharmaceutical Services, Inc.",West,,NYSE,False
+Western Union Co.,Western,,NYSE,False
+Whirlpool Corp.,Whirlpool,WHR,NYSE,False
+Willis Towers Watson PLC,Willis,WLTW,NASDAQ,False
+WisdomTree Global Quality Dividend Growth EUR UCITS ETF USD (Acc),WisdomTree,,Deutsche Börse Xetra,False
+WisdomTree Physical Precious Metals,WisdomTree,,Deutsche Börse Xetra,False
+Wix.Com ltd,Wix.Com,WIX,NASDAQ,False
+Xtrackers II Eurozone Government Bond UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers II Harvest China Government Bond UCITS ETF 1D,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Nikkei 225 GBX UCITS ETF 1D,Xtrackers,,London Stock Exchange,False
+Xtrackers S&P 500 2x Leveraged Daily Swap UCITS ETF,Xtrackers,,Deutsche Börse Xetra,True
+YouGov plc,YouGov,YOU,London Stock Exchange,False
+zooplus AG,Zooplus,ZO1,Deutsche Börse Xetra,False
+3i Group PLC,3i,III,London Stock Exchange,False
+3i Infrastructure PLC,3i,,London Stock Exchange,False
+Aberforth Smaller Companies Trust PLC,Aberforth,,London Stock Exchange,False
+Advanced Medical Solutions Group plc,Advanced,,London Stock Exchange,False
+AerCap Holdings NV,AerCap,,NYSE,False
+Affiliated Managers Group,Affiliated,,NYSE,False
+Aggreko PLC,Aggreko,AGK,London Stock Exchange,False
+"Agile Therapeutic, Inc.",Agile,,NASDAQ,False
+Alexion Pharmaceuticals,Alexion,,NASDAQ,False
+Algonquin Power & Utilities Corporation,Algonquin,,NYSE,False
+Alliance Data Systems Corp.,Alliance,,NYSE,False
+"Alliance Resource Partners, L.P.",Alliance,,NASDAQ,False
+"Ally Financial, Inc.",Ally,ALLY,NYSE,False
+Altice NV Class A,Altice,ATC,Netherlands,True
+Amarin Coporation plc,Amarin,AMRN,NASDAQ,False
+"Ambarella, Inc.",Ambarella,AMBA,NASDAQ,False
+"American Public Education, Inc.",American,,NASDAQ,False
+"American Software, Inc.",American,,NASDAQ,False
+American Superconductor Corporation,American,,NASDAQ,False
+American Woodmark Corporation,American,,NASDAQ,False
+"Amneal Pharmaceuticals, Inc. Class A",Amneal,,NYSE,False
+Amundi ETF MSCI Spain ETF,Amundi,,London Stock Exchange,False
+AMUNDI Index MSCI World SRI - UCITS ETF DR,AMUNDI,,London Stock Exchange,False
+Analog Devices Inc.,Analog,,NASDAQ,False
+Anglo Pacific Group PLC,Anglo,,London Stock Exchange,False
+"Annaly Capital Management, Inc.",Annaly,,NYSE,False
+"AnPac Bio-Medical Science Co., Ltd.",AnPac,,NASDAQ,False
+"Apellis Pharmaceuticals, Inc.",Apellis,,NASDAQ,False
+"Apollo Commercial Real Estate Finance, Inc.",Apollo,,NYSE,False
+"Applied DNA Sciences, Inc.",Applied,,NASDAQ,False
+"Arcos Dorados Holdings, Inc.",Arcos,ARCO,NYSE,False
+"Arcturus Therapeutics Holdings, Inc.",Arcturus,,NASDAQ,False
+Ascential PLC,Ascential,ASCL,London Stock Exchange,False
+ASGN Inc.,ASGN,ASGN,NYSE,False
+ASR Nederland NV,ASR,,Netherlands,True
+Astronics Corporation,Astronics,,NASDAQ,False
+"Atomera, Inc.",Atomera,ATOM,NASDAQ,False
+Atos SE,Atos,ATO,Euronext Paris,True
+"Automatic Data Processing, Inc.",Automatic,,NYSE,True
+AutoZone Inc,AutoZone,AZO,NYSE,False
+Aviva PLC 8.75% PRF,Aviva,,London Stock Exchange,False
+Avon Rubber PLC,Avon,AVON,London Stock Exchange,True
+"Aware, Inc.",Aware,AWRE,NASDAQ,False
+"Axcelis Technologies, Inc.",Axcelis,,NASDAQ,False
+AXIS Capital Holdings Ltd,AXIS,AXS,NYSE,False
+Axovant Gene Therapies Ltd,Axovant,,NASDAQ,False
+Bauer AG,Bauer,B5A,Deutsche Börse Xetra,False
+"Benchmark Electronics, Inc.",Benchmark,,NYSE,False
+BEST Inc,BEST,BEST,NYSE,False
+Big 5 Sporting Goods Corporation,Big,,NASDAQ,True
+"Bill Com Holdings, Inc.",Bill,,NYSE,False
+BioSpecifics Technologies Corp.,BioSpecifics,,NASDAQ,False
+"BJs Restaurants, Inc.",BJs,,NASDAQ,False
+Black Stone Minerals LP,Black,,NYSE,False
+BorgWarner,BorgWarner,BWA,NYSE,False
+"Borqs Technologies, Inc.",Borqs,,NASDAQ,False
+BP PLC 8% PRF,BP,BP.A,London Stock Exchange,False
+Brenntag AG,Brenntag,BNR,Deutsche Börse Xetra,False
+"Brookfield Asset Management, Inc.",Brookfield,,NYSE,False
+"Brookfield Property Reit, Inc. Class A",Brookfield,,NASDAQ,False
+Bunge Limited,Bunge,BG,NYSE,False
+Campbell Soup,Campbell,CPB,NYSE,False
+Camtek Ltd,Camtek,CAMT,NASDAQ,False
+Canadian Imperial Bank of Commerce,Canadian,,NYSE,False
+Capital & Regional PLC,Capital,,London Stock Exchange,False
+Capital Gearing Trust PLC,Capital,,London Stock Exchange,False
+"Cara Therapeutics, Inc.",Cara,,NYSE,False
+Caretech Holdings PLC,Caretech,,London Stock Exchange,False
+"Casa Systems, Inc.",Casa,CASA,NASDAQ,False
+"Casper Sleep, Inc.",Casper,CSPR,NYSE,True
+Ceconomy AG,Ceconomy,CEC,Deutsche Börse Xetra,False
+Cerence Inc,Cerence,CRNC,NASDAQ,False
+Cewe Stiftung & Co KGAA,Cewe,CWC,Deutsche Börse Xetra,False
+CGI Inc.,CGI,GIB,NYSE,False
+Check Point Software Technologies,Check,,NASDAQ,False
+"ChemoCentryx, Inc.","ChemoCentryx
+CCXI",,NASDAQ,False
+"Choice Hotels Internationals, Inc.",Choice,CHH,NYSE,False
+Cie Automotive,Cie,,Bolsa de Madrid,False
+Cincinnati Financial,Cincinnati,,NASDAQ,False
+Citrix Systems,Citrix,CTXS,NASDAQ,False
+City Of London Investment Trust PLC,City,,London Stock Exchange,False
+Close Brothers Group PLC,Close,,London Stock Exchange,False
+Clovis Oncology Inc,Clovis,,NASDAQ,True
+CME Group Inc.,CME,CME,NASDAQ,True
+ComStage EURO STOXX 50 UCITS ETF,ComStage,,Deutsche Börse Xetra,False
+Copa Holdings SA,Copa,CPA,NYSE,False
+"Copart, Inc.",Copart,CPRT,NASDAQ,False
+Corbion NV,Corbion,CRBN,Netherlands,True
+CoStar Group,CoStar,CSGP,NASDAQ,False
+"Credicorp, Ltd",Credicorp,BAP,NYSE,False
+Creighton's PLC,Creighton's,CRL,London Stock Exchange,False
+Cross Timbers Royalty Trust,Cross,,NYSE,False
+Cummins Inc.,Cummins,CMI,NYSE,False
+Custodian Reit PLC,Custodian,CREI,London Stock Exchange,False
+Darden Restaurants,Darden,,NYSE,False
+db Xtrackers CAC 40 DR ETF,db,,Deutsche Börse Xetra,False
+db Xtrackers FTSE China 50 DR,db,,Deutsche Börse Xetra,False
+db Xtrackers II-Iboxx Euro High Yield Bond,db,,Deutsche Börse Xetra,False
+db Xtrackers S&P Global Infrastructure,db,,Deutsche Börse Xetra,False
+DCC PLC,DCC,DCC,London Stock Exchange,True
+Dechra Pharmaceuticals PLC,Dechra,,London Stock Exchange,False
+DIC Asset AG,DIC,DIC,Deutsche Börse Xetra,False
+Discovery Com Class C,Discovery,,NASDAQ,False
+Dish Network Corp Class A,Dish,,NASDAQ,False
+Draegerwerk AG & Co KGaA,Draegerwerk,DRW8,Deutsche Börse Xetra,False
+DXC Technology Company,DXC,,NYSE,False
+Eckert & Ziegler AG,Eckert,,Deutsche Börse Xetra,False
+Edenred SA,Edenred,EDEN,Euronext Paris,True
+"Elastic, N.V.",Elastic,ESTC,NYSE,True
+Elbit Systems Ltd.,Elbit,ESLT,NASDAQ,False
+Elmos Semiconductor AG,Elmos,,Deutsche Börse Xetra,False
+ElringKlinger AG,ElringKlinger,ZIL2,Deutsche Börse Xetra,False
+"Energy Recovery, Inc.",Energy,,NASDAQ,False
+EQT Corporation,EQT,EQT,NYSE,False
+Equiniti Group PLC,Equiniti,EQN,London Stock Exchange,False
+ETFS DAX Daily 2x Long GO UCITS ETF,ETFS,,London Stock Exchange,False
+Exact Sciences Corporation,Exact,EXAS,NASDAQ,False
+"Exelixis, Inc.",Exelixis,EXEL,NASDAQ,False
+FactSet Research Systems Inc.,FactSet,,NYSE,False
+Fair Isaac Corporation,Fair,FICO,NYSE,False
+Fastenal Co.,Fastenal,FAST,NASDAQ,False
+Federal Realty Investment Trust,Federal,,NYSE,True
+Fidelity European Values PLC,Fidelity,,London Stock Exchange,False
+Flow Traders,Flow,FLOW,Netherlands,True
+Flowserve Corporation,Flowserve,FLS,NYSE,False
+"Fossil, Inc.",Fossil,FOSL,NASDAQ,False
+"Frequency Therapeutics, Inc.",Frequency,,NASDAQ,False
+GB Group plc,GB,GBG,London Stock Exchange,False
+GEA Group AG,GEA,G1A,Deutsche Börse Xetra,False
+Genel Energy Plc,Genel,GENL,London Stock Exchange,False
+General Dynamics,General,,NYSE,True
+Genus PLC,Genus,GNS,London Stock Exchange,False
+Geron Corp,Geron,GERN,NASDAQ,False
+Gladstone Investment Corporation,Gladstone,,NASDAQ,False
+Glu Mobile Inc.,Glu,GLUU,NASDAQ,False
+GrafTech International Ltd,GrafTech,EAF,NYSE,False
+GreenTree Hospitality Group Ltd.,GreenTree,,NYSE,False
+GRENKE AG,GRENKE,GLJ,Deutsche Börse Xetra,False
+Gulf Marine Services PLC,Gulf,,London Stock Exchange,False
+"Harvard Bioscience, Inc.",Harvard,,NASDAQ,False
+Helical PLC,Helical,HLCL,London Stock Exchange,False
+"Hepion Pharmaceuticals, Inc.",Hepion,,NASDAQ,False
+Herald Investment Trust PLC,Herald,,London Stock Exchange,False
+Hipgnosis Songs Fund Ltd,Hipgnosis,,London Stock Exchange,False
+Hochschild Mining PLC,Hochschild,,London Stock Exchange,False
+"Homology Medicines, Inc.",Homology,,NASDAQ,False
+HSBC MSCI Turkey UCITS ETF,HSBC,,London Stock Exchange,False
+Huntington Bancshares,Huntington,,NASDAQ,False
+I-Mab Biopharma,I-Mab,IMAB,NASDAQ,False
+"Identive Group, Inc.",Identive,,NASDAQ,False
+IHS Markit Ltd.,IHS,INFO,NYSE,False
+Infinera Corporation,Infinera,INFN,NASDAQ,False
+InflaRx N.V.,InflaRx,IFRX,NASDAQ,False
+Inphi Corporation,Inphi,,NYSE,False
+Inseego Corporation,Inseego,INSG,NASDAQ,False
+Intec Pharma Ltd.,Intec,NTEC,NASDAQ,False
+Intertek Group PLC,Intertek,,London Stock Exchange,True
+"Intuit, Inc.",Intuit,INTU,NASDAQ,True
+Invesco Perpetual UK Smaller Cos Investment Trust PLC,Invesco,,London Stock Exchange,False
+"Ionis Pharmaceuticals, Inc.",Ionis,,NASDAQ,False
+iShares Core Global Aggregate Bond UCITS ETF,iShares,,London Stock Exchange,False
+iShares Core MSCI Europe UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares EM Dividend UCITS ETF USD (Dist),iShares,,London Stock Exchange,True
+iShares Euro Govt Bond 20yr Target Duration UCITS ETF EUR Distributing,iShares,,Deutsche Börse Xetra,False
+iShares Fallen Angels High Yield Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares Global Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares Global High Yield Corp Bond GBP Hedged UCITS ETF (Dist),iShares,,London Stock Exchange,False
+iShares Global High Yield Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI ACWI ETF USD Acc,iSh,,London Stock Exchange,False
+iShares MSCI EM ESG Enhanced UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI World Islamic UCITS ETF USD (Dist),iShares,,London Stock Exchange,True
+iShares MSCI World SRI EUR UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares S&P 500 EUR Hedged UCITS ETF Acc,S&P,,London Stock Exchange,False
+James Fisher & Sons PLC,James,,London Stock Exchange,False
+Jde Peet's B.V.,Jde,JDEP,Netherlands,False
+JPMorgan Russian Securities plc,JPMorgan,,London Stock Exchange,False
+Juniper Networks,Juniper,,NYSE,False
+Keller Group PLC,Keller,KLR,London Stock Exchange,False
+Kin & Carta Plc,Kin,KCT,London Stock Exchange,False
+"Kinsale Capital Group, Inc.",Kinsale,,NASDAQ,False
+Kloeckner & Co SE,Kloeckner,KCO,Deutsche Börse Xetra,False
+Koninklijke Vopak NV,Koninklijke,,Netherlands,True
+Kopin Corporation,Kopin,KOPN,NASDAQ,False
+Korea Electric Power Corporation,Korea,,NYSE,False
+Korn/Ferry International,Korn,KFY,NYSE,False
+L&G Japan Equity UCITS ETF USD Accumulating,L&G,,Netherlands,False
+LabCorp,LabCorp,LH,NYSE,False
+Land Securities Group PLC,Land,,London Stock Exchange,True
+Latam Airlines Group S.A.,Latam,,NYSE,False
+Lattice Semiconductor Corporation,Lattice,,NASDAQ,False
+"Leggett & Platt, Inc.",Leggett,LEG,NYSE,True
+"Lendingtree, Inc.",Lendingtree,TREE,NASDAQ,False
+Leoni AG,Leoni,LEO,Deutsche Börse Xetra,False
+Leverage Shares 2x Amazon ETP,2x,AMZE,London Stock Exchange,False
+Leverage Shares 2x Amazon ETP,2x,AMZ2,London Stock Exchange,False
+Leverage Shares 2x Apple ETP,2x,AAP2,London Stock Exchange,False
+Leverage Shares 2x Apple ETP,2x,AAPE,London Stock Exchange,False
+Leverage Shares 2x Citigroup ETP,2x,CIT2,London Stock Exchange,False
+Leverage Shares 2x Facebook ETP,2x,2FB,London Stock Exchange,False
+Leverage Shares 2x Goldman Sachs ETP,2x,,London Stock Exchange,False
+Leverage Shares 2x JPMorgan Chase & Co. ETP,2x,JPM2,London Stock Exchange,False
+Leverage Shares 2x Netflix ETP,2x,NFLE,London Stock Exchange,False
+Leverage Shares 2x Netflix ETP,2x,2NFL,London Stock Exchange,False
+Leverage Shares 2x Visa ETP,2x,2VIS,London Stock Exchange,False
+Linde PLC,Linde,LIN,NYSE,False
+Liontrust Asset Management PLC,Liontrust,,London Stock Exchange,False
+Lonza Group AG,Lonza,LONN,SIX Swiss,False
+Luceco PLC,Luceco,LUCE,London Stock Exchange,False
+Lyxor Commodities Thomson Reuters/CoreCommodity CRB EX-Energy TR UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor iBoxx Gilt Inflation-Linked (DR) GBX UCITS ETF Distributing,Lyxor,,London Stock Exchange,True
+MannKind Corporation,MannKind,MNKD,NASDAQ,False
+Mattel Inc.,Mattel,MAT,NASDAQ,False
+McBride PLC,McBride,MCB,London Stock Exchange,False
+"MEI Pharma, Inc.",MEI,MEIP,NASDAQ,False
+"MGP Ingredients, Inc.",MGP,,NASDAQ,False
+Mimecast Ltd,Mimecast,MIME,NASDAQ,False
+Mirriad Advertising PLC,Mirriad,,London Stock Exchange,False
+MLP AG,MLP,MLP,Deutsche Börse Xetra,False
+Morgan Advanced Materials PLC,Morgan,,London Stock Exchange,True
+MorphoSys AG,MorphoSys,MOR,Deutsche Börse Xetra,False
+"Mr. Cooper Group, Inc.",Mr.,,NASDAQ,False
+"MyoKardia, Inc.",MyoKardia,MYOK,NASDAQ,False
+"NACCO Industries, Inc.",NACCO,,NYSE,False
+Nanoco Group PLC,Nanoco,NANO,London Stock Exchange,False
+"Nasdaq, Inc.",Nasdaq,NDAQ,NASDAQ,False
+"Natural Gas Services Group, Inc.",Natural,,NYSE,False
+Navient,Navient,NAVI,NASDAQ,False
+NeoPhotonics Corporation,NeoPhotonics,NPTN,NYSE,False
+"Newmark Group, Inc.",Newmark,,NASDAQ,False
+NexGen Energy Ltd.,NexGen,,NYSE,False
+NN Group NV,NN,NN,Netherlands,True
+Norcros PLC,Norcros,NXR,London Stock Exchange,False
+Norma Group SE,Norma,NOEJ,Deutsche Börse Xetra,False
+Novartis AG ADR,Novartis,NVS,NYSE,False
+Nucor Corp.,Nucor,NUE,NYSE,True
+"Nutanix, Inc.",Nutanix,NTNX,NASDAQ,False
+NXP Semiconductors,NXP,,NASDAQ,False
+"Ocugen, Inc.",Ocugen,OCGN,NASDAQ,False
+"Old Dominion Freight Line, Inc.",Old,ODFL,NASDAQ,False
+Pagegroup PLC,Pagegroup,PAGE,London Stock Exchange,False
+Pan African Resources plc,Pan,,London Stock Exchange,False
+Paragon Banking Group PLC,Paragon,,London Stock Exchange,False
+Parker-Hannifin,Parker-Hannifin,,NYSE,False
+Perion Network Ltd,Perion,,NASDAQ,False
+Pfeiffer Vacuum Technology AG,Pfeiffer,PFV,Deutsche Börse Xetra,False
+PG&E Corp.,PG&E,PCG,NYSE,True
+Philips Lighting NV,Philips,,Netherlands,True
+Photo-Me International PLC,Photo-Me,,London Stock Exchange,False
+Pioneer Natural Resources,Pioneer,,NYSE,False
+"Plymouth Industrial REIT, Inc.",Plymouth,,NYSE,False
+Prologis,Prologis,PLD,NYSE,False
+"Provention Bio, Inc.",Provention,PRVB,NASDAQ,False
+Publicis Groupe SA,Publicis,PUB,Euronext Paris,True
+QIAGEN NV,QIAGEN,QIA,Deutsche Börse Xetra,False
+QinetiQ Group PLC,QinetiQ,QQ,London Stock Exchange,False
+"Qualigen Therapeutics, Inc.",Qualigen,,NASDAQ,False
+Quantum Corporation,Quantum,QMCO,NASDAQ,False
+Qutoutiao Inc - ADR,Qutoutiao,QTT,NASDAQ,False
+R.E.A. Holdings PLC,R.E.A.,,London Stock Exchange,False
+Rathbone Brothers PLC,Rathbone,,London Stock Exchange,False
+"Redwood Trust, Inc.",Redwood,RWT,NYSE,False
+ResMed Inc.,ResMed,RMD,NYSE,False
+RM PLC,RM,RM,London Stock Exchange,False
+Rockhopper Exploration,Rockhopper,,London Stock Exchange,False
+Ross Stores,Ross,ROST,NASDAQ,False
+Rotork PLC,Rotork,ROR,London Stock Exchange,False
+RTL Group SA,RTL,RRTL,Deutsche Börse Xetra,False
+"Ruth's Hospitality Group, Inc.",Ruth's,,NASDAQ,False
+S&U PLC,S&U,SUS,London Stock Exchange,False
+Safestore Holdings PLC,Safestore,,London Stock Exchange,False
+SciPlay Corporation,SciPlay,SCPL,NASDAQ,False
+Secure Income REIT plc,Secure,SIR,London Stock Exchange,False
+Semtech Corporation,Semtech,SMTC,NASDAQ,False
+"Shift4 Payments, Inc.",Shift4,,NYSE,False
+"Shockwave Medical, Inc.",Shockwave,,NASDAQ,False
+"ShotSpotter, Inc.",ShotSpotter,SSTI,NASDAQ,False
+Signature Aviation PLC,Signature,,London Stock Exchange,False
+"Simulations Plus, Inc.",Simulations,,NASDAQ,False
+SiTime Corporation,SiTime,SITM,NASDAQ,False
+SK Telecom Co Ltd.,SK,SKM,NYSE,False
+"SkyWest, Inc.",SkyWest,SKYW,NASDAQ,False
+SL Green Realty Corporation,SL,,NYSE,False
+Sligro Food Group NV,Sligro,,Netherlands,True
+"Smith Micro Software, Inc.",Smith,,NASDAQ,False
+SMTC Corporation,SMTC,SMTX,NASDAQ,False
+"SOGOU, Inc.",SOGOU,SOGO,NYSE,False
+Sonova Holding AG,Sonova,SOON,SIX Swiss,False
+Southwestern Energy,Southwestern,,NYSE,False
+SPDR Barclays 10+ Year U.S. Corporate Bond ETF,SPDR,,London Stock Exchange,False
+SPDR Bloomberg Barclays U.S. TIPS UCITS ETF (Dist),SPDR,,Deutsche Börse Xetra,False
+SPDR MSCI ACWI EUR UCITS ETF USD (Acc),SPDR,,Deutsche Börse Xetra,False
+SPDR MSCI Emerging Markets UCITS ETF,SPDR,,Deutsche Börse Xetra,False
+SPDR MSCI World GBP UCITS ETF USD Accumulating,SPDR,,London Stock Exchange,False
+SPDR S&P 400 U.S. Mid Cap UCITS ETF (Acc),SPDR,,Deutsche Börse Xetra,False
+SPDR S&P 500 ESG Screened UCITS ETF (Acc),SPDR,,Deutsche Börse Xetra,False
+SPDR S&P Euro Dividend Aristocrats UCITS ETF (Dist),SPDR,,London Stock Exchange,False
+SPDR S&P Pan Asia Dividend Aristocrats UCITS ETF (Dist),SPDR,,London Stock Exchange,False
+Speedy Hire PLC,Speedy,SDY,London Stock Exchange,False
+SPI Energy Co Ltd,SPI,SPI,NASDAQ,False
+"Spirit Realty Capital, Inc.",Spirit,SRC,NYSE,False
+Stabilus SA,Stabilus,STM,Deutsche Börse Xetra,False
+"Starwood Property Trust, Inc.",Starwood,,NYSE,False
+SThree PLC,SThree,STEM,London Stock Exchange,False
+STMicroelectronics N.V.,"STMicroelectronics
+STM",,NYSE,False
+STRATEC Biomedical AG,STRATEC,,Deutsche Börse Xetra,False
+Stroeer SE & Co KGaA,Stroeer,SAX,Deutsche Börse Xetra,False
+Studio Retail Group plc,Studio,,London Stock Exchange,False
+Suedzucker AG,Suedzucker,SZU,Deutsche Börse Xetra,False
+"Supernus Pharmaceuticals, Inc.",Supernus,,NASDAQ,False
+SVMK Inc,SurveyMonkey,SVMK,NASDAQ,False
+"Synacor, Inc.",Synacor,SYNC,NASDAQ,False
+Syneos Health Inc.,Syneos,SYNH,NASDAQ,False
+"Synopsys, Inc.",Synopsys,SNPS,NASDAQ,False
+"Syros Pharmaceuticals, Inc.",Syros,,NASDAQ,False
+Takkt AG,Takkt,TTK,Deutsche Börse Xetra,False
+TAL Education Group ADR,TAL,,NYSE,False
+"Tandem Diabetes Care, Inc.",Tandem,,NASDAQ,False
+Target Hospitality Corporation Class A,Target,,NASDAQ,False
+Team17 Group plc,Team17,TM17,London Stock Exchange,False
+TechnipFMC PLC.,TechnipFMC,FTI,NYSE,False
+Tecnicas Reunidas SA,Tecnicas,,Bolsa de Madrid,False
+Tegna Inc.,Tegna,TGNA,NYSE,False
+Tele Columbus AG,Tele,TC1,Deutsche Börse Xetra,False
+Teradata Corp.,Teradata,TDC,NYSE,False
+"Texas Roadhouse, Inc.",Texas,,NASDAQ,False
+The Bank of New York Mellon Corporation,Bank,,NYSE,True
+The Cheesecake Factory Incorporated,The,,NASDAQ,False
+"Titan Pharmaceuticals, Inc.",Titan,,NASDAQ,False
+TKH Group NV,TKH,TWEKA,Netherlands,True
+Topbuild Corp,Topbuild,BLD,NYSE,False
+Tower Semiconductor Ltd.,Tower,,NASDAQ,False
+Town Centre Securities PLC,Town,,London Stock Exchange,False
+TR Property Investment Trust PLC - Ordinary Shares,TR,,London Stock Exchange,False
+Tractor Supply Co.,Tractor,TSCO,NASDAQ,False
+"TransDigm Group, Inc.",TransDigm,,NYSE,False
+Trifast PLC,Trifast,TRI,London Stock Exchange,False
+Trinity Biotech plc,Trinity,TRIB,NASDAQ,False
+Two Harbors Investments Corporation,Two,,NYSE,False
+U & I Group PLC,U,UAI,London Stock Exchange,False
+"Ulta Beauty, Inc.",Ulta,ULTA,NYSE,False
+UniFirst Corporation,UniFirst,UNF,NYSE,False
+UTStarcom Holdings Corporation,UTStarcom,,NASDAQ,False
+V.F. Corp.,V.F.,VFC,NYSE,False
+Vanguard EUR Corporate Bond UCITS ETF (EUR) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard EUR Eurozone Government Bond UCITS ETF (EUR) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard Euro STOXX 50 GBP UCITS ETF (EUR) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Developed Europe ex UK EUR UCITS ETF (EUR) Distributing,Vanguard,,Deutsche Börse Xetra,True
+Vanguard FTSE Developed World UCITS ETF USD Distributing,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Emerging Markets UCITS ETF USD Accumulating,Vanguard,,London Stock Exchange,False
+"Vaxart, Inc.",Vaxart,VXRT,NASDAQ,False
+Viavi Solutions Inc.,Viavi,VIAV,NASDAQ,False
+Victrex PLC,Victrex,VCT,London Stock Exchange,False
+"Viemed Healthcare, Inc.",Viemed,,NASDAQ,False
+"Virtu Financial, Inc.",Virtu,VIRT,NASDAQ,False
+Vista Outdoor Inc.,Vista,VSTO,NYSE,False
+Vistra Energy Corporation,Vistra,VST,NYSE,False
+Vivoryon Therapeutics AG,Vivoryon,,Netherlands,True
+Wacker Chemie AG,Wacker,,Deutsche Börse Xetra,False
+Watkin Jones PLC,Watkin,WJG,London Stock Exchange,True
+Watts Water Technologies Inc,Watts,,NYSE,False
+Weir Group PLC/The,Weir,WEIR,London Stock Exchange,False
+Wereldhave NV,Wereldhave,WHA,Netherlands,True
+XP Power Ltd,XP,XPP,London Stock Exchange,False
+Xtrackers MSCI World Information Technology UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,True
+Xtrackers Physical Gold ETC (EUR),Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Physical Silver Euro Hedged ETC,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers S&P 500 UCITS ETF 1C - EUR Hedged,Xtrackers,,Deutsche Börse Xetra,False
+Zebra Technologies Corporation,Zebra,,NASDAQ,False
+"Zendesk, Inc.",Zendesk,ZEN,NYSE,True
+"Zillow Group, Inc. Class C",Zillow,Z,NASDAQ,True
+"Zimmer Biomet Holdings, Inc.",Zimmer,,NYSE,False
+ZTO Express (Cayman) Inc. ADR,ZTO,ZTO,NYSE,False
+4imprint Group PLC,4imprint,,London Stock Exchange,False
+"9F, Inc.","9F,",JFU,NASDAQ,False
+Aalberts Industries NV,Aalberts,,Netherlands,True
+AC Immune SA,AC,ACIU,NASDAQ,False
+"Accelerate Diagnostics, Inc.",Accelerate,,NASDAQ,False
+"Acceleron Pharma, Inc.",Acceleron,,NASDAQ,False
+Acorda Therapeutics Inc,Acorda,,NASDAQ,False
+Adient plc,Adient,ADNT,NYSE,False
+"Advanced Emissions Solutions, Inc.",Advanced,,NASDAQ,False
+Aerie Pharmace,Aerie,,NASDAQ,False
+"AeroVironment, Inc.","AeroVironment
+AVAV",,NASDAQ,False
+AFH Financial Group plc,AFH,,London Stock Exchange,False
+Agilent Technologies Inc.,Agilent,,NYSE,False
+AGM Group Holdings Inc Class A,AGM,,NASDAQ,False
+"Airgain, Inc.",Airgain,AIRG,NASDAQ,False
+AIXTRON SE,AIXTRON,AIXA,Deutsche Börse Xetra,False
+"Akebia Therapeutics, Inc.",Akebia,,NASDAQ,False
+"Alarm.com Holdings, Inc.",Alarm.com,,NASDAQ,False
+Alcoa Inc.,Alcoa,AA,NYSE,False
+Alcon AG,Alcon,ALC,SIX Swiss,False
+"Allete, Inc.",Allete,ALE,NYSE,False
+Allianz Technology Trust PLC,Allianz,,London Stock Exchange,False
+Allied Minds PLC,Allied,ALM,London Stock Exchange,False
+Alpha and Omega Semiconductor Ltd,Alpha,,NASDAQ,False
+Alpha FX Group plc,Alpha,,London Stock Exchange,False
+Amadeus Fire AG,Amadeus,AAD,Deutsche Börse Xetra,False
+"Ameresco, Inc.","Ameresco,",AMRC,NYSE,False
+American Electric Power,American,,NYSE,False
+American Financial TRS Inc Class A,American,,NASDAQ,False
+American States Water Company,American,,NYSE,False
+Ametek,Ametek,AME,NYSE,False
+AMN Healthcare Services Inc,AMN,,NYSE,False
+Amsterdam Commodities NV,Amsterdam,,Netherlands,True
+Amundi INDEX MSCI Emerging Markets SRI - UCITS ETF DR (A),Amundi,,Deutsche Börse Xetra,False
+Amundi Index MSCI Emerging Markets SRI - UCITS ETF DR (A),Amundi,,London Stock Exchange,False
+Amundi Index MSCI Emerging Markets SRI - UCITS ETF DR (D),Amundi,,London Stock Exchange,False
+"Anaplan, Inc.",Anaplan,PLAN,NYSE,False
+"AngioDynamics, Inc.","AngioDynamics
+ANGO",,NASDAQ,False
+"Anixter International, Inc.",Anixter,,NYSE,False
+"Antares Pharmaceutical, Inc.",Antares,,NASDAQ,False
+Aon plc,Aon,AON,NYSE,False
+"Apollo Global Management, Inc.",Apollo,,NYSE,False
+"Applied Optoelectronics, Inc.",Applied,,NASDAQ,False
+"Applied Therapeutics, Inc.",Applied,,NASDAQ,False
+Aptiv PLC,Aptiv,APTV,NYSE,False
+"ARC Document Solutions, Inc.",ARC,,NYSE,False
+Ares Capital Corporation,Ares,ARCC,NASDAQ,False
+Arthur J. Gallagher & Co.,Arthur,,NYSE,False
+"Ashford Hospitality Trust, Inc.",Ashford,,NYSE,False
+Ashmore Group PLC,Ashmore,,London Stock Exchange,False
+Assurant Inc.,Assurant,AIZ,NYSE,False
+"Atara Biotherapeutics, Inc.",Atara,,NASDAQ,False
+"Athenex, Inc.",Athenex,ATNX,NASDAQ,False
+"AudioEye, Inc.",AudioEye,AEYE,NASDAQ,False
+AVI Global Trust PLC,AVI,,London Stock Exchange,False
+"Aviat Networks, Inc.",Aviat,,NASDAQ,False
+"Avid Technology, Inc.",Avid,,NASDAQ,False
+Avista Corporation,Avista,,NYSE,False
+AZEK Co. Inc,AZEK,AZEK,NYSE,False
+"B&G Foods, Inc.",B&G,BGS,NYSE,False
+Baillie Gifford Shin Nippon PLC,Baillie,BGS,London Stock Exchange,False
+Banco Santander Mexico SA Institucion de Banca Multiple Grupo,Banco,,NYSE,False
+Bank of Hawaii Corporation,Bank,BOH,NYSE,False
+Bank Ozk,Bank,OZK,NASDAQ,False
+"Barrett Business Services, Inc.",Barrett,,NASDAQ,False
+"Baudax Bio, Inc.",Baudax,BXRX,NASDAQ,False
+"Bausch Health Companies, Inc.",Bausch,,NYSE,True
+BE Semiconductor Industries NV,BE,,Netherlands,True
+"Beacon Roofing Supply, Inc.",Beacon,,NASDAQ,False
+Beazley PLC,Beazley,BEZ,London Stock Exchange,False
+BeiGene Ltd. ADR,"BeiGene,",BGNE,NASDAQ,False
+"Beyondspring, Inc.",Beyondspring,BYSI,NASDAQ,False
+BG Staffing Inc,BG,BGSF,NYSE,False
+BH Global Ltd/The Fund,BH,BHGG,London Stock Exchange,False
+BHP Group Ltd. ADR,BHP,BHP,NYSE,False
+BHP Group PLC ADR,BHP,BBL,NYSE,False
+BinckBank NV,BinckBank,BINCK,Netherlands,False
+Bio-Techne Corp.,Bio-Techne,TECH,NASDAQ,False
+"Bioanalytical Systems, Inc.",Bioanalytical,,NASDAQ,False
+"BioDelivery Sciences International, Inc.",BioDelivery,,NASDAQ,False
+"BioTelemetry, Inc.",BioTelemetry,BEAT,NASDAQ,False
+"BioXcel Therapeutics, Inc.",BioXcel,,NASDAQ,False
+Bloomsbury Publishing PLC,Bloomsbury,,London Stock Exchange,False
+Bluebird bio Inc,Bluebird,BLUE,NASDAQ,False
+BMO Commercial Property Trust Ltd,BMO,,London Stock Exchange,False
+Boingo Wireless Inc,Boingo,,NASDAQ,False
+"Boot Barn Holdings, Inc.",Boot,,NYSE,False
+Booz Allen Hamilton Holding Corporation,Booz,,NYSE,False
+Boyd Gaming Corporation,Boyd,BYD,NYSE,False
+Brightcove Inc.,Brightcove,BCOV,NASDAQ,False
+Brunel International NV,Brunel,,Netherlands,True
+Burford Capital Ltd.,Burford,,London Stock Exchange,False
+C. H. Robinson Worldwide,C.,CHRW,NASDAQ,False
+"Cabaletta Bio, Inc.",Cabaletta,CABA,NASDAQ,False
+"CACI International, Inc.",CACI,,NYSE,False
+Caesars Entertainment Corporation,Caesars,,NASDAQ,False
+Cairn Energy PLC,Cairn,CNE,London Stock Exchange,False
+Canadian Pacific Railway Limited,Canadian,,NYSE,False
+Capgemini SE,Capgemini,CAP,Euronext Paris,True
+"Cardiff Oncology , Inc.",Cardiff,,NASDAQ,False
+"CareTrust REIT, Inc.",CareTrust,,NASDAQ,False
+"CarGurus, Inc.",CarGurus,CARG,NASDAQ,True
+"Castle Biosciences, Inc.",Castle,,NASDAQ,False
+Catasys Inc,Catasys,CATS,NASDAQ,False
+Cato Corporation,Cato,CATO,NYSE,False
+CC Japan Income and Growth Trust PLC,CC,,London Stock Exchange,False
+Celanese Corporation,Celanese,CE,NYSE,False
+Centene Corporation,Centene,CNC,NYSE,False
+Centogene B V,Centogene,CNTG,NASDAQ,False
+Centrais Electricas Brasileiras SA ADR,Centrais,,NYSE,False
+Ceragon Networks Ltd,Ceragon,,NASDAQ,False
+Cerner,Cerner,CERN,NASDAQ,False
+"Change Healthcare, Inc.",Change,,NASDAQ,False
+ChannelAdvisor Corporation,ChannelAdvisor,,NYSE,False
+Cheniere Energy Partners LP.,Cheniere,,NYSE,False
+Chimera Investment Corporation,Chimera,,NYSE,False
+China mobile limited ADR,China,,NYSE,False
+ChipMOS Technologies Inc - ADR,ChipMOS,,NASDAQ,False
+"Church & Dwight Co., Inc.",Church,,NYSE,False
+"Chuy's Holdings, Inc.",Chuy's,,NASDAQ,False
+"City Office REIT, Inc.",City,,NYSE,False
+Clariant AG,Clariant,CLN,SIX Swiss,False
+Cleveland-Cliffs Inc.,"Cleveland-Cliffs
+CLF",,NYSE,False
+"Coherus Biosciences, Inc.",Coherus,,NASDAQ,False
+"Cohu, Inc.",Cohu,COHU,NASDAQ,False
+Colfax Corporation,Colfax,,NYSE,False
+Collier Creek Holdings,Collier,,NYSE,False
+"CommScope Holding Company, Inc.",CommScope,COMM,NASDAQ,False
+Compugen Ltd.,Compugen,CGEN,NASDAQ,False
+Concho Resources Inc.,Concho,,NYSE,False
+Consolidated Edison,Consolidated,,NYSE,True
+Consolidated Water Company Ltd.,Consolidated,,NASDAQ,False
+Consort Medical PLC,Consort,,London Stock Exchange,False
+"Constellation Pharmaceuticals, Inc.",Constellation,,NASDAQ,False
+"Continental Resources, Inc.",Continental,,NYSE,False
+Corcept Therapeutics Inc.,Corcept,,NASDAQ,False
+CorVel Corporation,CorVel,,NASDAQ,False
+Cosan Ltd,Cosan,CZZ,NYSE,False
+Covanta Holding Corporation,Covanta,,NYSE,False
+"Cowen, Inc.",Cowen,COWN,NASDAQ,False
+Crest Nicholson Holdings plc,Crest,,London Stock Exchange,False
+Criteo Sa - ADR,Criteo,CRTO,NASDAQ,False
+"Crocs, Inc.",Crocs,CROX,NASDAQ,False
+"CSG Systems International, Inc.",CSG,,NASDAQ,False
+Cubic Corporation,Cubic,CUB,NYSE,False
+"Cue Biopharma, Inc.",Cue,,NASDAQ,False
+Curtiss-Wright Corporation,Curtiss-Wright,,NYSE,False
+"Cymabay Therapeutics, Inc.",Cymabay,,NASDAQ,False
+"CyrusOne, Inc.",CyrusOne,CONE,NASDAQ,True
+"Cytokinetics, Inc.",Cytokinetics,CYTK,NASDAQ,False
+D. R. Horton,D.,DHI,NYSE,False
+Daily Mail & General Trust PLC,Daily,,London Stock Exchange,False
+Darling Ingredients Inc,Darling,,NYSE,False
+Dassault Systemes SE,Dassault,,Euronext Paris,True
+DaVita Inc.,DaVita,DVA,NYSE,False
+db Xtrackers II Sterling Cash ETF,db,,London Stock Exchange,False
+db Xtrackers MSCI Russia Capped ETF,db,,London Stock Exchange,False
+"Deciphera Pharmaceuticals, Inc.",Deciphera,,NASDAQ,False
+"DermTech, Inc.",DermTech,DMTK,NASDAQ,False
+Devro PLC,Devro,DVO,London Stock Exchange,False
+Diageo plc ADR,Diageo,DEO,NYSE,False
+"Dick's Sporting Goods, Inc.",Dick's,,NYSE,False
+"Diffusion Pharmaceuticals, Inc.",Diffusion,,NASDAQ,False
+Digital Realty Trust Inc.,Digital,,NYSE,False
+Dignity PLC,Dignity,DTY,London Stock Exchange,False
+Directa Plus plc,Directa,DCTA,London Stock Exchange,False
+Diverse Income Trust PLC/ The,Diverse,,London Stock Exchange,False
+Draper Esprit plc,Draper,GROW,London Stock Exchange,False
+Drillisch AG,Drillisch,DRI,Deutsche Börse Xetra,False
+E. W. Scripps Co Class A,E.,,NASDAQ,False
+Eastman Chemical,Eastman,,NYSE,True
+Eaton Corporation,Eaton,ETN,NYSE,False
+eGain Corporation,eGain,EGAN,NASDAQ,False
+"eHealth, Inc.","eHealth,",EHTH,NASDAQ,False
+EKF Diagnostics Holdings plc,EKF,,London Stock Exchange,False
+Electrocomponents PLC,Electrocomponents,,London Stock Exchange,True
+"Emerald Holding, Inc.",Emerald,,NYSE,False
+"Enanta Pharmaceuticals, Inc.",Enanta,,NASDAQ,False
+Enel Americas S.A.,Enel,ENIA,NYSE,False
+Enel Chile S.A.,Enel,ENIC,NYSE,False
+EnLink Midstream LLC,EnLink,,NYSE,False
+"Epizyme, Inc.",Epizyme,EPZM,NASDAQ,False
+Equity Residential,Equity,,NYSE,False
+Erie Insurance Group,Erie,ERIE,NASDAQ,False
+Essex Property Trust Inc,Essex,,NYSE,False
+EURO STOXX Opt Banks,EURO,,Deutsche Börse Xetra,False
+"Everbridge, Inc.",Everbridge,EVBG,NASDAQ,False
+Eversource Energy,Eversource,,NYSE,False
+"Everspin Technologies, Inc.",Everspin,,NASDAQ,False
+Expeditors Int'l,Expeditors,EXPD,NASDAQ,False
+"Extra Space Storage, Inc.",Extra,,NYSE,False
+Fidelity Asian Values PLC,Fidelity,,London Stock Exchange,False
+Fidelity Special Values PLC,Fidelity,,London Stock Exchange,False
+Fielmann AG,Fielmann,FIE,Deutsche Börse Xetra,False
+Fifth Third Bancorp,Fifth,,NASDAQ,False
+"First Citizens BancShares, Inc.",First,,NASDAQ,False
+First Derivatives plc,First,,London Stock Exchange,False
+"FirstCash, Inc.",FirstCash,FCFS,NASDAQ,False
+"Fiserv ,Inc",Fiserv,FISV,NASDAQ,True
+Flying Eagle Acquisition Corp.,Flying,,NYSE,False
+FMC Corporation,FMC,FMC,NYSE,False
+"Forescout Technologies, Inc.",Forescout,,NASDAQ,False
+"FormFactor, Inc.",FormFactor,FORM,NASDAQ,False
+Fox Factory Holding Corporation,Fox,,NASDAQ,False
+"Franchise Group, Inc.",Franchise,,NASDAQ,False
+Franklin Resources,Franklin,,NYSE,False
+"Freshpet, Inc.",Freshpet,FRPT,NASDAQ,False
+"Frontdoor, Inc.",Frontdoor,FTDR,NASDAQ,False
+FUCHS PETROLUB SE,FUCHS,,Deutsche Börse Xetra,False
+FUCHS PETROLUB SE Preference Shares,FUCHS,,Deutsche Börse Xetra,False
+"Funko, Inc.",Funko,FNKO,NASDAQ,False
+"Garrett Motion, Inc.",Garret,GTX,NYSE,False
+GasLog Ltd,GasLog,GLOG,NYSE,False
+GasLog Partners LP,GasLog,,NYSE,False
+GCP Infrastructure Investments Ltd,GCP,,London Stock Exchange,False
+Geberit AG,Geberit,GEBN,SIX Swiss,False
+General Finance Corporation,General,,NASDAQ,False
+Generation Bio Co.,Generation,,NASDAQ,False
+Genworth Financial Inc.,Genworth,,NYSE,False
+Gesco AG,Gesco,GSC1,Deutsche Börse Xetra,False
+Gilat Satelite Networks Ltd.,Gilat,,NASDAQ,False
+Gladstone Land Corp.,Gladstone,,NASDAQ,True
+"Global Blood Therapeutics, Inc.",Global,,NASDAQ,False
+Global Net Lease Inc,Global,,NYSE,False
+"Gogo, Inc.",Gogo,GOGO,NASDAQ,False
+Goodwin PLC,Goodwin,GDWN,London Stock Exchange,False
+"Goosehead Insurance, Inc.",Goosehead,,NASDAQ,False
+Grainger PLC,Grainger,GRI,London Stock Exchange,False
+Gravity Co Ltd - ADR,Gravity,GRVY,NASDAQ,False
+Grocery Outlet Holding Corporation,Grocery,,NASDAQ,False
+GrowGeneration Corp.,GrowGeneration,,NASDAQ,False
+"GSI Technology, Inc.",GSI,,NASDAQ,False
+"Halozyme Therapeutics, Inc.",Halozyme,,NASDAQ,False
+Hamburger Hafen und Logistik AG,HHFA,HHFA,Deutsche Börse Xetra,False
+HarbourVest Global Private Equity Ltd.,HarbourVest,,London Stock Exchange,False
+HDFC Bank Ltd.,HDFC,HDB,NYSE,False
+"HealthEquity, Inc.",HealthEquity,HQY,NASDAQ,False
+Heijmans NV,Heijmans,HEIJM,Netherlands,True
+"Henderson Far East Income, Ltd.",Henderson,,London Stock Exchange,False
+Henry Schein Inc.,Henry,HSIC,NASDAQ,False
+"Heritage-Crystal Clean, Inc.",Heritage-Crystal,,NASDAQ,False
+Hess Corporation,Hess,HES,NYSE,False
+HICL Infrastructure Company Ltd,HICL,,London Stock Exchange,False
+Hill & Smith Holdings PLC,Hill,,London Stock Exchange,False
+HMS Holdings Corporation,HMS,HMSY,NASDAQ,False
+"Hologic, Inc.",Hologic,HOLX,NASDAQ,False
+Horizon Discovery Group PLC,Horizon,,London Stock Exchange,False
+Horizon Technology Finance Corp,Horizon,,NASDAQ,False
+Horizon Therapeutics PLC,Horizon,,NASDAQ,False
+Host Hotels & Resorts,Host,,NYSE,False
+HSBC MSCI Turkey UCITS ETF,HSBC,,London Stock Exchange,False
+"Huaneng Power International, Inc.",Huaneng,,NYSE,False
+Hudson Ltd.,Hudson,HUD,NYSE,False
+Hypoport AG,Hypoport,HYQ,Deutsche Börse Xetra,False
+"ICU Medical, Inc.",ICU,ICUI,NASDAQ,False
+Illinois Tool Works,Illinois,,NYSE,True
+Incyte Corporation,Incyte,INCY,NASDAQ,False
+Indus Holding AG,Indus,INH,Deutsche Börse Xetra,False
+"Innoviva, Inc.",Innoviva,INVA,NASDAQ,False
+"Inspired Entertainment, Inc.",Inspired,,NASDAQ,False
+Insulet Corporation,Insulet,PODD,NASDAQ,False
+IntegraFin Holdings PLC,IntegraFin,,London Stock Exchange,False
+"Intercept Pharmaceuticals, Inc.",Intercept,,NASDAQ,False
+Interpublic Group,Interpublic,,NYSE,False
+Invesco Ltd.,Invesco,IVZ,NYSE,False
+Invesco MSCI World UCITS ETF,Invesco,,London Stock Exchange,False
+Invesco US Treasury Bond 7-10 Year UCITS ETF USD Dist,Invesco,,London Stock Exchange,False
+"Invitation Homes, Inc.",Invitation,,NYSE,False
+"Iridium Communications, Inc.",Iridium,,NASDAQ,False
+iShares $ Corp Bond UCITS ETF USD Dist,iShares,,London Stock Exchange,False
+iShares $ Floating Rate Bond UCITS ETFs USD (Acc),iShares,,London Stock Exchange,False
+iShares $ TIPS UCITS ETF USD (Acc),iShares,IUST,Deutsche Börse Xetra,False
+iShares AEX ETF EUR Dist,iShares,,London Stock Exchange,False
+iShares Asia Property Yield UCITS ETF GBX,iShares,,London Stock Exchange,False
+iShares Core EUR Govt Bond ETF EUR Dist,iSh,,London Stock Exchange,False
+iShares Core EURO STOXX 50 EUR UCITS ETF EUR (Dist),iShares,,Deutsche Börse Xetra,False
+iShares Core MSCI Europe UCITS GBX ETF EUR (Acc),iShares,,London Stock Exchange,False
+iShares Core MSCI Pacific ex-Japan UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares Core MSCI World UCITS ETF USD (Acc) GBP,iShares,,London Stock Exchange,True
+iShares Corp Bond 0-5yr ETF GBP Dist,iSh,,London Stock Exchange,False
+iShares Edge MSCI World Momentum Factor GBX UCITS ETF,iShares,,London Stock Exchange,False
+iShares EUR Govt Bond 15-30yr ETF EUR Dist,iShEUR,,London Stock Exchange,False
+iShares EURO STOXX UCITS ETF (DE) Distributing,iShares,,Deutsche Börse Xetra,False
+iShares Fallen Angels High Yield Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares FTSE 250 UCITS ETF GBP Distributing,iShares,,London Stock Exchange,True
+iShares Global AAA-AA Govt Bond UCITS ETF USD (Dist),iShares,,Deutsche Börse Xetra,False
+iShares Global AAA-AA Govt Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares Global Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares High Yield Corp Bond UCITS ETF EUR(Dist),iShares,,London Stock Exchange,False
+iShares MSCI China A UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI China A UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI EM Islamic UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI EM SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI EM SRI UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI EM SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI Europe SRI UCITS ETF EUR (Acc),iShares,,London Stock Exchange,False
+iShares MSCI Europe SRI UCITS ETF EUR (Dist),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Japan SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI USA ESG Screened UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI USA Islamic UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI USA Islamic UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI USA SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI World ESG Enhanced GBP UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI World ESG Screened EUR UCITS ETF USD (Dist),iShares,,Deutsche Börse Xetra,False
+iShares MSCI World Small Cap UCITS ETF,iShares,,Deutsche Börse Xetra,False
+iShares MSCI World SRI EUR UCITS ETF EUR (Acc),iShares,,London Stock Exchange,False
+iShares MSCI World UCITS ETF (USD) Distributing,iShares,,London Stock Exchange,False
+iShares STOXX Europe 600 Basic Resourse UCITS ETF (DE),iShare,,Deutsche Börse Xetra,False
+iShares TA-35 Israel UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+Isra Vision AG,Isra,ISR,Deutsche Börse Xetra,False
+J.M. Smucker Co.,J.M.,SJM,NYSE,False
+"Jefferies Financial Group, Inc",Jefferies,,NYSE,False
+John Laing Group PLC,John,,London Stock Exchange,False
+Kansas City Southern,Kansas,,NYSE,False
+"Kelly Services, Inc.",Kelly,KELYA,NASDAQ,False
+"Keysight Technologies, Inc.",Keysight,KEYS,NYSE,False
+Kimco Realty,Kimco,KIM,NYSE,False
+Kiniksa Pharmaceuticals Ltd.,Kiniksa,,NASDAQ,False
+"Kodiak Sciences, Inc.",Kodiak,,NASDAQ,False
+Koninklijke KPN NV,Koninklijke,,Netherlands,True
+Kontoor Brands Inc,Kontoor,KTB,NYSE,False
+"Krystal Biotech, Inc.",Krystal,,NASDAQ,False
+KSB AG,KSB,KSB3,Deutsche Börse Xetra,False
+"Kura Sushi USA, Inc.",Kura,,NASDAQ,False
+L Brands Inc.,L,LB,NYSE,False
+L&G Asia Pacific ex Japan Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+L&G Battery Value-Chain UCITS ETF USD Accumulating,L&G,,London Stock Exchange,True
+"L3Harris Technologies, Inc.",L3Harris,,NYSE,False
+LafargeHolcim Ltd.,LafargeHolcim,LHN,SIX Swiss,False
+Lakeland Financial Corporation,Lakeland,,NASDAQ,False
+Lancashire Holdings Ltd,Lancashire,,London Stock Exchange,False
+Law Debenture Corp PLC/fund,Law,,London Stock Exchange,False
+Lazard Ltd.,Lazard,LAZ,NYSE,True
+Legacy Acquisition Corp.,Legacy,,NYSE,False
+Legrand SA,Legrand,LR,Euronext Paris,True
+"Leidos Holdings, Inc.",Leidos,,NYSE,False
+Lennar Corp.,Lennar,LEN,NYSE,False
+Leverage Shares 2x Apple ETP,2x,2AAP,London Stock Exchange,False
+Leverage Shares 2x Citigroup ETP,2x,2CIT,London Stock Exchange,False
+Leverage Shares 2x Citigroup ETP,2x,CITE,London Stock Exchange,False
+Leverage Shares 2x Facebook ETP,2x,FB2E,London Stock Exchange,False
+Leverage Shares 2x JPMorgan Chase & Co. ETP,2x,JP2E,London Stock Exchange,False
+Leverage Shares 2x Microsoft Corporation ETP,2x,MSFE,London Stock Exchange,False
+Leverage Shares 2x Nvidia ETP,2x,2NVD,London Stock Exchange,False
+Leverage Shares 2x Nvidia ETP,2x,NVDE,London Stock Exchange,False
+Leverage Shares 2x Salesforce ETP,2x,2CRM,London Stock Exchange,False
+Leverage Shares 2x Salesforce ETP,2x,CRME,London Stock Exchange,False
+Leverage Shares 2x Visa ETP,2x,VISE,London Stock Exchange,False
+Leverage Shares 2x Visa ETP,2x,VIS2,London Stock Exchange,False
+LexinFintech Holdings Ltd.,LexinFintech,,NASDAQ,False
+Liberty Broadband Corporation - Class C,Liberty,,NASDAQ,False
+Liberty Global Class C,Liberty,,NASDAQ,False
+"Limelight Networks, Inc.",Limelight,,NASDAQ,False
+Lions Gate Entertainment Corp. Class B,Lions,,NYSE,False
+LivaNova PLC,LivaNova,LIVN,NASDAQ,False
+"LivePerson, Inc.",LivePerson,LPSN,NASDAQ,False
+Lizhi Inc - ADR,Lizhi,LIZI,NASDAQ,False
+"Loral Space and Communications, Inc.",Loral,,NASDAQ,False
+LSL Property Services PLC,LSL,,London Stock Exchange,False
+"Lumentum Holdings, Inc.",Lumentum,,NASDAQ,False
+Lyxor Bund Daily 2x Leveraged UCITS ETF EUR,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Daily LevDAX UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor EURO STOXX 50 Daily (2x) Leveraged UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor FTSE Actuaries UK Glits 0-5Y UCITS ETF,Lyxor,,London Stock Exchange,False
+Lyxor MSCI EM ESG Trend Leaders UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Nasdaq-100 UCITS ETF - Acc,Lyxor,,London Stock Exchange,False
+Lyxor Pan Africa UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+M&T Bank Corp.,M&T,MTB,NYSE,False
+Mack-Cali Realty Corporation,Mack-Cali,,NYSE,False
+"MACOM Technology Solutions Holdings, Inc.",MACOM,,NASDAQ,False
+"Madrigal Pharmaceuticals, Inc.",Madrigal,,NASDAQ,False
+Magal Security Systems Ltd.,Magal,,NASDAQ,False
+Magic Software Enterprises Ltd.,Magic,,NASDAQ,False
+Mallinckrodt plc,Mallinckrodt,MNK,NYSE,True
+Man Group PLC,Man,EMG,London Stock Exchange,False
+"Manitex International, Inc.",Manitex,,NASDAQ,False
+ManpowerGroup,ManpowerGroup,,NYSE,False
+ManTech International Corporation,ManTech,,NASDAQ,False
+Marriot Vacations Worldwide Corporation,Marriot,,NYSE,False
+Martin Marietta,Martin,,NYSE,False
+"Masimo, Corp.",Masimo,MASI,NASDAQ,False
+"MaxCyte, Inc.",MaxCyte,MXCT,London Stock Exchange,False
+"Maxim Integrated Products, Inc.",Maxim,,NASDAQ,False
+McKay Securities PLC,McKay,,London Stock Exchange,False
+Mercantile Investment Trust PLC,Mercantile,,London Stock Exchange,False
+Merus NV,Merus,MRUS,NASDAQ,False
+Midatech Pharma plc ADR,Midatech,,NASDAQ,False
+"Mitek Systems, Inc.",Mitek,MITK,NASDAQ,False
+MJ Gleeson PLC,MJ,GLE,London Stock Exchange,False
+"MOGU, Inc.","MOGU
+MOGU","MOGU
+MOGU",NYSE,False
+"Momo, Inc.",Momo,MOMO,NASDAQ,False
+Mortgage Advice Bureau (Holdings) plc,Mortgage,,London Stock Exchange,False
+Mountview Estates PLC,Mountview,,London Stock Exchange,False
+"Murphy USA, Inc.",Murphy,MUSA,NYSE,False
+"Myriad Genetics, Inc.",Myriad,,NASDAQ,False
+"NanoString Technologies, Inc.",NanoString,,NASDAQ,False
+Nektar Therapeutics,Nektar,,NASDAQ,False
+"NetScout Systems, Inc.",NetScout,,NASDAQ,False
+"Neurocrine Biosciences, Inc.",Neurocrine,,NASDAQ,False
+"New Oriental Education & Technology Group, Inc.",New,,NYSE,False
+"New Relic, Inc.",New,NEWR,NYSE,False
+New Residential Investment Corp.,New,,NYSE,True
+New Work SE,New,NWOn,Deutsche Börse Xetra,False
+"Newell Brands, Inc.",Newell,NWL,NASDAQ,False
+News Corp Class A,News,,NASDAQ,False
+"NexPoint Real Estate Finance, Inc.",NexPoint,,NYSE,True
+Nichols PLC,Nichols,NICL,London Stock Exchange,True
+Northern Trust Corp.,Northern,,NASDAQ,False
+"Nuance Communications, Inc.",Nuance,,NASDAQ,False
+Numis Corporation plc,Numis,NUM,London Stock Exchange,False
+Nutrien Ltd.,Nutrien,NTR,NYSE,False
+NVE Corporation,NVE,NVEC,NASDAQ,False
+OC Oerlikon Corporation AG,OC,OERL,SIX Swiss,False
+OCI NV,OCI,OCI,Netherlands,True
+"Odonate Therapeutics, Inc.",Odonate,,NASDAQ,False
+Oi S.A.,Oi,OIBR/C,NYSE,False
+Old Mutual Ltd.,Old,OMU,London Stock Exchange,False
+"Ollie's Bargain Outlet Holdings, Inc.",Ollie's,,NASDAQ,False
+ON Semiconductor Corporation,ON,,NASDAQ,False
+"ONE Gas, Inc.",ONE,OGS,NYSE,False
+OneSmart International Education Group Ltd.,OneSmart,,NYSE,False
+Opera Ltd ADR,Opera,OPRA,NASDAQ,False
+"Opko Health, Inc.",Opko,OPK,NASDAQ,False
+"Option Care Health, Inc.",Option,,NASDAQ,False
+Ordina NV,Ordina,ORDI,Netherlands,True
+OrthoPediatrics Corp,"OrthoPediatrics
+KIDS",,NASDAQ,False
+"Overstock.com, Inc.","Overstock.com
+OSTK",,NASDAQ,False
+Owens-Illinois Inc.,Owens-Illinois,OI,NYSE,False
+Pacific Assets Trust PLC/Fund,Pacific,,London Stock Exchange,False
+"Pacific Biosciences of California, Inc.",Pacific,,NASDAQ,False
+"Paratek Pharmaceuticals, Inc.",Paratek,,NASDAQ,False
+"Park City Group, Inc.",Park,,NASDAQ,False
+Park Electrochemical Corporation,Park,,NYSE,False
+"Parsley Energy, Inc.",Parsley,PE,NYSE,False
+"Passage Bio, Inc.",Passage,PASG,NASDAQ,False
+"Paycom Software, Inc.",Paycom,,NYSE,False
+Paylocity Holding Corporation,Paylocity,,NASDAQ,False
+"PBF Energy, Inc.",PBF,PBF,NYSE,False
+Pegasystems Inc.,Pegasystems,PEGA,NASDAQ,False
+People's United Bank,People's,,NASDAQ,False
+Perrigo,Perrigo,PRGO,NYSE,False
+"PetMed Express, Inc.",PetMed,,NASDAQ,False
+Pharmaceutical Product Development Inc,PPD,PPD,NASDAQ,False
+"Photronics, Inc.",Photronics,PLAB,NASDAQ,False
+PIMCO US Dollar Short Maturity Source UCITS ETF Distributing,PIMCO,,London Stock Exchange,False
+Pintec Technology Holdings Ltd,Pintec,,NASDAQ,False
+"Pixelworks, Inc.",Pixelworks,PXLW,NASDAQ,False
+Portland General Electric Cо.,Portland,,NYSE,False
+Portola Pharmaceuticals Inc,Portola,,NASDAQ,False
+"Power Integrations, Inc.",Power,,NASDAQ,False
+"Precipio, Inc.",Precipio,PRPO,NASDAQ,False
+"Premier, Inc. Class A",Premier,PINC,NASDAQ,False
+"Proofpoint, Inc.",Proofpoint,PFPT,NASDAQ,False
+PTC Inc.,PTC,PTC,NASDAQ,False
+Public Storage,Public,PSA,NYSE,False
+"Puma Biotechnology, Inc.",Puma,,NASDAQ,False
+QSC AG,QSC,QSC,Deutsche Börse Xetra,False
+"Qualys, Inc.",Qualys,QLYS,NASDAQ,False
+Quanterix Corporation,Quanterix,QTRX,NASDAQ,False
+"Qudian, Inc.",Qudian,QD,NYSE,True
+Quest Diagnostics,Quest,,NYSE,False
+"QuinStreet, Inc.",QuinStreet,QNST,NASDAQ,False
+Qurate Retail Inc Series A,Qurate,QRTEA,NASDAQ,False
+R.E.A. Holdings PLC 9% PRF,R.E.A.,,London Stock Exchange,False
+"Rambus, Inc.",Rambus,RMBS,NASDAQ,False
+Range Resources Corp.,Range,,NYSE,False
+"Rapid7, Inc.",Rapid7,RPD,NASDAQ,False
+Raven Property Group Limited,Raven,,London Stock Exchange,False
+RDI REIT PLC,RDI,RDI,London Stock Exchange,False
+Regional REIT Ltd.,Regional,RGL,London Stock Exchange,False
+Renishaw PLC,Renishaw,RSW,London Stock Exchange,False
+Residential Secure Income PLC,Residential,,London Stock Exchange,False
+"Resolute Mining, Ltd.",Resolute,,London Stock Exchange,False
+"Retrophin, Inc.",Retrophin,RTRX,NASDAQ,False
+"Rexford Industrial Realty, Inc.",Rexford,,NYSE,False
+Rexnord Corporation,Rexnord,RXN,NYSE,False
+RHOEN-KLINIKUM AG,RHOEN-KLINIKUM,,Deutsche Börse Xetra,False
+Ricardo PLC,Ricardo,RCDO,London Stock Exchange,False
+Rimini Street Inc.,Rimini,RMNI,NASDAQ,False
+"RingCentral, Inc. - Class A",RingCentral,,NYSE,False
+Riverstone Energy Ltd,Riverstone,,London Stock Exchange,True
+Robert Half International,Robert,,NYSE,False
+"Rocket Pharmaceuticals, Inc.",Rocket,,NASDAQ,False
+"Rockwell Medical, Inc.",Rockwell,,NASDAQ,False
+Rosetta Stone,Rosetta,RST,NYSE,False
+RSA Insurance PLC 7.38% PRF,RSA,,London Stock Exchange,False
+S DAX Daily 2x Short GO,S,,Deutsche Börse Xetra,False
+"Sabra Health Care REIT, Inc.",Sabra,,NASDAQ,False
+SAF-Holland SA,SAF-Holland,SFQ,Deutsche Börse Xetra,False
+"Sanderson Farms, Inc.",Sanderson,,NASDAQ,False
+"Sarepta Therapeutics, Inc.",Sarepta,,NASDAQ,False
+SBA Communications Corp Class A,SBA,,NASDAQ,False
+Scapa Group plc,Scapa,SCPA,London Stock Exchange,False
+Schaltbau Holding AG,Schaltbau,,Deutsche Börse Xetra,False
+Schroders PLC,Schroders,SDRC,London Stock Exchange,False
+Schroders PLC,Schroders,SDR,London Stock Exchange,False
+Scientific Games Corp,Scientific,,NASDAQ,False
+ScS Group PLC,ScS,SCS,London Stock Exchange,False
+"Seattle Genetics, Inc.",Seattle,,NASDAQ,False
+"SelectQuote Insurance Services, Inc.",SelectQuote,SLQT,NYSE,False
+Sempra Energy,Sempra,,NYSE,False
+Serica Energy plc,Serica,SQZ,London Stock Exchange,False
+"ServiceSource International, Inc.",ServiceSource,,NASDAQ,False
+"Shake Shack, Inc.",Shake,SHAK,NYSE,False
+Shell Midstream Partners LP,Shell,,NYSE,False
+Sherwin-Williams Co.,Sherwin-Williams,,NYSE,False
+Sibanye-Stillwater ADR,Sibanye-Stillwater,,NYSE,False
+Signet Jewelers Limited,Signet,,NYSE,False
+"Silicon Laboratories, Inc.",Silicon,,NASDAQ,False
+Siltronic AG,Siltronic,WAF,Deutsche Börse Xetra,False
+Siteone Landscape Supply Inc,Siteone,,NYSE,False
+"SMART Global Holdings, Inc.",SMART,,NASDAQ,False
+"Smartsheet, Inc.",Smartsheet,SMAR,NYSE,False
+Smithson Investment Trust PLC,Smithson,,London Stock Exchange,False
+Sohu.com Ltd - ADR,Sohu.com,SOHU,NASDAQ,False
+"Soliton, Inc.",Soliton,SOLY,NASDAQ,False
+South32 Ltd,South32,S32,London Stock Exchange,False
+Spartan Energy Acquisition Corporation,Spartan,,NYSE,False
+SPDR Barclays 1 - 5 Year Gilt ETF,SPDR,,London Stock Exchange,False
+SPDR Bloomberg Barclays U.S. TIPS UCITS ETF (Dist),SPDR,,London Stock Exchange,False
+SPDR MSCI ACWI USD UCITS ETF USD (Acc),SPDR,,London Stock Exchange,False
+SPDR MSCI Europe Small Cap Value Weighted UCITS ETF,SPDR,,London Stock Exchange,False
+SPDR MSCI USA Small Cap Value Weighted UCITS ETF,SPDR,,Deutsche Börse Xetra,False
+SPDR MSCI World Consumer Staples UCITS ETF,SPDR,,London Stock Exchange,False
+SPDR S&P Euro Dividend Aristocrats UCITS ETF (Dist),SPDR,,Deutsche Börse Xetra,False
+SPDR S&P Pan Asia Dividend Aristocrats UCITS ETF (Dist),SPDR,,London Stock Exchange,False
+Sportech PLC,Sportech,SPO,London Stock Exchange,False
+"Sprout Social, Inc.",Sprout,SPT,NASDAQ,False
+"SPX FLOW, Inc.",SPX,FLOW,NYSE,False
+St Modwen Properties PLC,St,,London Stock Exchange,False
+Standex International Corporation,Standex,,NYSE,False
+Stanley Black & Decker,Stanley,,NYSE,False
+Steel Dynamics Inc,Steel,,NASDAQ,False
+STO SE & Co KGaA,STO,STO3,Deutsche Börse Xetra,False
+STOXX Europe 600 Opt Banks,STOXX,,Deutsche Börse Xetra,False
+STV Group PLC,STV,STVG,London Stock Exchange,False
+"Sun Communities, Inc.",Sun,,NYSE,False
+Sunrun Inc,Sunrun,RUN,NASDAQ,False
+"Sunstone Hotel Investors, Inc.",Sunstone,,NYSE,False
+"Surgery Partners, Inc.",Surgery,,NASDAQ,False
+Surteco SE,Surteco,SUR,Deutsche Börse Xetra,False
+"Syndax Pharmaceuticals, Inc.",Syndax,,NASDAQ,False
+Synnex Corporation,Synnex,SNX,NYSE,False
+Synthomer PLC,Synthomer,SYNT,London Stock Exchange,False
+"Tanger Factory Outlet Centers, Inc.",Tanger,SKT,NYSE,True
+Taylor Morrison Home Corporation,Taylor,,NYSE,False
+TD Ameritrade Holding Corporation,TD,AMTD,NASDAQ,False
+TE Connectivity Ltd.,TE,,NYSE,False
+Teleflex Inc.,Teleflex,TFX,NYSE,False
+TELUS Corporation,TELUS,TU,NYSE,False
+"Tetra Tech, Inc.",Tetra,TTEK,NASDAQ,False
+Textron Inc.,Textron,TXT,NYSE,False
+TFS Financial Corporation,TFS,TFSL,NASDAQ,False
+"TG Therapeutics, Inc.",TG,,NASDAQ,False
+"The Greenbrier Companies, Inc.",The,,NYSE,False
+The Mosaic Co.,The,MOS,NYSE,False
+The Shyft Group Inc,The,,NASDAQ,False
+"The Travelers Companies, Inc.",The,TRV,NYSE,True
+Thomson Reuters Corporation,Thomson,,NYSE,False
+Titan Medical Inc.,Titan,TMDI,NASDAQ,False
+Tiziana Life Sciences plc,Tiziana,,London Stock Exchange,False
+TomTom NV,TomTom,TOM2,Netherlands,True
+Total S.A. ADR,Total,TOT,NYSE,False
+TP ICAP PLC,TP,TCAP,London Stock Exchange,False
+TR European Growth Trust PLC,TR,,London Stock Exchange,False
+"Tricida, Inc.",Tricida,TCDA,NASDAQ,False
+"TriNet Group, Inc.",TriNet,TNET,NYSE,False
+"TTM Technologies, Inc.",TTM,,NASDAQ,False
+UBS -Barclays US Liquid Corporates Hedged to EUR,UBS,,Deutsche Börse Xetra,False
+Ucloudlink Group Inc. ADR,Ucloudlink,UCL,NASDAQ,False
+UGI Corporation,"UGI
+UGI","UGI
+UGI",NYSE,False
+"Ultra Clean Holdings, Inc.",Ultra,,NASDAQ,False
+"Ultragenyx Pharmaceutical, Inc.",Ultragenyx,,NASDAQ,False
+Umpqua Holdings Corporation,Umpqua,,NASDAQ,False
+Unilever NV ADR,Unilever,UN,NYSE,False
+Uniqure NV,Uniqure,QURE,NASDAQ,False
+Unisys Corporation,Unisys,UIS,NYSE,False
+United Insurance Holdings Corp,United,,NASDAQ,False
+United States Cellular Corporation,United,,NYSE,False
+United Therapeutics Corp.,United,,NASDAQ,False
+Universal Health Services,Universal,,NYSE,False
+Uxin Ltd,Uxin,UXIN,NASDAQ,False
+"Vail Resorts, Inc.",Vail,MTN,NYSE,False
+Vanguard FTSE Developed Europe ex UK GBP UCITS ETF (EUR) Distributing,Vanguard,,London Stock Exchange,True
+Vanguard FTSE Developed World UCITS ETF USD Distributing,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Japan GBP UCITS ETF (USD) Accumulating,Vanguard,,London Stock Exchange,False
+Vanguard FTSE North America USD UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Corporate 1-3 Year Bond UCITS ETF (USD) Distributing -,Vanguard,,Deutsche Börse Xetra,False
+Vanguard USD Corporate Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Emerging Markets Government Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Emerging Markets Government Bond UCITS ETF (USD) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard USD Treasury Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Treasury Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+"Varonis Systems, Inc.",Varonis,,NASDAQ,False
+Veeco Instruments Inc.,Veeco,,NASDAQ,False
+Ventas Inc.,Ventas,VTR,NYSE,False
+"Verisk Analytics, Inc.",Verisk,,NASDAQ,True
+Versarien plc,Versarien,VRS,London Stock Exchange,False
+Viacom Inc.,Viacom,VIAB,NASDAQ,False
+Viad Corporation,Viad,VVI,NYSE,False
+"ViaSat, Inc.",ViaSat,VSAT,NASDAQ,False
+Victoria plc,Victoria,VCP,London Stock Exchange,False
+Vietnam Enterprise Investments Limited,Vietnam,,London Stock Exchange,False
+Villeroy & Boch AG,Villeroy,,Deutsche Börse Xetra,False
+Virtusa Corporation,Virtusa,VRTU,NASDAQ,False
+Volution Group PLC,Volution,,London Stock Exchange,False
+Vossloh AG,Vossloh,VOS,Deutsche Börse Xetra,False
+VTG AG,VTG,VT9,Deutsche Börse Xetra,False
+Vuzix Corporation,Vuzix,VUZI,NASDAQ,True
+Waitr Holdings Inc.,Waitr,,NASDAQ,False
+Wanda Sports Group Co Ltd- ADR,Wanda,,NASDAQ,False
+Warpaint London PLC,Warpaint,,London Stock Exchange,False
+Washtec AG,Washtec,WSU,Deutsche Börse Xetra,False
+"Waste Connections, Inc.",Waste,,NYSE,False
+Waters Corp.,Waters,WAT,NYSE,False
+WCM Beteiligungs & Grundbesitz-AG,WCM,WCMK,Deutsche Börse Xetra,False
+"Western New England Bancorp, Inc.",Western,,NASDAQ,False
+"Westwood Holdings Group, Inc.",Westwood,,NYSE,False
+Weyerhaeuser Corp.,Weyerhaeuser,WY,NYSE,False
+Whitestone REIT,Whitestone,WSR,NYSE,False
+"Willdan Group, Inc.",Willdan,WLDN,NASDAQ,False
+Wolters Kluwer NV,Wolters,,Netherlands,True
+"Workday, Inc.",Workday,WDAY,NASDAQ,False
+Workiva Inc.,Workiva,WK,NYSE,False
+World Fuel Services Corporation,World,,NYSE,False
+"Wrap Technologies, Inc.",Wrap,,NASDAQ,False
+"Wyndham Destinations, Inc.",Wyndham,,NYSE,False
+"Wyndham Hotels & Resorts, Inc.",Wyndham,,NYSE,False
+XLMedia plc,XLMedia,XLM,London Stock Exchange,False
+"XP, Inc.",XP,XP,NASDAQ,False
+Xperi Corporation,Xperi,XPER,NASDAQ,False
+Xtrackers Euro Stoxx 50 UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI EM Latin America Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI USA UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI World Consumer Staples UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Nikkei 225 EUR UCITS ETF 1D,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Russell 2000 UCITS ETF 1C,Xtrackers,,London Stock Exchange,False
+Xtrackers S&P 500 Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xylem Inc.,Xylem,XYL,NYSE,False
+Yandex NV,Yandex,YNDX,NASDAQ,False
+"Yext, Inc.",Yext,YEXT,NYSE,True
+Zix Corporation,Zix,ZIXI,NASDAQ,False
+"Zumiez, Inc.",Zumiez,ZUMZ,NASDAQ,False
+"Zuora, Inc.",Zuora,ZUO,NYSE,False
+"Zynex, Inc.",Zynex,ZYXI,NASDAQ,False
+"1-800-Flowers.com, Inc.","1-800-Flowers.com
+FLWS",,NASDAQ,False
+"10X Genomics, Inc.",10X,TXG,NASDAQ,False
+1st Source Corporation,1st,SRCE,NASDAQ,False
+21Vianet Group Inc,21Vianet,,NASDAQ,False
+"360 Finance, Inc.",360,QFIN,NASDAQ,False
+"8x8, Inc.",8x8,EGHT,NYSE,False
+A.O. Smith Corporation,A.O.,AOS,NYSE,False
+A10 Network,A10,ATEN,NYSE,False
+AB Dynamics plc,AB,ABDP,London Stock Exchange,False
+Abcam plc,Abcam,ABC,London Stock Exchange,False
+"Acacia Communications, Inc.",Acacia,,NASDAQ,False
+Acacia Mining PLC,Acacia,ACA,London Stock Exchange,False
+Acacia Research Corporation,Acacia,,NASDAQ,False
+"Acadia Healthcare Company, Inc.",Acadia,,NASDAQ,False
+"Acadia Pharmaceuticals, Inc.",Acadia,,NASDAQ,False
+Acco Brands Corporation,Acco,ACCO,NYSE,False
+"ACI Worldwide, Inc.",ACI,,NASDAQ,False
+Actuant Corporation,Actuant,,NYSE,False
+AdaptHealth Corp.,AdaptHealth,AHCO,NASDAQ,False
+Addus HomeCare Corporation,Addus,,NASDAQ,False
+"ADDvantage Technologies Group, Inc.",ADDvantage,,NASDAQ,False
+Adesto Technologies Corporation,Adesto,,NASDAQ,False
+"Adtalem Global Education, Inc.",Adtalem,,NYSE,False
+"ADTRAN, Inc.",ADTRAN,ADTN,NASDAQ,False
+"Advance Auto Parts, Inc.",Advance,,NYSE,False
+"Advanced Disposal Services, Inc.",Advanced,,NYSE,False
+"Advanced Energy Industries, Inc.",Advanced,,NASDAQ,False
+"AdvanSix, Inc.","AdvanSix,",ASIX,NYSE,False
+"Adverum Biotechnologies, Inc.",Adverum,,NASDAQ,False
+Aecom Technology Corporation,Aecom,,NYSE,False
+AES Corp.,AES,AES,NYSE,False
+"Agenus, Inc.",Agenus,AGEN,NASDAQ,False
+"Agilysys, Inc.",Agilysys,AGYS,NASDAQ,False
+Agios Pharm,Agios,AGIO,NASDAQ,False
+Agree Realty Corporation,Agree,,NYSE,False
+Aimmune Therapeutics Inc,Aimmune,,NASDAQ,False
+Akcea Therapeutics Inc,Akcea,,NASDAQ,False
+Akerna Corporation,Akerna,KERN,NASDAQ,False
+"Akero Therapeutics, Inc.",Akero,,NASDAQ,False
+"ALamo Group, Inc.",ALamo,,NYSE,False
+"Albireo Pharma, Inc.",Albireo,,NASDAQ,False
+Alcon AG,Alcon,ALC,NYSE,False
+Alector Inc,Alector,ALEC,NASDAQ,False
+"Alexander & Baldwin Holdings, Inc.",Alexander,,NYSE,False
+"Alexanders, Inc.","Alexanders,",,NYSE,False
+"Alexandria Real Estate Equities, Inc.",Alexandria,,NYSE,False
+Alkermes PLC,Alkermes,ALKS,NASDAQ,False
+"Allakos, Inc.",Allakos,ALLK,NASDAQ,False
+Allegiant Travel Company,Allegiant,,NASDAQ,False
+Allegion PLC,Allegion,ALLE,NYSE,False
+AllianceBernstein Holding LP,AllianceBernstein,,NYSE,False
+Alliant Energy Corporation,Alliant,LNT,NASDAQ,False
+Allied Motion Technologies Inc,Allied,,NASDAQ,False
+"Allogene Therapeutics, Inc.",Allogene,,NASDAQ,False
+Allot Communications Ltd,Allot,,NASDAQ,False
+Allstate Corp.,Allstate,ALL,NYSE,False
+"Alnylam Pharmaceuticals, Inc.",Alnylam,,NASDAQ,False
+Altice NV Class B,Altice,ATCB,Netherlands,True
+"Ambac Financial Group, Inc.",Ambac,,NYSE,False
+Amcor plc,Amcor,AMCR,NYSE,False
+"Amedisys, Inc.",Amedisys,AMED,NASDAQ,False
+Ameren Corp.,Ameren,AEE,NYSE,False
+"American Campus Communities, Inc.",American,,NYSE,False
+"Americas Car-Mart, Inc.",Americas,,NASDAQ,False
+Americold Realty Trust,Americold,,NYSE,False
+Ameriprise Financial,Ameriprise,,NYSE,True
+Ameris Bancorp,Ameris,,NASDAQ,False
+"AMERISAFE, Inc.",AMERISAFE,AMSF,NASDAQ,False
+AMG Advanced Metallurgical Group NV,Advanced,,Netherlands,True
+"Amkor Technology, Inc.",Amkor,,NASDAQ,False
+"Amphastar Pharmaceuticals, Inc.",Amphastar,,NASDAQ,False
+Amphenol Corp.,Amphenol,APH,NYSE,False
+"Amtech Systems, Inc.",Amtech,,NASDAQ,False
+Amundi ETF MSCI Europe Industrials ETF,Amun,,London Stock Exchange,False
+Amundi ETF MSCI Europe Utilities UCITS ETF EUR,Amundi,,London Stock Exchange,False
+Amundi Index MSCI Emerging Markets SRI - UCITS ETF DR (D),Amundi,,London Stock Exchange,False
+Amundi MSCI Emerging Markets UCITS ETF - EUR,Amundi,,London Stock Exchange,False
+"AnaptysBio, Inc.",AnaptysBio,ANAB,NASDAQ,False
+"ANGI Homeservices, Inc.",ANGI,,NASDAQ,False
+"ANI Pharmaceuticals, Inc.",ANI,,NASDAQ,False
+"Anika Therapeutics, Inc.",Anika,,NASDAQ,False
+"Anterix, Inc.",Anterix,ATEX,NASDAQ,False
+Apartment Investment and Management Company,Aimco,AIV,NYSE,False
+APERAM SA,APERAM,APAM,Netherlands,True
+"Apollo Medical Holdings, Inc.",Apollo,,NASDAQ,False
+"AppFolio, Inc.",AppFolio,APPF,NASDAQ,False
+"Aprea Therapeutics, Inc.",Aprea,,NASDAQ,False
+"Aptose Biosciences, Inc.",Aptose,,NASDAQ,False
+Arcadis NV,Arcadis,ARCAD,Netherlands,True
+Arch Capital Group Ltd.,Arch,,NYSE,False
+"Arch Resources, Inc.",Arch,,NYSE,False
+"Archrock, Inc.","Archrock,",AROC,NYSE,False
+"Arcutis Biotherapeutics, Inc.",Arcutis,,NASDAQ,False
+"Ardelyx, Inc.",Ardelyx,ARDX,NASDAQ,False
+Ares Management Corporation,Ares,,NYSE,False
+"Argan, Inc.","Argan,",AGX,NYSE,False
+Arlo Technologies,Arlo,,NYSE,False
+Arrow Financial Corporation,Arrow,,NASDAQ,False
+"Arrowhead Pharmaceuticals, Inc.",Arrowhead,,NASDAQ,False
+"Artisan Partners Asset Management, Inc.",Artisan,,NYSE,False
+"Arvinas, Inc.",Arvinas,ARVN,NASDAQ,False
+Ascendis Pharma AS ADR,Ascendis,,NASDAQ,False
+ASM International NV,ASM,,Netherlands,True
+"Assembly Biosciences, Inc.",Assembly,,NASDAQ,False
+Associated Banc-Corp,Associated,,NYSE,False
+"Associated Capital Group, Inc.",Associated,,NYSE,False
+Assured Guaranty Ltd.,Assured,,NYSE,False
+Asure Software Inc,Asure,,NASDAQ,False
+Atlantic Union Bankshares Corporation,Atlantic,,NASDAQ,False
+Atmos Energy Corporation,Atmos,ATO,NYSE,False
+"ATN International, Inc.",ATN,,NASDAQ,False
+"Atreca, Inc.",Atreca,BCEL,NASDAQ,False
+"AtriCure, Inc.",AtriCure,ATRC,NASDAQ,False
+Atrion Corpоration,Atrion,ATRI,NASDAQ,False
+Augean plc,Augean,AUG,London Stock Exchange,False
+"Autohome, Inc. ADR","Autohome,",ATHM,NYSE,False
+AutoNation Inc.,AutoNation,AN,NYSE,False
+Avadel Pharmaceuticals PLC,Avadel,,NASDAQ,False
+AvalonBay Communities,AvalonBay,,NYSE,False
+"Avangrid, Inc.",Avangrid,AGR,NYSE,False
+"Avanos Medical, Inc.",Avanos,,NYSE,False
+"Avantor, Inc.",Avantor,AVTR,NYSE,False
+Avery Dennison Corp,Avery,,NYSE,False
+Avidity Biosciences LLC,Avidity,,NASDAQ,False
+"Avnet, Inc.",Avnet,AVT,NASDAQ,False
+"Avrobio, Inc.",Avrobio,AVRO,NASDAQ,False
+"Axogen, Inc.",Axogen,AXGN,NASDAQ,False
+"Axonics Modulation Technologies, Inc.",Axonics,,NASDAQ,False
+Axsome Therapeutics Inc,Axsome,,NASDAQ,False
+AXT Inc,AXT,AXTI,NASDAQ,False
+Azure Power Global Ltd.,Azure,,NYSE,False
+Badger Meter Inc,Badger,BMI,NYSE,False
+Balchem Corporation,Balchem,,NASDAQ,False
+Ball Corp,Ball,BLL,NYSE,False
+Baloise Holding AG,Baloise,BALN,SIX Swiss,False
+BancFirst Corporation,BancFirst,BANF,NASDAQ,False
+"Bandwidth, Inc.",Bandwidth,BAND,NASDAQ,False
+"BankUnited, Inc.",BankUnited,BKU,NYSE,False
+Banner Corporation,Banner,BANR,NASDAQ,False
+Baring Emerging Europe PLC,Baring,,London Stock Exchange,False
+"Barings BDC, Inc.",Barings,,NYSE,False
+Basler AG,Basler,BSL,Deutsche Börse Xetra,False
+"BCB Bancorp, Inc.",BCB,BCBP,NASDAQ,False
+BCE Inc.,BCE,BCE,NYSE,False
+"Beam Therapeutics, Inc.",Beam,,NASDAQ,False
+"Becton, Dickinson and Company",Becton,,NYSE,True
+Befesa S.A.,Befesa,BFSA,Deutsche Börse Xetra,False
+Belden Inc,Belden,BDC,NYSE,False
+"Bellicum Pharmaceuticals, Inc.",Bellicum,,NASDAQ,False
+"Benefitfocus, Inc.",Benefitfocus,BNFT,NASDAQ,False
+Bertrandt AG,Bertrandt,BDT,Deutsche Börse Xetra,False
+BH Macro Ltd,BH,BHMG,London Stock Exchange,False
+BiomX Inc.,BiomX,PHGE,NYSE,False
+"BJs Wholesale Holdings, Inc.",BJs,,NYSE,False
+"Black Diamond Therapeutics, Inc.",Black,,NASDAQ,False
+Black Hills Corporation,Black,BKH,NYSE,False
+"Blackbaud, Inc.",Blackbaud,BLKB,NASDAQ,False
+"BlackLine, Inc.",BlackLine,BL,NASDAQ,False
+Blackrock North American Income Trust PLC,Blackrock,,London Stock Exchange,False
+BlackRock Throgmorton Trust plc,BlackRock,,London Stock Exchange,False
+Bloomin Brands Inc,Bloomin,,NASDAQ,False
+"Blucora, Inc.",Blucora,BCOR,NASDAQ,False
+Blueprint Medicines Corporation,Blueprint,,NASDAQ,False
+Boise Cascad Llc,Boise,,NYSE,False
+BOK Financial Corporation,BOK,BOKF,NASDAQ,False
+Boston Omaha Corporation,Boston,BOMN,NASDAQ,False
+Boston Properties,Boston,,NYSE,False
+"Bottomline Technologies, Inc.",Bottomline,,NASDAQ,False
+BP plc ADR,BP,BP,NYSE,False
+Brady Corporation,Brady,,NYSE,False
+"Bridge Bancorp, Inc.",Bridge,,NASDAQ,False
+"Brighthouse Financial, Inc.",Brighthouse,,NASDAQ,False
+BrightView Holdings,BrightView,BV,NYSE,False
+Bristol & West PLC PRF,Bristol,,London Stock Exchange,False
+Brixmor Property,Brixmor,,NYSE,False
+"Brooks Automation, Inc.",Brooks,,NASDAQ,False
+Brown & Brown Inc,Brown,,NYSE,False
+Brown-Forman Corporation - Class A,Brown-Forman,,NYSE,False
+Brown-Forman Corporation - Class B,Brown-Forman,,NYSE,False
+Bruker Corporation,Bruker,BRKR,NASDAQ,False
+Brunner Investment Trust PLC/The,Brunner,,London Stock Exchange,False
+Brunswick Corporation,Brunswick,BC,NYSE,False
+"Buckle, Inc.","Buckle,",BKE,NYSE,False
+Burlington Stores Inc,Burlington,,NYSE,False
+Bushveld Minerals Limited,Bushveld,,London Stock Exchange,False
+Cable One Inc,Cable,CABO,NYSE,False
+"Cactus, Inc.",Cactus,WHD,NYSE,False
+Cadence Bancorp,Cadence,,NYSE,False
+"CAI International, Inc.",CAI,,NYSE,False
+"Cal-Maine Foods, Inc.",Cal-Maine,,NASDAQ,False
+CalAmp Corp.,CalAmp,CAMP,NASDAQ,False
+"Calavo Growers, Inc.",Calavo,,NASDAQ,False
+Caledonia Mining Corporation plc,Caledonia,,London Stock Exchange,False
+"Caleres, Inc.",Caleres,CAL,NYSE,True
+Cameco Corporation,Cameco,CCJ,NYSE,False
+CannTrust Holdings Inc,CannTrust,,NYSE,False
+Capital & Counties Properties PLC,Capital,,London Stock Exchange,False
+"Capitol Federal Financial, Inc.",Capitol,,NASDAQ,False
+"Cardiovascular Systems, Inc.",Cardiovascular,,NASDAQ,False
+"Cardtronics, Inc.",Cardtronics,CATM,NASDAQ,False
+"CareDx, Inc.",CareDx,CDNA,NASDAQ,False
+"Carlisle Cos, Inc.",Carlisle,CSL,NYSE,False
+Carpenter Technology Corporation,Carpenter,,NYSE,False
+"Carter's, Inc.",Carter's,CRI,NYSE,False
+Cathay General Bancorp,Cathay,,NASDAQ,False
+"CBRE Group, Inc Class A",CBRE,CBRE,NYSE,False
+"CBTX, Inc.","CBTX
+CBTX","CBTX
+CBTX",NASDAQ,False
+CDW Corporation,CDW,,NASDAQ,False
+Cedar Fair LP,Cedar,FUN,NYSE,False
+Cellcom Israel Ltd.,Cellcom,CEL,NYSE,False
+"Celsius Holdings, Inc.",Celsius,,NASDAQ,False
+CenterPoint Energy,CenterPoint,,NYSE,False
+Central European Media Enterprises Ltd,Central,,NASDAQ,False
+CenturyLink Inc.,CenturyLink,CTL,NYSE,True
+Cerus Corporation,Cerus,CERS,NASDAQ,False
+"CEVA, Inc.",CEVA,CEVA,NASDAQ,False
+CF Industries Holdings Inc.,CF,,NYSE,False
+Chatham Lodging Trust,Chatham,,NYSE,False
+Chubb Ltd.,Chubb,CB,NYSE,True
+Chunghwa Telecom Co Ltd.,Chunghwa,,NYSE,False
+Cimarex Energy,Cimarex,,NYSE,False
+Cintas Corp.,Cintas,CTAS,NASDAQ,False
+City Holding Company,City,CHCO,NASDAQ,False
+"Clearfield, Inc.",Clearfield,CLFD,NASDAQ,False
+Clinigen Group plc,Clinigen,CLIN,London Stock Exchange,False
+CMS Energy,CMS,CMS,NYSE,False
+"Codexis, Inc.",Codexis,CDXS,NASDAQ,False
+"Cogent Communications Holdings, Inc.",Cogent,,NASDAQ,False
+"Coherent, Inc.",Coherent,COHR,NASDAQ,False
+"Collegium Pharmaceutical, Inc.",Collegium,,NASDAQ,False
+"Columbia Banking System, Inc.",Columbia,,NASDAQ,False
+Comerica Inc.,Comerica,CMA,NYSE,False
+"Comfort Systems USA, Inc.",Comfort,,NYSE,False
+Community Bank System Inc,Community,,NYSE,False
+"Commvault Systems, Inc.",Commvault,,NASDAQ,False
+Compania De Minas Buenaventura S.A.A.,Compania,,NYSE,False
+Compass Diversified Holdings,Compass,,NYSE,False
+"Computer Programs and Systems, Inc.",Computer,,NASDAQ,False
+"Computer Task Group, Inc.",Computer,,NASDAQ,False
+ComStage iBoxx Euro Liquid Sovereigns Diversified 25+ UCITS ETF EUR Disitributing,ComStage,,Deutsche Börse Xetra,False
+"Comstock Resources, Inc.",Comstock,,NYSE,False
+Comtech Telecommunications Corp.,Comtech,,NASDAQ,False
+ConAgra Brands Inc.,ConAgra,,NYSE,False
+Conduent Inc,Conduent,CNDT,NASDAQ,False
+Consol Energy Inc.,Consol,CEIX,NYSE,False
+"Consolidated Communications Holdings, Inc.",Consolidated,,NASDAQ,False
+"CoreCivic, Inc.",CoreCivic,CXW,NYSE,False
+"CoreLogic, Inc.",CoreLogic,CLGX,NYSE,False
+CoreSite Realty Corporation,CoreSite,,NYSE,False
+"Cornerstone OnDemand, Inc.",Cornerstone,,NASDAQ,False
+Corteva Inc,Corteva,CTVA,NYSE,False
+"Cortexyme, Inc.",Cortexyme,CRTX,NASDAQ,False
+"Cousins Properties, Inc.",Cousins,,NYSE,False
+"Covetrus, Inc.",Covetrus,CVET,NASDAQ,False
+Craneware plc,Craneware,CRW,London Stock Exchange,False
+Credit Acceptance Corporation,Credit,,NASDAQ,False
+"Cree, Inc.",Cree,CREE,NASDAQ,False
+Cresud SACIF - ADR,Cresud,CRESY,NASDAQ,False
+"Crinetics Pharmaceuticals, Inc.",Crinetics,,NASDAQ,False
+"Cross Country Healthcare, Inc.",Cross,,NASDAQ,False
+"Cryoport, Inc.",Cryoport,CYRX,NASDAQ,False
+CSX Corporation,CSX,CSX,NASDAQ,True
+CTS Corporation,CTS,CTS,NYSE,False
+CubeSmart,CubeSmart,CUBE,NYSE,False
+"Cutera, Inc.",Cutera,CUTR,NASDAQ,False
+CVB Financial Corporation,CVB,CVBF,NASDAQ,False
+"CVR Energy, Inc.",CVR,CVI,NYSE,False
+CVS Group plc,CVS,CVSG,London Stock Exchange,False
+CyberOptics Corporation,CyberOptics,CYBE,NASDAQ,False
+"CytomX Therapeutics, Inc.",CytomX,,NASDAQ,False
+Daily Journal Corporation,Daily,DJCO,NASDAQ,False
+"Daktronics, Inc.",Daktronics,DAKT,NASDAQ,False
+db Xtrackers - FTSE 250 UCITS ETF DR,db,,London Stock Exchange,False
+db Xtrackers DAX DR 1C ETF,db,,Deutsche Börse Xetra,False
+db Xtrackers EURO STOXX 50 DR,db,,Deutsche Börse Xetra,False
+db Xtrackers MSCI Emerging Markets ETF - 1C,db,,London Stock Exchange,False
+db Xtrackers Stoxx Europe 600 ETF DR,db,,London Stock Exchange,False
+"Del Taco Restaurants, Inc.",Del,,NASDAQ,False
+"Denali Therapeutics, Inc.",Denali,,NASDAQ,False
+Dentsply Int'l,Dentsply,XRAY,NASDAQ,False
+Derwent London PLC,Derwent,,London Stock Exchange,False
+"Descartes Systems Group, Inc.",Descartes,,NASDAQ,False
+"Despegar.com, Corp.",Despegar.com,DESP,NYSE,False
+Dialight PLC,Dialight,DIA,London Stock Exchange,False
+Diamond Offshore Drilling,Diamond,,NYSE,False
+"Diamondback Energy, Inc.",Diamondback,,NASDAQ,False
+"Dicerna Pharmaceuticals, Inc.",Dicerna,,NASDAQ,False
+Digi International Inc.,Digi,,NASDAQ,False
+Digimarc Corporation,Digimarc,DMRC,NASDAQ,False
+Diodes Incorporated,Diodes,,NASDAQ,False
+"Dominion Energy, Inc.",Dominion,,NYSE,True
+DOMO Inc,"DOMO
+DOMO","DOMO
+DOMO",NASDAQ,False
+"Douglas Emmett, Inc.",Douglas,,NYSE,False
+Dover Corp.,Dover,DOV,NYSE,False
+DP London plc,DP,DPP,London Stock Exchange,False
+"Dril-Quip, Inc.",Dril-Quip,DRQ,NYSE,False
+"DSP Group, Inc.",DSP,DSPG,NASDAQ,False
+DTE Energy Co.,DTE,DTE,NYSE,False
+Duerr AG,Duerr,DUE,Deutsche Börse Xetra,False
+Dynatronics Corporation,Dynatronics,,NASDAQ,False
+"Dynex Capital, Inc.",Dynex,DX,NYSE,True
+E*Trade Financial Corp.,E*Trade,,NASDAQ,False
+"Eagle Bancorp, Inc.",Eagle,EGBN,NASDAQ,False
+"Eagle Pharmaceuticals, Inc.",Eagle,,NASDAQ,False
+"EastGroup Properties, Inc.",EastGroup,,NYSE,False
+Eaton Vance Corporation,Eaton,EV,NYSE,False
+Ecclesiastical Insurance Office PLC 8.625% PRF,Ecclesiastical,,London Stock Exchange,False
+EchoStar Corporation,EchoStar,SATS,NASDAQ,False
+Edwards Lifesciences Corporation,Edwards,,NYSE,True
+"Eidos Therapeutics, Inc.",Eidos,,NASDAQ,False
+"El Pollo Loco Holdings, Inc.",El,,NASDAQ,False
+"Element Solutions, Inc.",Element,,NYSE,False
+"Ellington Financial, Inc.",Ellington,,NYSE,False
+EMCORE Corporation,EMCORE,EMKR,NASDAQ,False
+EMIS Group plc,EMIS,EMIS,London Stock Exchange,False
+Emmerson plc,Emmerson,EML,London Stock Exchange,False
+"Empire State Realty Trust, Inc.",Empire,,NYSE,False
+"Encore Capital Group, Inc.",Encore,,NASDAQ,False
+Endava Ltd.,Endava,DAVA,NYSE,False
+"Endurance International Group Holdings, Inc.",Endurance,,NASDAQ,False
+"Energy Fuels, Inc.",Energy,UUUU,NYSE,False
+Enstar Group Limited,Enstar,ESGR,NASDAQ,False
+Entergy Corp.,Entergy,ETR,NYSE,False
+"Envestnet, Inc.",Envestnet,ENV,NYSE,False
+Enviva Partners LP,Enviva,,NYSE,False
+ePlus inc.,ePlus,PLUS,NASDAQ,False
+Equifax Inc.,Equifax,EFX,NYSE,False
+"Equity LifeStyle Properties, Inc.",Equity,,NYSE,False
+"Esperion Therapeutics, Inc.",Esperion,,NASDAQ,False
+Essent Group Ltd.,Essent,ESNT,NYSE,False
+"Establishment Labs Holdings, Inc.",Establishment,,NASDAQ,False
+Eurasia Mining PLC,Eurasia,EUA,London Stock Exchange,False
+EURO STOXX 50 - A EUR Accumulating,STOXX,,Deutsche Börse Xetra,False
+Evercore Partners Inc,Evercore,,NYSE,False
+"Evergy, Inc.",Evergy,EVRG,NYSE,False
+"Evolent Health, Inc.",Evolent,EVH,NYSE,False
+eXp World Holdings Inc,eXp,,NASDAQ,False
+"Exponent, Inc.",Exponent,EXPO,NASDAQ,False
+Exterran Corporation,Exterran,EXTN,NYSE,False
+"Extreme Networks, Inc.",Extreme,,NASDAQ,False
+F5 Networks,F5,FFIV,NASDAQ,False
+"Fanhua, Inc.",Fanhua,FANH,NASDAQ,False
+"Farmland Partners, Inc. Preferred Stock",Farmland,,NYSE,False
+"Fate Therapeutics, Inc.",Fate,,NASDAQ,False
+"FibroGen, Inc.",FibroGen,FGEN,NASDAQ,False
+First Busey Corporation,First,BUSE,NASDAQ,False
+First Defiance Financial Corporation,First,,NASDAQ,False
+"First Financial Bankshares, Inc.",First,,NASDAQ,False
+"First Hawaiian, Inc.",First,FHB,NASDAQ,False
+First Horizon National Corporation,First,,NYSE,False
+First Republic Bank,First,,NYSE,False
+FirstEnergy Corp,FirstEnergy,FE,NYSE,False
+Five Point Holdings LLC,Five,,NYSE,False
+"FleetCor Technologies, Inc.",FleetCor,,NYSE,False
+Flex Ltd.,Flex,FLEX,NASDAQ,False
+FLIR Systems,FLIR,FLIR,NASDAQ,False
+Focusrite plc,Focusrite,TUNE,London Stock Exchange,False
+"Forestar Group, Inc.",Forestar,,NYSE,False
+"Forrester Research, Inc.",Forrester,,NASDAQ,False
+"Fortis, Inc.",Fortis,FTS,NYSE,False
+Fortive Corporation,Fortive,FTV,NYSE,False
+"Four Corners Property Trust, Inc.",Four,,NYSE,False
+Franklin Electric Co Inc,Franklin,,NASDAQ,False
+Freedom Holding Corporation,Freedom,,NASDAQ,False
+"Frequency Electronics, Inc.",Frequency,,NASDAQ,False
+Frontier Communications,Frontier,,NASDAQ,False
+Fulton Financial Corporation,Fulton,,NASDAQ,False
+Futu Holdings Ltd.,Futu,FUTU,NASDAQ,False
+"G1 Therapeutics, Inc.",G1,,NASDAQ,False
+"Gartner, Inc.",Gartner,IT,NYSE,False
+Gateley Holdings plc,Gateley,,London Stock Exchange,False
+GATX Corporation,GATX,GATX,NYSE,False
+"GCP Applied Technologies, Inc.",GCP,,NYSE,False
+General Accident PLC 8.875% PRF,General,,London Stock Exchange,False
+Gentex Corporation,Gentex,GNTX,NASDAQ,False
+Genuine Parts Company,Genuine,GPC,NYSE,True
+"Glacier Bancorp, Inc.",Glacier,,NASDAQ,False
+"GlobalSCAPE, Inc.",GlobalSCAPE,GSB,NYSE,False
+Globant SA,Globant,GLOB,NYSE,False
+"Globe Life, Inc.",Globe,GL,NYSE,False
+"Golden Entertainment, Inc.",Golden,,NASDAQ,False
+Gooch & Housego plc,Gooch,,London Stock Exchange,False
+Gore Street Energy Storage Fund plc,Gore,,London Stock Exchange,False
+"Gossamer Bio, Inc.",Gossamer,GOSS,NASDAQ,False
+Graham Corporation,Graham,,NYSE,False
+Grammer AG,Grammer,GMM,Deutsche Börse Xetra,False
+"Grid Dynamics Holdings, Inc.",Grid,,NASDAQ,False
+Griffon Corporation,Griffon,,NYSE,False
+GTY Technology Holdings Inc.,GTY,,NASDAQ,False
+"Guardion Health Sciences, Inc.",Guardion,,NASDAQ,False
+"Guidewire Software, Inc.",Guidewire,,NYSE,False
+"H&E Equipment Services, Inc.",H&E,,NASDAQ,False
+"Hamilton Lane, Inc.",Hamilton,HLNE,NASDAQ,False
+Hanesbrands Inc,Hanesbrands,HBI,NYSE,False
+Hannon Armstrong Sustainable Infrastructure Capital,Hannon,,NYSE,False
+Hansard Global PLC,Hansard,,London Stock Exchange,False
+HarbourVest Global Private Equity Ltd.,HarbourVest,,London Stock Exchange,False
+Harmonic Inc.,Harmonic,HLIT,NASDAQ,False
+Hartford Financial Services,Hartford,,NYSE,False
+HCA Inc.,HCA,HCA,NYSE,False
+"HD Supply Holdings, Inc.",HD,,NASDAQ,False
+Headlam Group PLC,Headlam,,London Stock Exchange,False
+"HealthStream, Inc.",HealthStream,HSTM,NASDAQ,False
+"Heartland Financial USA, Inc.",Heartland,,NASDAQ,False
+"Heidrick & Struggles International, Inc.",Heidrick,,NASDAQ,False
+Helen of Troy Ltd.,Helen,HELE,NASDAQ,False
+Helmerich & Payne,Helmerich,,NYSE,False
+"Herman Miller, Inc.",Herman,MLHR,NASDAQ,False
+"Heron Therapeutics, Inc.",Heron,,NASDAQ,False
+Hersha Hospitality Trust,Hersha,,NYSE,False
+Heska Corporation,Heska,,NASDAQ,False
+HgCapital Trust PLC/Fund,HgCapital,,London Stock Exchange,False
+"Hibbett Sports, Inc.",Hibbett,HIBB,NASDAQ,False
+"Hiltop Holdings, Inc.",Hiltop,,NYSE,False
+"Himax Technologies, Inc.- ADR",Himax,,NASDAQ,False
+"Holly Energy Partners, LP",Holly,,NYSE,True
+"Hope Bancorp, Inc.",Hope,HOPE,NASDAQ,False
+"Houlihan Lokey, Inc.",Houlihan,,NYSE,False
+HSBC Holdings plc ADR,HSBC,,NYSE,False
+HSBC MSCI Japan UCITS ETF,HSBC,,Deutsche Börse Xetra,False
+HSBC MSCI Japan UCITS ETF,HSBC,,London Stock Exchange,False
+HSBC MSCI Japan UCITS ETF,HSBC,,London Stock Exchange,False
+HSBC MSCI Taiwan Capped GBX UCITS ETF (USD) Distributing,HSBC,,London Stock Exchange,False
+HSBC MSCI Taiwan Capped USD UCITS ETF (USD) Distributing,HSBC,,London Stock Exchange,False
+"Hubbell, Inc.",Hubbell,HUBB,NYSE,False
+Hudson Pacific Properties Inc,Hudson,,NYSE,False
+Humana Inc.,Humana,HUM,NYSE,False
+Hunter Douglas NV,Hunter,,Netherlands,True
+IAC InterActiveCorp,InterActiveCorp,,NASDAQ,False
+ICG Enterprise Trust plc,ICG,,London Stock Exchange,False
+Ichor Holdings,Ichor,ICHR,NASDAQ,False
+ICL Group Ltd.,ICL,ICL,NYSE,False
+ICON PLC,ICON,ICLR,NASDAQ,False
+Ideagen plc,Ideagen,IDEA,London Stock Exchange,False
+IDOX plc,IDOX,IDOX,London Stock Exchange,False
+IG Design Group plc,IG,IGR,London Stock Exchange,False
+"IGM Biosciences, Inc.",IGM,,NASDAQ,False
+"iHeartMedia, Inc. Class A",iHeartMedia,IHRT,NASDAQ,False
+II-VI Incorporated,II-VI,,NASDAQ,False
+Ilika plc,Ilika,IKA,London Stock Exchange,False
+IMCD Group NV,IMCD,IMCD,Netherlands,True
+IMI PLC,IMI,IMI,London Stock Exchange,False
+IMImobile plc,IMImobile,IMO,London Stock Exchange,False
+Immersion Corporation,Immersion,IMMR,NASDAQ,False
+"ImmunoGen, Inc.",ImmunoGen,IMGN,NASDAQ,False
+Impax Asset Management Group plc,Impax,,London Stock Exchange,False
+"Inari Medical, Inc.",Inari,NARI,NASDAQ,False
+Ingersoll-Rand PLC,Ingersoll-Rand,IR,NYSE,False
+"Ingles Markets, Incorporated",Ingles,IMKTA,NASDAQ,False
+Inland Homes plc,Inland,INL,London Stock Exchange,False
+Innogy SE,Innogy,IGY,Deutsche Börse Xetra,False
+Innovaderma plc,Innovaderma,IDP,London Stock Exchange,False
+"Inogen, Inc.",Inogen,INGN,NASDAQ,False
+"Inovalon Holdings, Inc.",Inovalon,,NASDAQ,False
+Insight Enterprises Inc,Insight,,NASDAQ,False
+"Insmed, Inc.",Insmed,INSM,NASDAQ,False
+"Insperity, Inc.",Insperity,NSP,NYSE,False
+Integra LifeSciences Holdings Corporation,Integra,,NASDAQ,False
+"Inter Parfums, Inc.",Inter,IPAR,NASDAQ,False
+"Interactive Brokers Group, Inc.",Interactive,,NASDAQ,False
+"InterDigital, Inc.",InterDigital,IDCC,NASDAQ,False
+"Interface, Inc.",Interface,TILE,NASDAQ,False
+Internap Corporation,Internap,INAP,NASDAQ,False
+International Public Partnerships Ltd,Int.,,London Stock Exchange,False
+"Intevac, Inc.",Intevac,IVAC,NASDAQ,False
+Intl Flavors & Fragrances,Intl,,NYSE,False
+"Intra-Cellular Therapies, Inc.",Intra-Cellular,,NASDAQ,False
+Invesco Health Care S&P US Select Sector USD UCITS ETF,Invesco,,London Stock Exchange,False
+Invesco US Treasury Bond 1-3 Year UCITS ETF USD Dist,Invesco,,London Stock Exchange,False
+Invesco US Treasury Bond 3-7 Year UCITS ETF USD Dist,Invesco,,London Stock Exchange,False
+"Investors Bancorp, Inc.",Investors,,NASDAQ,False
+iomart Group plc,iomart,IOM,London Stock Exchange,False
+"Iovance Biotherapeutics, Inc.",Iovance,,NASDAQ,False
+IP Group PLC,IP,IPO,London Stock Exchange,False
+IPG Photonics Corporation,IPG,IPGP,NASDAQ,False
+IQVIA Holdings Inc.,IQVIA,IQV,NYSE,False
+"iRhythm Technologies, Inc.",iRhythm,,NASDAQ,False
+"Ironwood Pharmaceuticals, Inc.",Ironwood,,NASDAQ,False
+iShares $ Floating Rate Bond GBX UCITS,iShares,,London Stock Exchange,False
+iShares $ Short Duration Corp Bond UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares $ TIPS UCITS ETF USD (Acc),iShares,ITPS,London Stock Exchange,False
+iShares $ TIPS UCITS ETF USD (Acc),iShares,IDTP,London Stock Exchange,False
+iShares $ Treasury Bond 1-3yr UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares Core Corp Bond ETF GBP Dist,iSh,,London Stock Exchange,False
+iShares Core EUR Corp Bond ETF EUR Dist,iSh,,London Stock Exchange,False
+iShares Core EURO STOXX 50 GBX UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares Core EURO STOXX 50 UCITS ETF (DE),iShares,,Deutsche Börse Xetra,False
+iShares Core Global Aggregate Bond EUR UCITS ETF EUR Hedged (Acc),iShares,,Deutsche Börse Xetra,False
+iShares Core MSCI EM IMI ETF USD Dist,MSCI,,London Stock Exchange,False
+iShares Core MSCI Europe UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares Core MSCI Japan IMI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares Core MSCI Japan IMI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares Core MSCI Pacific ex-Japan UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares Core MSCI Pacific ex-Japan UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares CorpBdInterestRateHgd UCITS ETF EUR(Dist),iShares,,London Stock Exchange,False
+iShares Edge MSCI Europe Momentum Factor GBX UCITS ETF,iShares,,London Stock Exchange,False
+iShares Edge MSCI USA Momentum Factor UCITS ETF (Acc),iShares,,London Stock Exchange,False
+iShares Edge MSCI World Min Vol ETF USD Acc,iSh,,London Stock Exchange,False
+iShares Edge MSCIWorldValueFactorUCITS ETF USD Acc,iShares,,London Stock Exchange,False
+iShares France Govt Bond UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares GBP Ultrashort Bond UCITS GBP,iShares,,London Stock Exchange,False
+iShares Global AAA-AA Govt Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares Global High Yield Corp Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares Global Water USD UCITS ETF USD Distributing,iShares,,London Stock Exchange,False
+iShares J.P. Morgan EM Local Govt Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares J.P. Morgan EM Local Govt Bond UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI AC Far East ex-Japan ETF USD Dist,iSh,,London Stock Exchange,False
+iShares MSCI Brazil ETF USD Dist,iSh,,London Stock Exchange,False
+iShares MSCI China A UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI EM IMI ESG Screened UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI EM IMI ESG Screened UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI EM IMI ESG Screened UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI EM IMI ESG Screened UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI EMU ESG Enhanced UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Europe ESG Enhanced UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Europe ESG Screened UCITS ETF EUR (Acc),iShares,,London Stock Exchange,False
+iShares MSCI Europe ESG Screened UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Europe ESG Screened UCITS ETF EUR (Dist),iShares,,London Stock Exchange,False
+iShares MSCI Europe ESG Screened UCITS ETF EUR (Dist),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Europe ex-UK UCITS ETF EUR (Dist),iShares,,London Stock Exchange,True
+iShares MSCI Europe SRI UCITS ETF EUR (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Japan ESG Screened UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI Japan ESG Screened UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI Japan SRI UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI Japan SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI USA ESG Screened UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI USA ESG Screened UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI USA ESG Screened UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI USA SRI UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI USA SRI UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI World ESG Enhanced USD UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI World ESG Screened EUR UCITS ETF USD (Acc),iShares,,Deutsche Börse Xetra,False
+iShares MSCI World ESG Screened USD UCITS ETF USD (Acc),iShares,,London Stock Exchange,False
+iShares MSCI World ESG Screened USD UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI World SRI USD UCITS ETF USD (Dist),iShares,,London Stock Exchange,False
+iShares MSCI World UCITS ETF (USD) Distributing,iShares,,London Stock Exchange,False
+iShares Physical Palladium ETC,iShares,,London Stock Exchange,False
+iShares Physical Palladium ETC,iShares,,London Stock Exchange,False
+iShares STOXX Europe 600 Telecommunications UCITS ETF (DE) Distributing,iShares,,Deutsche Börse Xetra,False
+iShares STOXX Europe 600 UCITS ETF (DE),iShares,,Deutsche Börse Xetra,False
+iShares STOXX Global Select Dividend 100 UCITS ETF (DE),STOXX,,Deutsche Börse Xetra,False
+iShares US Property Yield UCITS ETF GBX Distributing,iShares,,London Stock Exchange,False
+iShares USD Corp Bond Int Rate Hedged USD,iSh,,London Stock Exchange,False
+iShares USD Treasury Bond 1-3yr ETF USD Dist,iSh,,London Stock Exchange,True
+"Itron, Inc.",Itron,ITRI,NASDAQ,False
+"J.B. Hunt Transport Services, Inc.",J.,JBHT,NASDAQ,False
+"J.W. Mays, Inc.",J.W.,MAYS,NASDAQ,False
+"j2 Global, Inc.",j2,JCOM,NASDAQ,False
+"Jack Henry & Associates, Inc.",Jack,,NASDAQ,False
+"Jadestone Energy, Inc.",Jadestone,,London Stock Exchange,False
+James Halstead plc,James,,London Stock Exchange,False
+James River Group Holdings Ltd.,James,,NASDAQ,False
+Janus Henderson Group plc,Janus,,NYSE,False
+John Bean Technologies Corporation,John,,NYSE,False
+"Jupiter Emerging & Frontier Income Trust , PLC",Jupiter,,London Stock Exchange,False
+Kadant Inc,Kadant,KAI,NYSE,False
+"Kala Pharmaceuticals, Inc.",Kala,,NASDAQ,False
+"Karuna Therapeutics, Inc.",Karuna,,NASDAQ,False
+Kemper Corporation,Kemper,,NYSE,False
+Kendrion NV,Kendrion,KENDR,Netherlands,True
+"Kennedy-Wilson Holdings, Inc.",Kennedy-Wilson,,NYSE,False
+Kewaunee Scientific Corporation,Kewaunee,,NASDAQ,False
+KeyCorp,KeyCorp,KEY,NYSE,False
+"Kforce, Inc.",Kforce,KFRC,NASDAQ,False
+"Kimball Electronics, Inc.",Kimball,,NASDAQ,False
+Kimball International Inc,Kimball,,NASDAQ,False
+Kulicke and Soffa Industries Inc,Kulicke,,NASDAQ,False
+"Kura Oncology, Inc.",Kura,KURA,NASDAQ,False
+"KVH Industries, Inc.",KVH,,NASDAQ,False
+L&G Asia Pacific ex Japan Equity UCITS ETF USD Accumulating,L&G,,Deutsche Börse Xetra,False
+L&G Asia Pacific ex Japan Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+L&G Battery Value-Chain UCITS ETF GBP Accumulating,L&G,,London Stock Exchange,True
+L&G Europe ex UK Equity UCITS ETF EUR Accumulating,L&G,,Netherlands,False
+L&G Europe ex UK Equity UCITS ETF EUR Accumulating,L&G,,London Stock Exchange,False
+L&G Europe ex UK Equity UCITS ETF EUR Accumulating,L&G,,London Stock Exchange,False
+L&G Global Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+L&G Global Equity UCITS ETF USD Accumulating,L&G,,Netherlands,False
+L&G Global Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+L&G Japan Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+L&G Japan Equity UCITS ETF USD Accumulating,L&G,,London Stock Exchange,False
+Ladder Capital Corp,Ladder,LADR,NYSE,False
+Landmark Infrastructure Part,Landmark,,NASDAQ,False
+"Landstar System, Inc.",Landstar,,NASDAQ,False
+"Lantern Pharma, Inc.",Lantern,,NASDAQ,False
+"Lantheus Holdings, Inc.",Lantheus,,NASDAQ,False
+"Lantronix, Inc.",Lantronix,LTRX,NASDAQ,False
+"Laureate Education, Inc.",Laureate,,NASDAQ,False
+Legg Mason,Legg,LM,NYSE,False
+Leifheit AG,Leifheit,LEI,Deutsche Börse Xetra,False
+"LeMaitre Vascular, Inc.",LeMaitre,,NASDAQ,False
+Leverage Shares 2x Alphabet ETP,2x,GOOE,London Stock Exchange,False
+Leverage Shares 2x Alphabet ETP,2x,GOO2,London Stock Exchange,False
+Leverage Shares 2x JPMorgan Chase & Co. ETP,2x,2JPM,London Stock Exchange,False
+Leverage Shares 2x Microsoft Corporation ETP,2x,MSF2,London Stock Exchange,False
+Leverage Shares 2x Netflix ETP,2x,NFL2,London Stock Exchange,False
+Leverage Shares 2x Nvidia ETP,2x,NVD2,London Stock Exchange,False
+Leverage Shares 2x Salesforce ETP,2x,CRM,London Stock Exchange,False
+"LHC Group, Inc.",LHC,LHCG,NASDAQ,False
+Liberty Broadband Corporation - Class A,Liberty,,NASDAQ,False
+Liberty Latin America Ltd. Class A,Liberty,,NASDAQ,False
+Liberty Latin America Ltd. Class C,Liberty,,NASDAQ,False
+"Ligand Pharmaceuticals, Inc.",Ligand,,NASDAQ,False
+"Lincoln Electric Holdings, Inc.",Lincoln,,NASDAQ,False
+Lincoln National,Lincoln,,NYSE,False
+"Liquidity Services, Inc.",Liquidity,,NASDAQ,False
+"Lithia Motors, Inc.",Lithia,LAD,NYSE,False
+Littelfuse Inc,Littelfuse,LFUS,NASDAQ,False
+"Live Oak Bancshares, Inc.",Live,,NASDAQ,False
+Liveramp Holdings Inc,Liveramp,,NYSE,False
+Loews Corp.,Loews,L,NYSE,False
+"LogMein, Inc.",LogMein,LOGM,NASDAQ,False
+Lowland Investment Company PLC,Lowland,,London Stock Exchange,False
+Luminex Corporation,Luminex,LMNX,NASDAQ,False
+Luna Innovations Incorporated,Luna,,NASDAQ,False
+Lyxor Australia S&P/ASX 200,Lyx,,Deutsche Börse Xetra,False
+Lyxor Core Morningstar UK NT (DR) UCITS ETF - Dist,Lyxor,,London Stock Exchange,False
+Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Core US TIPS (DR) UCITS ETF - Dist,Lyxor,,London Stock Exchange,False
+Lyxor Core US TIPS (DR) UCITS ETF - Dist,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Core US TIPS (DR) UCITS ETF - Dist,Lyxor,,London Stock Exchange,False
+Lyxor Daily Shortdax x2,Lyx,,Deutsche Börse Xetra,False
+Lyxor DAX (DR),Lyxor,,Deutsche Börse Xetra,False
+Lyxor ETF SG Global Value Beta,Lyx,,London Stock Exchange,False
+Lyxor EURO STOXX 50 (DR) UCITS ETF - Dist,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Japan (TOPIX) (DR) UCITS ETF - Dist EUR,Lyxor,,London Stock Exchange,False
+Lyxor MSCI Brazil UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor MSCI EM ESG Trend Leaders UCITS ETF - Acc,Lyxor,,London Stock Exchange,False
+Lyxor MSCI EM ESG Trend Leaders UCITS ETF - Acc,Lyxor,,London Stock Exchange,False
+Lyxor MSCI Korea UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor MSCI World Consumer Staples TR UCITS ETF,Lyxor,,London Stock Exchange,False
+Lyxor Nasdaq-100 UCITS ETF - Acc,Lyxor,,London Stock Exchange,False
+Lyxor Nasdaq-100 UCITS ETF - Acc,Lyxor,,Deutsche Börse Xetra,False
+Lyxor STOXX Europe Select Dividend 30 UCITS ETF - Dist,Lyxor,,Deutsche Börse Xetra,False
+Lyxor Turkey (DJ Turkey Titans 20),Lyx,,Deutsche Börse Xetra,False
+"MacroGenics, Inc.",MacroGenics,MGNX,NASDAQ,False
+"Magellan Health Services, Inc.",Magellan,,NASDAQ,False
+"Magellan Midstream Partners, LP",Magellan,,NYSE,True
+MakeMyTrip Limited,MakeMyTrip,MMYT,NASDAQ,False
+"Manhattan Associates, Inc.",Manhattan,,NASDAQ,False
+Manulife Financial Corporation,Manulife,,NYSE,False
+Manz AG,Manz,M5Z,Deutsche Börse Xetra,False
+"Marchex, Inc.",Marchex,MCHX,NASDAQ,False
+"MarineMax, Inc.",MarineMax,HZO,NYSE,False
+Masco Corp.,Masco,MAS,NYSE,False
+Materialise NV ADR,Materialise,MTLS,NASDAQ,False
+Matthews International Corporation,Matthews,,NASDAQ,False
+"MaxLinear, Inc",MaxLinear,MXL,NYSE,False
+McColl's Retail Group PLC,McColl's,,London Stock Exchange,False
+McCormick & Co.,McCormick,,NYSE,True
+"McDermott International, Inc.",McDermott,,NYSE,False
+McGrath RentCorp,McGrath,MGRC,NASDAQ,False
+McKesson Corp.,McKesson,MCK,NYSE,False
+"MDU Resources Group, Inc.",MDU,,NYSE,False
+Mears Group PLC,Mears,MER,London Stock Exchange,False
+"Medpace Holdings, Inc.",Medpace,,NASDAQ,False
+MeiraGTx Holdings PLC,MeiraGTx,,NASDAQ,False
+Mercury General Corporation,Mercury,,NYSE,False
+"Mercury Systems, Inc.",Mercury,,NASDAQ,False
+Meredith Corporation,Meredith,,NYSE,True
+"Meridian Bioscience, Inc.",Meridian,,NASDAQ,False
+"Merit Medical Systems, Inc.",Merit,,NASDAQ,False
+Meritage Homes Corporation,Meritage,,NYSE,False
+"Mersana Therapeutics, Inc.",Mersana,,NASDAQ,False
+Meten Edtechx Education Group Ltd,Meten,,NASDAQ,False
+Mettler-Toledo International Inc.,Mettler-Toledo,MTD,NYSE,False
+MGE Energy Inc,MGE,MGEE,NASDAQ,False
+MicroStrategy Incorporated,MicroStrategy,MSTR,NASDAQ,False
+"Mid-America Apartment Communities, Inc.",Mid-America,,NYSE,False
+Midwich Group plc,Midwich,,London Stock Exchange,False
+"Mirati Therapeutics, Inc.",Mirati,,NASDAQ,False
+"Mirum Pharmaceuticals, Inc.",Mirum,,NASDAQ,False
+"Mix Telematics, Ltd.",Mix,MIXT,NYSE,False
+"MobileIron, Inc.",MobileIron,MOBL,NASDAQ,False
+"Model N, Inc.",Model,MODN,NYSE,False
+Moelis & Company,Moelis,MC,NYSE,False
+Mohawk Industries,Mohawk,,NYSE,False
+"Molecular Templates, Inc.",Molecular,,NASDAQ,False
+Mologen AG,Mologen,MGNK,Deutsche Börse Xetra,False
+Monmouth Real Estate Investment,Monmouth,,NYSE,False
+"Monro, Inc.",Monro,MNRO,NASDAQ,False
+"Morphic Holding, Inc.",Morphic,,NASDAQ,False
+MP Evans Group plc,MP,MPE,London Stock Exchange,False
+MPAC Group Ltd.,MPAC,MPAC,London Stock Exchange,False
+MPLX LP.,MPLX,MPLX,NYSE,True
+MTS Systems Corporation,MTS,MTSC,NASDAQ,False
+Murray Income Trust PLC,Murray,,London Stock Exchange,False
+Murray International Trust PLC,Murray,,London Stock Exchange,False
+"NAPCO Security Technologies, Inc.",NAPCO,,NASDAQ,False
+"Natera, Inc.",Natera,NTRA,NASDAQ,False
+"National CineMedia, Inc.",National,,NASDAQ,False
+National Instruments Corporation,National,,NASDAQ,False
+National Research Corporation,National,,NASDAQ,False
+"Natus Medical, Inc.",Natus,NTUS,NASDAQ,False
+"Nelnet, Inc.",Nelnet,NNI,NYSE,False
+Neogen Corporation,Neogen,,NASDAQ,False
+"NeoGenomics, Inc.",NeoGenomics,NEO,NASDAQ,False
+NetApp,NetApp,NTAP,NASDAQ,False
+"NETGEAR, Inc",NETGEAR,NTGR,NASDAQ,False
+Neways Electronics International NV,Neways,,Netherlands,True
+News Corp Class B,News,,NASDAQ,False
+Next Fifteen Communications Group plc,Next,,London Stock Exchange,False
+"NextCure, Inc.",NextCure,NXTC,NASDAQ,False
+NIC Inc,NIC,EGOV,NASDAQ,False
+Nice Ltd ADR,Nice,NICE,NASDAQ,False
+Nielsen Holdings,Nielsen,,NYSE,False
+NiSource Inc.,NiSource,NI,NYSE,False
+Nlight Inc,Nlight,LASR,NASDAQ,False
+NMC Health PLC,NMC,NMC,London Stock Exchange,True
+Northern Technologies International Corporation,Northern,,NASDAQ,False
+"Northwest Bancshares, Inc.",Northwest,,NASDAQ,False
+Nova Measuring Instruments Ltd,Nova,,NASDAQ,False
+"Novanta, Inc.",Novanta,NOVT,NASDAQ,False
+Novocure Ltd.,Novocure,NVCR,NASDAQ,False
+NSI NV,NSI,NSI,Netherlands,True
+NuStar Energy LP,NuStar,,NYSE,False
+Nuveen Preferred Securites Income Fund,Nuveen,,NYSE,False
+O'Reilly Automotive,O'Reilly,,NASDAQ,False
+OceanFirst Financial Corporation,OceanFirst,,NASDAQ,False
+Old National Bancorp,Old,,NASDAQ,False
+Omeros Corp,Omeros,OMER,NASDAQ,False
+Omnicell Inc.,Omnicell,OMCL,NASDAQ,False
+OneSpan Inc,OneSpan,OSPN,NASDAQ,False
+OneSpaWorld Holdings Ltd.,OneSpaWorld,,NASDAQ,False
+"Oragenics, Inc.",Oragenics,OGEN,NYSE,False
+"OraSure Technologies, Inc.",OraSure,,NASDAQ,False
+Orchard Therapeutics PLC ADR,Orchard,,NASDAQ,False
+"Ormat Technologies, Inc.",Ormat,,NYSE,False
+"Orthofix Medical, Inc.",Orthofix,,NASDAQ,False
+"OSI Systems, Inc.",OSI,OSIS,NASDAQ,False
+Otis Worldwide Corporation,Otis,,NYSE,False
+"Oyster Point Pharma, Inc.",Oyster,,NASDAQ,False
+PACCAR Inc.,PACCAR,PCAR,NASDAQ,False
+"Pacific Premier Bancorp, Inc.",Pacific,,NASDAQ,False
+"Pacira BioSciences, Inc.",Pacira,,NASDAQ,False
+PacWest Bancorp,PacWest,,NASDAQ,False
+"Palomar Holdings, Inc.",Palomar,,NASDAQ,False
+"Parke Bancorp, Inc.",Parke,PKBK,NASDAQ,False
+Partner Communications Company Ltd - ADR,Partner,,NASDAQ,False
+Patterson Companies,Patterson,,NASDAQ,False
+"PAVmed, Inc.",PAVmed,PAVM,NASDAQ,False
+Paychex Inc.,Paychex,PAYX,NASDAQ,False
+"Paysign, Inc.",Paysign,PAYS,NASDAQ,False
+"PC-Tel, Inc.",PC-Tel,PCTI,NASDAQ,False
+"PDF Solutions, Inc.",PDF,PDFS,NASDAQ,False
+"PDL BioPharma, Inc.",PDL,,NASDAQ,False
+Pentair Ltd.,Pentair,PNR,NYSE,False
+"Perficient, Inc.",Perficient,PRFT,NASDAQ,False
+PerkinElmer,PerkinElmer,PKI,NYSE,False
+"PetIQ, Inc.",PetIQ,PETQ,NASDAQ,False
+"PFSweb, Inc.",PFSweb,PFSW,NASDAQ,False
+"Phantom Pharmaceuticals, Inc.",Phantom,,NASDAQ,False
+Phibro Animal Health Corp.,Phibro,,NASDAQ,False
+Phillips 66 Partners LP,Phillips,,NYSE,True
+Physicians Realty Trust,Physicians,,NYSE,False
+Pilgrim's Pride Corporation,Pilgrim's,PPC,NASDAQ,False
+PIMCO Short-Term HY Corp Bond USD Inc,PIMCO,,London Stock Exchange,False
+"Pinnacle Financial Partners, Inc.",Pinnacle,,NASDAQ,False
+Pinnacle West Capital,Pinnacle,,NYSE,False
+Plains All American Pipeline L.P.,Plains,,NYSE,False
+Plexus Corp.,Plexus,PLXS,NASDAQ,False
+Pluralsight Inc,Pluralsight,PS,NASDAQ,False
+Popular Inc,Popular,BPOP,NASDAQ,False
+Powell Industries Inc.,Powell,,NASDAQ,False
+PRA Health Sciences Inc.,PRA,,NASDAQ,False
+"Precigen, Inc.",Precigen,PGEN,NASDAQ,False
+"Preferred Apartment Communities, Inc.",Preferred,,NYSE,False
+"Prevail Therapeutics, Inc.",Prevail,,NASDAQ,False
+"Principia Biopharma, Inc.",Principia,,NASDAQ,False
+ProAssurance Corporation,ProAssurance,PRA,NYSE,False
+Progress Software Corporation,Progress,,NASDAQ,True
+"PROS Holdings, Inc.",PROS,,NYSE,False
+Prothena Corp.,Prothena,PRTA,NASDAQ,False
+"PTC Therapeutics, Inc.",PTC,,NASDAQ,False
+"Public Service Enterprise Group, Inc.",Public,,NYSE,False
+"Pulmatrix, Inc.",Pulmatrix,PULM,NASDAQ,False
+"Pulse Biosciences, Inc.",Pulse,,NASDAQ,False
+PulteGroup Inc.,PulteGroup,PHM,NYSE,False
+Puxin Ltd.,Puxin,NEW,NYSE,False
+PZ Cussons PLC,PZ,PZC,London Stock Exchange,False
+QAD Inc.,QAD,QADA,NASDAQ,False
+QAD Inc.,QAD,QADB,NASDAQ,False
+Qiwi PLC - ADR,Qiwi,QIWI,NASDAQ,False
+Quanta Services Inc.,Quanta,,NYSE,False
+Quidel Corp.,Quidel,QDEL,NASDAQ,False
+Quotient Ltd,Quotient,QTNT,NASDAQ,False
+Qurate Retail Inc Series B,Qurate,QRTEA,NASDAQ,False
+Radcom Ltd,Radcom,RDCM,NASDAQ,False
+"Radian Group, Inc.",Radian,RDN,NYSE,False
+"Radius Health, Inc.",Radius,RDUS,NASDAQ,False
+"RadNet, Inc.",RadNet,RDNT,NASDAQ,False
+"RAPT Therapeutics, Inc.",RAPT,,NASDAQ,False
+"Rayonier, Inc.",Rayonier,RYN,NYSE,False
+"Reading International, Inc.",Reading,,NASDAQ,False
+Ready Capital Corporation,Ready,RC,NYSE,False
+"RealPage, Inc.",RealPage,RP,NASDAQ,False
+"Reata Pharmaceuticals, Inc.",Reata,,NASDAQ,False
+"Red Violet ,Inc.",Red,RDVT,NASDAQ,False
+Regal Beloit Corporation,Regal,,NYSE,False
+"Regenxbio, Inc.",Regenxbio,RGNX,NASDAQ,False
+Regional Management Corp.,Regional,,NYSE,False
+Regions Financial Corp.,Regions,,NYSE,False
+"Relmada Therapeutics, Inc.",Relmada,,NASDAQ,False
+RELX NV,RELX,REN,Netherlands,True
+Renasant Corporation,Renasant,RNST,NASDAQ,False
+Renew Holdings plc,Renew,,London Stock Exchange,False
+Rent-A-Center Inc.,Rent-A-Center,RCII,NASDAQ,False
+Repay Holdings Corporation,Repay,,NASDAQ,False
+Repligen Corp.,Repligen,RGEN,NASDAQ,False
+"Replimune Group, Inc",Replimune,,NASDAQ,False
+"Repro-Med Systems, Inc.",Repro-Med,,NASDAQ,False
+Republic Services Inc.,Republic,,NYSE,False
+"Resonant, Inc.",Resonant,RESN,NASDAQ,False
+"Resources Connection, Inc.",Resources,,NASDAQ,False
+Restore plc,Restore,RST,London Stock Exchange,False
+"Retail Value, Inc.",Retail,RVI,NYSE,False
+"Revance Therapeutics, Inc.",Revance,,NASDAQ,False
+"Revolution Medicines, Inc.",Revolution,,NASDAQ,False
+"RGC Resources, Inc.",RGC,,NASDAQ,False
+"Rhythm Pharmaceuticals, Inc.",Rhythm,,NASDAQ,False
+"Ribbon Communications, Inc.",Ribbon,,NASDAQ,False
+Rite Aid Corporation,Rite,RAD,NYSE,True
+RLJ Lodging Trust,RLJ,,NYSE,False
+"RMR Group, Inc.",RMR,RMR,NASDAQ,False
+"Rogers Communications, Inc.",Rogers,,NYSE,False
+Roper Industries,Roper,,NYSE,False
+RSA Insurance Group PLC,RSA,,London Stock Exchange,False
+"Rubius Therapeutics, Inc.",Rubius,,NASDAQ,False
+Ruffer Investment Company Ltd,Ruffer,,London Stock Exchange,False
+Ruhnn Holding Ltd,Ruhnn,RUHN,NASDAQ,False
+RWS Holdings plc,RWS,RWS,London Stock Exchange,False
+Ryder System,Ryder,R,NYSE,False
+S&T AG,S&T,SANT,Deutsche Börse Xetra,False
+"Safehold, Inc.",Safehold,SAFE,NYSE,False
+"Safety Insurance Group, Inc.",Safety,,NASDAQ,False
+"SAGE Therapeutics, Inc.",SAGE,,NASDAQ,False
+"Saia, Inc.",Saia,SAIA,NASDAQ,False
+Sandstorm Gold Ltd.,Sandstorm,,NYSE,False
+"Sandy Spring Bancorp, Inc.",Sandy,,NASDAQ,False
+Sanmina Corporation,Sanmina,SANM,NASDAQ,False
+Sanne Group PLC,Sanne,SNN,London Stock Exchange,False
+SAP SE ADR,SAP,SAP,NYSE,False
+Sapiens International Corporation NV,Sapiens,,NASDAQ,False
+"Saul Centers, Inc.",Saul,BFS,NYSE,False
+SBM Offshore NV,SBM,SBMO,Netherlands,True
+"ScanSource, Inc.",ScanSource,SCSC,NASDAQ,False
+"Schnitzer Steel Industries, Inc.",Schnitzer,,NASDAQ,False
+Scholar Rock Holding Corp.,Scholar,,NASDAQ,False
+Schroder Japan Growth Fund PLC,Schroder,,London Stock Exchange,False
+Science in Sport plc,Science,,London Stock Exchange,False
+SDL PLC,SDL,SDL,London Stock Exchange,False
+Sealed Air Corp.,Sealed,SEE,NYSE,False
+"SeaWorld Entertainment, Inc.",SeaWorld,,NYSE,False
+SecureWorks Corp.,SecureWorks,SCWX,NASDAQ,False
+"Select Bancorp, Inc.",Select,SLCT,NASDAQ,False
+"Selective Insurance Group, Inc.",Selective,,NASDAQ,False
+"Seneca Biopharma, Inc.",Seneca,,NASDAQ,False
+SGS SA,SGS,SGSN,SIX Swiss,False
+Shanta Gold Ltd.,Shanta,SHG,London Stock Exchange,False
+"Shaw Communications, Inc. Class B",Shaw,,NYSE,True
+"Shoe Carnival, Inc.",Shoe,SCVL,NASDAQ,False
+Shoe Zone plc,Shoe,SHOE,London Stock Exchange,False
+"Shutterstock, Inc.",Shutterstock,SSTK,NYSE,False
+SHW AG,SHW,SW1,Deutsche Börse Xetra,False
+"Si-Bone, Inc.",Si-Bone,SIBN,NASDAQ,False
+Sierra Wireless Inc.,Sierra,,NASDAQ,False
+"Siga Technologies, Inc.",Siga,,NASDAQ,False
+"Sigma Designs, Inc.",Sigma,SIGM,NYSE,False
+Silicom Ltd.,Silicom,SILC,NASDAQ,False
+Silicon Motion Technology Corporation ADR,Silicon,,NASDAQ,False
+"Silk Road Medical, Inc.",Silk,,NASDAQ,False
+Sina Corporation,Sina,SINA,NASDAQ,False
+"Sinclair Broadcast Group, Inc.",Sinclair,,NASDAQ,False
+Skyline Champion Corporation,Skyline,,NYSE,False
+Sleep Number Corporation,Sleep,SNBR,NASDAQ,False
+SLM Corporation,SLM,,NASDAQ,False
+Smart Metering Systems plc,Smart,,London Stock Exchange,False
+Southern Company,Southern,SO,NYSE,True
+"Southside Bancshares, Inc.",Southside,,NASDAQ,False
+SpartanNash Co,SpartanNash,SPTN,NASDAQ,False
+SPDR Bloomberg Barclays Euro Aggregate Bond UCITS ETF,SPDR,,Deutsche Börse Xetra,False
+SPDR Bloomberg Barclays U.S. Treasury Bond UCITS ETF (Dist),SPDR,,Deutsche Börse Xetra,False
+SPDR FTSE EPRA Europe ex UK Real Estate UCITS ETF (Acc),SPDR,,London Stock Exchange,False
+SPDR MSCI Europe Small Cap Value Weighted UCITS ETF,SPDR,,Deutsche Börse Xetra,False
+SPDR MSCI Europe Value Weighted ETF,SPDR,,London Stock Exchange,False
+SPDR MSCI USA Small Cap Value Weighted UCITS ETF,SPDR,,London Stock Exchange,False
+SPDR MSCI World Health Care USD UCITS ETF,SPDR,,London Stock Exchange,False
+SPDR MSCI World USD UCITS ETF USD Accumulating,SPDR,,London Stock Exchange,True
+SPDR S&P Pan Asia Dividend Aristocrats UCITS ETF (Dist),SPDR,,Deutsche Börse Xetra,False
+SPDR S&P U.S. Health Care Select Sector EUR UCITS ETF (Acc),SPDR,,Deutsche Börse Xetra,False
+SPDR STOXX Europe 600 ESG Screened UCITS ETF (Acc),SPDR,,Deutsche Börse Xetra,False
+Spectris PLC,Spectris,SXS,London Stock Exchange,True
+"Spire, Inc.",Spire,SR,NYSE,False
+"SpringWorks Therapeutics, Inc.",SpringWorks,,NASDAQ,False
+"SPS Commerce, Inc.",SPS,,NASDAQ,False
+SPX Corporation,SPX,SPXC,NYSE,False
+"SS&C Technologies Holdings, Inc.",SS&C,,NASDAQ,False
+SSGA SPDR Barclays Capital UK Gilt UCITS ETF,SPDR,,London Stock Exchange,False
+STAAR Surgical Company,STAAR,,NASDAQ,False
+"STAG Industrial, Inc.",STAG,,NYSE,False
+Stage Stores Inc,Stage,SSI,NYSE,False
+"Stamps.com, Inc.",Stamps.com,STMP,NASDAQ,False
+State Auto Financial Corporation,State,,NASDAQ,False
+State Street Corp.,State,STT,NYSE,False
+Stellus Capital Investment,Stellus,,NYSE,False
+Stericycle Inc.,Stericycle,SRCL,NASDAQ,False
+Steven Madden Ltd.,Steven,,NASDAQ,False
+"Stoke Therapeutics, Inc.",Stoke,,NASDAQ,False
+"Strategic Education, Inc.",Strategic,,NASDAQ,False
+Suess MicroTec AG,Suess,,Deutsche Börse Xetra,False
+Sun Life Financial Inc.,Sun,,NYSE,False
+"Surmodics, Inc.",Surmodics,SRDX,NASDAQ,False
+SVB Financial Group,SVB,SIVB,NASDAQ,False
+"Sykes Enterprises, Incorporated",Sykes,,NASDAQ,False
+"Synchronoss Technologies, Inc.",Synchronoss,SNCR,NYSE,False
+"Synchrony Financial, Inc.",Synchrony,,NYSE,False
+Synovus Financial Group,Synovus,,NYSE,False
+T. Rowe Price Group,T.,TROW,NASDAQ,False
+Tabula Rasa HealthCare Inc,Tabula,,NASDAQ,False
+"Tactile Systems Technology, Inc.",Tactile,,NASDAQ,False
+Talend SA,Talend,TLND,NASDAQ,True
+Tapestry Inc,Tapestry,TPR,NYSE,False
+Targa Resources Corporation,Targa,,NYSE,False
+Taro Pharmaceutical Industries Ltd,Taro,,NYSE,False
+"Taronis Technologies, Inc.",Taronis,,NASDAQ,False
+TC Energy Corporation,TC,TRP,NYSE,True
+Tech Data Corporation,Tech,TECD,NASDAQ,False
+"TechTarget, Inc.",TechTarget,TTGT,NASDAQ,False
+Telefonica S.A. - ADR,Telefonica,TEF,NYSE,False
+Tenable Holdings Inc,Tenable,,NASDAQ,False
+Tenet Healthcare Corp.,Tenet,,NYSE,False
+Tennant Company,Tennant,TNC,NYSE,False
+Terex Corporation,Terex,TEX,NYSE,False
+Terreno Realty Corporation,Terreno,TRNO,NYSE,False
+"Texas Capital Bancshares, Inc.",Texas,,NASDAQ,False
+"The Chefs Warehouse, Inc.",The,,NASDAQ,False
+"The Childrens Place Retail Stores, Inc.",The,,NASDAQ,False
+"The Cooper Companies, Inc.",The,,NYSE,False
+"The Ensign Group, Inc.",The,,NASDAQ,False
+"The Hackett Group, Inc.",The,,NASDAQ,False
+"The Hanover Insurance Group, Inc.",The,,NYSE,False
+The Middleby Corporation,Middleby,MIDD,NASDAQ,False
+The Providence Service Corporation,The,,NASDAQ,False
+"The RealReal, Inc.",The,REAL,NASDAQ,False
+"Theravance Biopharma, Inc.",Theravance,,NASDAQ,False
+Third Point Reinsurance Ltd,Third,,NYSE,False
+"Timberland Bancorp, Inc.",Timberland,,NASDAQ,False
+Timken Company,Timken,TKR,NYSE,False
+"Tivity Health, Inc.",Tivity,TVTY,NASDAQ,False
+TiVo Corporation,TiVo,TIVO,NASDAQ,False
+Toll Brothers Inc,Toll,TOL,NYSE,False
+Towne Bank,Towne,TOWN,NASDAQ,False
+Trane Technologies plc,Trane,,NYSE,False
+"Transcat, Inc.",Transcat,TRNS,NASDAQ,False
+"Translate Bio, Inc.",Translate,TBIO,NASDAQ,False
+"TransMedics Group, Inc.",TransMedics,,NASDAQ,False
+TransUnion,TransUnion,TRU,NYSE,False
+Tremor International Ltd,Tremor,,London Stock Exchange,False
+"Trex Company, Inc.",Trex,TREX,NYSE,False
+Tribune Publishing Co,Tribune,,NASDAQ,False
+"Trilium Therapeutics, Inc.",Trilium,,NASDAQ,False
+"Trimble, Inc.",Trimble,TRMB,NASDAQ,False
+Trip.com Group Ltd.,Trip.com,TCOM,NASDAQ,False
+Triple-S Management Corporation,Triple-S,,NYSE,False
+"TriState Capital Holdings, Inc.",TriState,,NASDAQ,False
+Tristel plc,Tristel,TSTL,London Stock Exchange,False
+"TrueBlue, Inc.",TrueBlue,TBI,NYSE,False
+"TrueCar, Inc.",TrueCar,TRUE,NASDAQ,False
+Truist Financial Corporation,Truist,,NYSE,False
+"Trupanion, Inc.",Trupanion,TRUP,NASDAQ,False
+TTEC Holdings Inc.,TTEC,TTEC,NYSE,False
+Tucows Inc.,Tucows,TCX,NASDAQ,False
+"Turning Point Therapeutics, Inc.",Turning,,NASDAQ,False
+"Twin Disc, Incorporated",Twin,TWIN,NASDAQ,False
+Twist Bioscience Corporation,Twist,,NASDAQ,False
+"Tyler Technologies, Inc.",Tyler,,NYSE,False
+Tyman PLC,Tyman,TYMN,London Stock Exchange,False
+UBS ETF - MSCI EMU UCITS ETF (EUR) A-dis,UBS,,Deutsche Börse Xetra,False
+UBS ETF (LU) MSCI USA Socially Responsible EUR UCITS ETF (USD) A-dis,UBS,,Deutsche Börse Xetra,False
+UBS ETF (LU) MSCI USA Socially Responsible GBX UCITS ETF (USD) A-dis,UBS,,London Stock Exchange,False
+UMB Financial Corporation,UMB,UMBF,NASDAQ,False
+"UMH Properties, Inc.",UMH,,NYSE,False
+Uniphar plc,Uniphar,UPR,London Stock Exchange,False
+"United Bankshares, Inc.",United,,NASDAQ,False
+"United Rentals, Inc.",United,URI,NYSE,False
+Unitil Corporation,Unitil,UTL,NYSE,False
+"Upland Software, Inc.",Upland,,NASDAQ,False
+"Ur-Energy, Inc.",Ur-Energy,URG,NYSE,False
+Uranium Energy Corporation,Uranium,,NYSE,False
+"UroGen Pharma, Ltd.",UroGen,,NASDAQ,False
+Utilico Emerging Markets Ltd,Utilico,UEM,London Stock Exchange,False
+Valley National Bancorp,Valley,,NASDAQ,False
+"Valvoline, Inc.",Valvoline,VVV,NYSE,False
+"Vanda Pharmaceuticals, Inc.",Vanda,,NASDAQ,False
+Vanguard EUR Corporate Bond UCITS ETF (EUR) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard EUR Eurozone Government Bond UCITS ETF (EUR) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard FTSE Developed Asia Pacific ex Japan UCITS ETF USD Accumulating,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Developed World UCITS ETF (USD) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard FTSE Developed World UCITS ETF GBP Accumulation,Vanguard,,London Stock Exchange,False
+Vanguard FTSE Japan UCITS ETF USD Accumulating,Vanguard,,London Stock Exchange,False
+Vanguard Global Aggregate Bond UCITS ETF USD Hedghed Accumulation,Vanguard,,London Stock Exchange,False
+Vanguard USD Corporate 1-3 Year Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Vanguard USD Corporate Bond UCITS ETF (USD) Distributing,Vanguard,,Deutsche Börse Xetra,False
+Vanguard USD Corporate Bond UCITS ETF (USD) Distributing,Vanguard,,London Stock Exchange,False
+Varex Imaging Corp.,Varex,VREX,NASDAQ,False
+Varian Medical Systems,Varian,,NYSE,False
+Vastned Retail NV,Vastned,VASTN,Netherlands,True
+"Velocity Financial, Inc.",Velocity,,NYSE,False
+Venture Life Group plc,Venture,,London Stock Exchange,False
+"Veracyte, Inc.",Veracyte,VCYT,NASDAQ,False
+Verint Systems Inc.,Verint,VRNT,NASDAQ,False
+Verisign Inc.,Verisign,VRSN,NASDAQ,False
+"Vermilion Energy, Inc.",Vermilion,,NYSE,False
+Verso Corporation,Verso,VRS,NYSE,False
+Vesuvius PLC,Vesuvius,VSVS,London Stock Exchange,False
+"VICI Properties, Inc.",VICI,,NYSE,False
+Vicor Corporation,Vicor,VICR,NASDAQ,False
+"Victory Capital Holdings, Inc.",Victory,,NASDAQ,False
+"Viela Bio, Inc.",Viela,VIE,NASDAQ,False
+"Viking Therapeutics, Inc.",Viking,,NASDAQ,False
+Village Bank and Trust Financial Corp.,Village,,NASDAQ,False
+Viper Energy Partners LP,Viper,,NASDAQ,False
+Viscofan SA,Viscofan,VIS,Bolsa de Madrid,False
+Vitec Group PLC/The,Vitec,VTC,London Stock Exchange,False
+VOC Energy Trust,VOC,,NYSE,False
+"Vocera Communications, Inc.",Vocera,,NYSE,False
+VOXX International Corporation,VOXX,,NASDAQ,False
+"Voyager Therapeutics, Inc.",Voyager,,NASDAQ,False
+Vp PLC,Vp,VP,London Stock Exchange,False
+VSE Corporation,VSE,VSEC,NASDAQ,False
+WANdisco plc,WANdisco,WAND,London Stock Exchange,False
+"Washington Federal, Inc.",Washington,,NASDAQ,False
+"Waterstone Financial, Inc.",Waterstone,,NASDAQ,False
+"Wayside Technology Group, Inc.",Wayside,,NASDAQ,False
+Webster Financial Corporation,Webster,,NYSE,False
+"Weis Markets, Inc.",Weis,WMK,NYSE,False
+Welltower Inc.,Welltower,WELL,NYSE,True
+Western Alliance Bancorp,Western,,NYSE,False
+"Western Midstream Partners, L.P.",Western,,NYSE,False
+Wingstop. Inc.,Wingstop,WING,NASDAQ,False
+Winmark Corporation,Winmark,WINA,NASDAQ,False
+Wintrust Financial Corporation,Wintrust,,NASDAQ,False
+Wisconsin Energy Corp.,Wisconsin,,NYSE,False
+WNS (Holdings) Ltd.,WNS,,NYSE,False
+"Woodward, Inc.",Woodward,WWD,NASDAQ,False
+"WPX Energy, Inc.",WPX,WPX,NYSE,False
+Wright Medical Group NV,Wright,,NASDAQ,False
+Xcel Energy Inc.,Xcel,XEL,NASDAQ,False
+"Xencor, Inc.",Xencor,XNCR,NASDAQ,False
+"Xenon Pharmaceuticals, Inc.",Xenon,,NASDAQ,False
+Xtrackers DAX Income UCITS ETF 1D,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers ESG MSCI Emerging Markets UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers ESG MSCI World UCITS ETF,Xtrackers,,London Stock Exchange,False
+Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers II EUR High Yield Corporate Bond 1-3 Swap UCITS ETF,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers II EUR Overnight Rate Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers II Eurozone Government Bond 25+ UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers LPX Private Equity Swap UCITS ETF (EUR),Xtrackers,,London Stock Exchange,False
+Xtrackers MSCI AC Asia ex Japan Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI Brazil UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI Emerging Markets Swap UCITS ETF 1C,MSCI,,Deutsche Börse Xetra,False
+Xtrackers MSCI Europe Small Cap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI Japan UCITS ETF,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI Mexico UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI USA Health Care UCITS ETF,Xtrackers,,London Stock Exchange,False
+Xtrackers MSCI USA Health Care UCITS ETF,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers MSCI USA Health Care UCITS ETF,Xtrackers,,London Stock Exchange,False
+Xtrackers MSCI USA Information Technology GBX UCITS ETF USD Distributing,Xtrackers,,London Stock Exchange,True
+Xtrackers Russell 2000 UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Russell 2000 UCITS ETF 1C,Xtrackers,,London Stock Exchange,False
+Xtrackers Russell Midcap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers ShortDAX Daily Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers STOXX Europe 600 Basic Resources Swap UCITS ETF 1C,Xtrackers,,Deutsche Börse Xetra,False
+Xtrackers Switzerland UCITS ETF 1D,Xtrackers,,Deutsche Börse Xetra,False
+Xunlei Ltd - ADR,Xunlei,XNET,NASDAQ,False
+"Y-mAbs Therapeutics, Inc.",Y-mAbs,,NASDAQ,False
+Yellow Cake plc,Yellow,YCA,London Stock Exchange,False
+"Yunji, Inc. - ADR",Yunji,YJ,NASDAQ,False
+"Zai Lab, Ltd. ADR",Zai,ZLAB,NASDAQ,False
+Zeal Network SE,Zeal,TIMA,Deutsche Börse Xetra,False
+"Zentalis Pharmaceuticals, Inc.",Zentalis,,NASDAQ,False
+Zions Bancorp,Zions,ZION,NASDAQ,False
+"Zogenix, Inc.",Zogenix,ZGNX,NASDAQ,False

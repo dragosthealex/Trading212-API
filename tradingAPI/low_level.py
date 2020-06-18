@@ -8,15 +8,18 @@ This module provides the low level functions with the service.
 """
 
 import time
+import os
 from datetime import datetime
 
+import pandas as pd
 from tradingAPI.base import Instrument
 from tradingAPI.dom_components import InvestOrderWindow, \
-    CFDOrderWindow, PendingOrdersTab
+    CFDOrderWindow, PendingOrdersTab, SearchInstrumentsModal
 from tradingAPI.exceptions import CredentialsException, BaseExc
 from .glob import Glob
 from .links import dommap, urls
-from .utils import num, expect, send_keys_human, w, click, TRADING_MODES
+from .utils import num, expect, send_keys_human, w, click, TRADING_MODES, \
+    INVEST_INSTRUMENTS_CSV, ISA_INSTRUMENTS_CSV, CFD_INSTRUMENTS_CSV
 from tradingAPI import exceptions
 import selenium.common.exceptions
 from selenium.webdriver.chrome.options import Options
@@ -34,6 +37,7 @@ class LowLevelAPI(object):
         self.orders = []
         self.placed_orders = []
         self.stocks = []
+        self.log = logger
         # init globals
         Glob()
 
@@ -273,6 +277,40 @@ class LowLevelAPI(object):
         if self.is_css(dommap['close']):
             self.css1(dommap['close']).click()
 
+    def load_instruments(self, force_reload=False):
+        """Depending on the trading mode, load instruments available
+
+        """
+        if self.trading_mode == TRADING_MODES.INVEST:
+            return self._load_refresh_instruments(INVEST_INSTRUMENTS_CSV,
+                                                  force_reload)
+        if self.trading_mode == TRADING_MODES.CFD:
+            return self._load_refresh_instruments(CFD_INSTRUMENTS_CSV,
+                                                  force_reload)
+        if self.trading_mode == TRADING_MODES.ISA:
+            return self._load_refresh_instruments(ISA_INSTRUMENTS_CSV,
+                                                  force_reload)
+
+    def _load_refresh_instruments(self, csv_path, force_reload):
+        """Loads instruments from csv or forces reload
+
+        Args:
+            csv_path (str): Path to store / retrieve from
+            force_reload (bool)): If true, do a new search
+
+        Returns:
+            (pd.DataFrame): Instruments dataframe
+        """
+        if os.path.isfile(csv_path) and not force_reload:
+            return pd.read_csv(csv_path)
+        # Perform a new search of instruments
+        instruments_modal = self.new_search_instruments_modal()
+        instruments = instruments_modal.load_all_instruments()
+        # Convert to list of dicts
+        instruments = pd.DataFrame([i.to_dict() for i in instruments])
+        instruments.to_csv(csv_path, index=False)
+        return instruments
+
     def get_instrument(self, short_name=None, symbol=None, name=None):
         """Retrieve an instrument from the list, by shorthand, symbol or name
 
@@ -296,9 +334,27 @@ class LowLevelAPI(object):
             return Instrument(symbol, symbol, symbol)
         raise ValueError('You must pass at least one identifier')
 
-    def load_instruments(self):
-        """Load all available instruments to use later"""
-        pass
+    def scroll_to_bottom(self, css_path):
+        """Scrolls element to bottom
+
+        Args:
+            css_path (str): CSS Selector
+        """
+        if not self.is_css(css_path):
+            raise ValueError(f'Could not find element {css_path}')
+        elem = self.css1(css_path)
+        old_height = 0
+
+        while int(elem.get_attribute('scrollHeight')) > old_height:
+            old_height = int(elem.get_attribute('scrollHeight'))
+            self.browser.execute_script(
+                f"document.querySelector('{css_path}').scroll(0, {old_height})"
+            )
+            w()
+
+    def new_search_instruments_modal(self):
+        """Instantiate the search window modal"""
+        return SearchInstrumentsModal(self)
 
     def new_cfd_order_window(self, name, order_mode):
         """Instantiate a OpenCFDPositionWindow for opening invest positions

@@ -8,7 +8,8 @@ import selenium
 from bs4 import BeautifulSoup
 
 from tradingAPI import exceptions
-from tradingAPI.base import CFDMarketOrder, InvestMarketOrder, ORDER_CLASS_MAP
+from tradingAPI.base import CFDMarketOrder, InvestMarketOrder, ORDER_CLASS_MAP, \
+    Instrument
 from tradingAPI.exceptions import ParsingException
 from tradingAPI.links import dommap
 from tradingAPI.utils import (click, CFD_ORDER_TYPES, format_float,
@@ -328,7 +329,7 @@ class InvestOrderWindow(OrderWindow):
             (float): Current price
         """
         price = format_float(self.api.css1('#invest-order '
-                                               'div.fund-ammount-wrapper').text)
+                                           'div.fund-ammount-wrapper').text)
         self.price = price
         return price
 
@@ -369,35 +370,71 @@ class InvestOrderWindow(OrderWindow):
         if not self.by_value:
             return super().get_quantity()
             # Calculate the approx quantity and set it
-        self.quantity= super().get_quantity() / self.get_price()
+        self.quantity = super().get_quantity() / self.get_price()
 
         return self.quantity
 
 
-class PendingOrdersTab():
+class BaseModalWindow(metaclass=ABCMeta):
 
-    def __init__(self, api):
-        """"""
+    def __init__(self, api, div_css):
         self.api = api
-        self.div_css = '#ordersTable'
-
-    def open_all_cols(self):
-        """Make sure to open all columns"""
+        self.div_css = div_css
+        self._div = None
+        self.is_open = False
 
     def get(self):
         """Get the parent div"""
-        if self.api.is_css(self.div_css):
-            return self.api.css1(self.div_css)
+        if self._div and self.is_open:
+            return self._div
+
+        if self.is_open and self.api.is_css(self.div_css):
+            self._div = self.api.css1(self.div_css)
+            return self._div
         return False
 
-    def activate(self):
+    def open(self):
+        """Open the modal"""
+        self._open()
+        self.is_open = True
+
+    def close(self):
+        """Close the modal"""
+        self._close()
+        self.is_open = False
+        self._div = None
+
+    @abstractmethod
+    def _open(self):
+        pass
+
+    @abstractmethod
+    def _close(self):
+        pass
+
+
+class PendingOrdersTab(BaseModalWindow):
+
+    def __init__(self, api):
+        super().__init__(api, '#ordersTable')
+
+    def open_all_cols(self):
+        """Make sure to open all columns"""
+        pass
+
+    def _open(self):
         """Activate the table if not open already"""
         self.api.close_all()
         if not self.get():
             self.api.css1('span.tab-item.taborders').click()
             self.api.wait_for_element(self.div_css)
 
-    def load_orders(self):
+    def _close(self):
+        """Deactivate the table tab if activated"""
+        if self.get():
+            self.api.css1('span.tab-item.taborders').click()
+
+    def load_orders(self) -> list:
         """Load all the orders into Order objects"""
 
         orders = []
@@ -435,6 +472,12 @@ class PendingOrdersTab():
                                                'data-limit-price').text)
             stop = format_float(self.api.css1('span.stop-limit-order-'
                                               'data-limit-price').text)
+        else:
+            target_price = format_float(self.api.css1('td.targetPrice').text)
+            if order_type == ORDER_TYPES.LIMIT:
+                limit = target_price
+            else:
+                stop = target_price
 
         order_cls = ORDER_CLASS_MAP[order_type]
         order = order_cls(instrument=instrument, quantity=quantity, price=price,
@@ -449,10 +492,9 @@ class PendingOrdersTab():
             # Means Market Invest/ISA order
             order.by_value = True
             order.quantity = order.cost / order.price
-        else:
-            order.cost = order.quantity * order.price
         if limit:
             order.limit = limit
+            order.cost = order.quantity * order.limit
         if stop:
             order.stop = stop
         return order
@@ -480,6 +522,77 @@ class PendingOrdersTab():
             'OCO': CFD_ORDER_TYPES.OCO
         }
         return mapping[exchange_order_type]
+
+
+class SearchInstrumentsModal(BaseModalWindow):
+
+    def __init__(self, api):
+        super().__init__(api, 'div.search')
+
+    def _open(self):
+        """Open the search window"""
+        self.api.css1('#navigation-search-button').click()
+        self.api.wait_for_element(self.div_css)
+
+    def _close(self):
+        """Close the search window"""
+        if self.get():
+            self.api.css1('div.back-button', self.get()).click()
+
+    def load_all_instruments(self) -> list:
+        """Load all instruments - might take some time
+
+        Returns:
+            (list <Instrument>): List of Instrument instances
+        """
+
+        # Scroll to max first
+        self.api.scroll_to_bottom('div.search-results div.scrollable-area-body')
+
+        # Load all instruments
+        instruments = []
+        for instrument_elem in self.api.css('div.search-results-instrument'):
+            try:
+                instrument = self._decode_instrument_element(instrument_elem)
+                # self.api.log.debug(f'{len(instruments)}, {instrument}')
+                print(f'{len(instruments)}, {instrument}')
+            except (RuntimeError, IndexError) as e:
+                raise ParsingException('Instrument', e)
+            instruments.append(instrument)
+        return instruments
+
+    def _decode_instrument_element(self, instrument_elem) -> Instrument:
+        """Decode an instrument html into Instrument instance
+
+        Returns:
+            (Instrument): with set attributes
+        """
+        short_name = self.api.css1('div.ticker', instrument_elem).text
+        short_name = short_name.split(' ')[0]
+        ticker = short_name
+        if self.api.is_css('div.ticker span', instrument_elem):
+            ticker = self.api.css1('div.ticker span', instrument_elem).text
+        ticker = ticker.replace('(', '').replace(')', '')
+        name = self.api.css1('div.full-name', instrument_elem).text
+        exchange = self.api.css1('div.market-name', instrument_elem).text
+        fractional = self.api.is_css('svg.fractions-indicator', instrument_elem)
+        return Instrument(name=name, short_name=short_name, symbol=ticker,
+                          exchange=exchange, fractional=fractional)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
