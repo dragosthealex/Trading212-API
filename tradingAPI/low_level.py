@@ -8,13 +8,15 @@ This module provides the low level functions with the service.
 """
 
 import time
-import re
 from datetime import datetime
-from bs4 import BeautifulSoup
+
+from tradingAPI.base import Instrument
+from tradingAPI.dom_components import InvestOrderWindow, \
+    CFDOrderWindow, PendingOrdersTab
+from tradingAPI.exceptions import CredentialsException, BaseExc
 from .glob import Glob
-from .links import path
-from .utils import num, expect, get_pip
-# exceptions
+from .links import dommap, urls
+from .utils import num, expect, send_keys_human, w, click, TRADING_MODES
 from tradingAPI import exceptions
 import selenium.common.exceptions
 from selenium.webdriver.chrome.options import Options
@@ -25,52 +27,25 @@ import logging
 logger = logging.getLogger('tradingAPI.low_level')
 
 
-class Stock(object):
-    """base class for stocks"""
-    def __init__(self, product):
-        self.product = product
-        self.market = True
-        self.records = []
-
-    def new_rec(self, rec):
-        """add a record"""
-        self.records.append(rec)
-        return self.records
-
-
-class Movement(object):
-    """class-storing movement"""
-    def __init__(self, product, quantity, mode, price):
-        self.product = product
-        self.quantity = quantity
-        self.mode = mode
-        self.price = price
-
-
-class PurePosition(object):
-    """class-storing position"""
-    def __init__(self, product, quantity, mode, price):
-        self.product = product
-        self.quantity = quantity
-        self.mode = mode
-        self.price = price
-
-    def __repr__(self):
-        return ' - '.join([str(self.product), str(self.quantity),
-                           str(self.mode), str(self.price)])
-
-
 class LowLevelAPI(object):
     """low level api to interface with the service"""
     def __init__(self):
         self.positions = []
-        self.movements = []
+        self.orders = []
+        self.placed_orders = []
         self.stocks = []
         # init globals
         Glob()
 
     def launch(self, headless=False):
-        """launch browser and virtual display, first of all to be launched"""
+        """launch browser and virtual display, first of all to be launched
+
+        Returns:
+            (bool): True if launched successfully
+
+        Raises:
+            BrowserException: If failed to launch
+        """
         options = Options()
         options.add_argument('--disable-gpu')
         options.add_argument('--disable-extensions')
@@ -82,14 +57,18 @@ class LowLevelAPI(object):
             options.add_argument("--headless")
         try:
             self.browser = webdriver.Chrome(options=options)
-            logger.debug(f"Chromium launched launched")
+            logger.debug('Chromium launched launched')
         except Exception:
-            raise exceptions.BrowserException('Chromium', "failed to launch")
+            raise exceptions.BrowserException('Chromium', 'failed to launch')
         return True
 
     def shutdown(self):
-        """Close the driver"""
-        self.browser.close()
+        """Close the driver, logging out"""
+        try:
+            self.browser.close()
+        except:
+            raise exceptions.BrowserException('Chromium', "not started")
+        return True
 
     def css(self, css_path, dom=None):
         """css find function abbreviation"""
@@ -101,20 +80,28 @@ class LowLevelAPI(object):
         dom = dom if dom else self.browser
         return self.css(css_path, dom)[0]
 
-    def search_name(self, name, dom=None):
-        """name find function abbreviation"""
+    def search_names(self, name, dom=None):
+        """Return list of elements matching name passed
+
+        Args:
+            name (str): Name of the html element
+            dom (WebElement): DOM element, defaults to root
+
+        Returns:
+            (list <WebElement>): List of matching elements
+        """
         dom = dom if dom else self.browser
         return expect(dom.find_elements_by_name, args=[name])
 
-    def search_name1(self, name, dom=None):
+    def search_name(self, name, dom=None):
         """Return first result by name"""
         dom = dom if dom else self.browser
-        return self.search_name(name, dom)[0]
+        return self.search_names(name, dom)[0]
 
     def xpath(self, xpath, dom=None):
         """xpath find function abbreviation"""
         dom = dom if dom else self.browser
-        return expect(dom.find_element_by_xpath, args=[xpath])
+        return expect(dom.find_elements_by_xpath, args=[xpath])
 
     def is_css(self, css_path, dom=None):
         """Check if there is an element by CSS path
@@ -123,7 +110,7 @@ class LowLevelAPI(object):
             (bool) True if element is present in dom
         """
         dom = dom if dom else self.browser
-        return len(self.css(css_path, dom)) > 1
+        return len(self.css(css_path, dom)) > 0
 
     def is_xpath(self, xpath, dom=None):
         """Check if there is an element by Xpath
@@ -132,411 +119,222 @@ class LowLevelAPI(object):
             (bool) True if element is present in xpath
         """
         dom = dom if dom else self.browser
-        return len(self.xpath(xpath, dom)) > 1
+        return len(self.xpath(xpath, dom)) > 0
 
-    def login(self, username, password, mode="demo"):
-        """Login onto the platform, going to the 'mode'
+    def get(self, url):
+        """Connect to the URL through 'GET' request
+
+        Args:
+            url (str): URL to connect to
+
+        Raises:
+            (WebDriverException): If connection timed out
+        """
+        try:
+            w()
+            logger.debug(f'visiting {url}')
+            self.browser.get(url)
+            logger.debug(f'connected to {url}')
+            w()
+        except selenium.common.exceptions.WebDriverException:
+            logger.critical('connection timed out')
+            raise
+
+    def wait_for_element(self, css_path):
+        """Wait for a css path to appear
+
+        Useful to check popups/modals after navigating to a new url
+
+        Returns:
+            (mixed): Element if it appears, false otherwise
+        """
+        timeout = time.time() + 4
+        while not self.is_css(css_path):
+            if time.time() > timeout:
+                return False
+        return self.css1(css_path)
+
+    def login(self, username, password, trading_mode=TRADING_MODES.INVEST,
+              is_live=False):
+        """Login onto the platform, navigating to desired mode
 
         Args:
             username (str): Plaintext username
             password (str): Plaintext password
-            mode (str): 'demo', 'cfd', 'invest', 'isa'
+            mode (str): 'cfd', 'invest', 'isa'. Default 'invest'
+            live (bool): Whether live trading or demo. Default False
 
         Returns:
             (bool): True if login successful, otherwise False
         """
-        url = "https://trading212.com/en/login"
+        # Access login page
+        url = urls['login']
+        self.get(url)
         try:
-            logger.debug(f"visiting %s" % url)
-            self.browser.get(url)
-            logger.debug(f"connected to %s" % url)
-        except selenium.common.exceptions.WebDriverException:
-            logger.critical("connection timed out")
-            raise
-        try:
-            self.search_name("login[username]").fill(username)
-            self.search_name("login[password]").fill(password)
-            self.css1(path['log']).click()
-            # define a timeout for logging in
-            timeout = time.time() + 30
-            while not self.is_css(path['logo']):
+            username_input = self.search_name("login[username]")
+            pass_input = self.search_name("login[password]")
+            # Fill input
+            send_keys_human(username_input, username)
+            send_keys_human(pass_input, password)
+            click(self.css1(dommap['login-submit']))
+
+            # define a timeout for logging in, checking each second
+            timeout = time.time() + 10
+            while not self.is_css(dommap['logo']):
                 if time.time() > timeout:
                     logger.critical("login failed")
                     raise CredentialsException(username)
-            time.sleep(1)
-            logger.info(f"logged in as {username}")
-            # check if it's a weekend
-            if mode == "demo" and datetime.now().isoweekday() in range(5, 8):
-                timeout = time.time() + 10
-                while not self.is_css(path['alert-box']):
-                    if time.time() > timeout:
-                        logger.warning("weekend trading alert-box not closed")
-                        break
-                if self.is_css(path['alert-box']):
-                    self.css1(path['alert-box']).click()
-                    logger.debug("weekend trading alert-box closed")
+                time.sleep(1)
+            logger.info(f'logged in as {username}')
+
+            # Navigate on corresponding mode
+            self.go_to_mode(trading_mode, is_live)
+
+            self._post_login_checks(is_live)
         except Exception as e:
             logger.critical("login failed")
-            raise exceptions.BaseExc(e)
+            raise BaseExc(e)
         return True
 
-    def logout(self):
-        """logout func (quit browser)"""
-        try:
-            self.browser.quit()
-        except Exception:
-            raise exceptions.BrowserException(self.brow_name, "not started")
-            return False
-        self.vbro.stop()
-        logger.info("logged out")
+    def _post_login_checks(self, is_live=False):
+        """Do checks for modals after login"""
+        # check if it's a weekend
+        if not is_live and datetime.now().isoweekday() in range(5, 8):
+            alert_box = self.wait_for_element(dommap['alert-box'])
+            if alert_box:
+                click(alert_box)
+                logger.debug("weekend trading alert-box closed")
+        # Check new account modal
+        new_acc_modal = self.wait_for_element(dommap['new-acc-modal'])
+        if new_acc_modal:
+            click(new_acc_modal)
+
+    def go_to_mode(self, trading_mode=TRADING_MODES.INVEST, is_live=False):
+        """Navigate to desired mode of trading
+
+        Args:
+            mode (str): 'cfd', 'invest', 'isa'. Default 'invest'
+            is_live (bool): Whether live trading or demo. Default False
+
+        Returns:
+            (bool): True if navigated successfully
+        """
+        if is_live:
+            self.get(url=urls['live'])
+            self.is_live = True
+        else:
+            self.get(url=urls['demo'])
+            self.is_live = False
+
+        # go to the account menu
+        self.wait_for_element(dommap['acc-menu'])
+        w()
+        self.css1(dommap['acc-menu']).click()
+        if trading_mode == TRADING_MODES.CFD:
+            self.css1(f"{dommap['acc-items']}.cfd").click()
+        elif trading_mode == TRADING_MODES.INVEST:
+            self.css1(f"{dommap['acc-items']}.equity").click()
+        elif trading_mode == TRADING_MODES.ISA:
+            self.css1(f"{dommap['acc-items']}.isa").click()
+        else:
+            raise BaseExc(f'Invalid mode: {mode}')
+        self.wait_for_element(dommap['acc-menu'])  # wait until done
+        # Do modal checks again
+        self._post_login_checks(is_live)
+        self.trading_mode = trading_mode
         return True
 
     def get_bottom_info(self, info):
+        """Get information regarding current status
+
+        Args:
+            info (str): Information piece. Choose from 'free_funds',
+                'blocked_funds', 'account_value', 'live_result', 'used_margin'.
+                'used_margin' only for CFD page
+
+        Returns:
+
+        """
         accepted_values = {
             'free_funds': 'equity-free',
+            'blocked_funds': 'equity-blocked',
             'account_value': 'equity-total',
             'live_result': 'equity-ppl',
             'used_margin': 'equity-margin'}
         try:
             info_label = accepted_values[info]
-            val = self.css1("div#%s span.equity-item-value" % info_label).text
+            val = self.css1(f'div#{info_label} span.equity-item-value').text
             return num(val)
         except KeyError as e:
             raise exceptions.BaseExc(e)
 
-    def get_price(self, name):
-        soup = BeautifulSoup(
-            self.css1("div.scrollable-area-content").html, "html.parser")
-        for product in soup.select("div.tradebox"):
-            fullname = product.select("span.instrument-name")[0].text.lower()
-            if name.lower() in fullname:
-                mark_closed_list = [x for x in product.select(
-                    "div.quantity-list-input-wrapper") if x.select(
-                    "div.placeholder")[0].text.lower().find("close") != -1]
-                if mark_closed_list:
-                    sell_price = product.select("div.tradebox-price-sell")[0]\
-                        .text
-                    return float(sell_price)
-                else:
-                    return False
+    def close_all(self):
+        """Close any modal window if open"""
+        if self.is_css(dommap['close']):
+            self.css1(dommap['close']).click()
 
-    class MovementWindow(object):
-        """add movement window"""
-        def __init__(self, api, product):
-            self.api = api
-            self.product = product
-            self.state = 'initialized'
-            self.insfu = False
+    def get_instrument(self, short_name=None, symbol=None, name=None):
+        """Retrieve an instrument from the list, by shorthand, symbol or name
 
-        def open(self, name_counter=None):
-            """open the window"""
-            if self.api.css1(path['add-mov']).visible:
-                self.api.css1(path['add-mov']).click()
-            else:
-                self.api.css1('span.dataTable-no-data-action').click()
-            logger.debug("opened window")
-            self.api.css1(path['search-box']).fill(self.product)
-            if self.get_result(0) is None:
-                self.api.css1(path['close']).click()
-                raise exceptions.ProductNotFound(self.product)
-            result, product = self.search_res(self.product, name_counter)
-            result.click()
-            if self.api.is_css("div.widget_message"):
-                self.decode(self.api.css1("div.widget_message"))
-            self.product = product
-            self.state = 'open'
+        Args:
+            short_name (str): Short name e.g. Apple
+            symbol (str): Ticker e.g. AAPL
+            name (str): Full name e.g. Apple Inc.
 
-        def _check_open(self):
-            if self.state == 'open':
-                return True
-            else:
-                raise exceptions.WindowException()
+        Returns:
+            (Instrument): The instrument found
 
-        def close(self):
-            """close a movement"""
-            self._check_open()
-            self.api.css1(path['close']).click()
-            self.state = 'closed'
-            logger.debug("closed window")
+        Raises:
+            (ValueError): If nothing passed
+        """
+        # TODO: FIX
+        if short_name:
+            return Instrument(short_name, short_name, short_name)
+        if name:
+            return Instrument(name, name, name)
+        if symbol:
+            return Instrument(symbol, symbol, symbol)
+        raise ValueError('You must pass at least one identifier')
 
-        def confirm(self):
-            """confirm the movement"""
-            self._check_open()
-            self.get_price()
-            self.api.css1(path['confirm-btn']).click()
-            widg = self.api.css("div.widget_message")
-            if widg:
-                self.decode(widg[0])
-                raise exceptions.WidgetException(widg)
-            if all(x for x in ['quantity', 'mode'] if hasattr(self, x)):
-                self.api.movements.append(Movement(
-                    self.product, self.quantity, self.mode, self.price))
-                logger.debug("%s movement appended to the list" % self.product)
-            self.state = 'conclused'
-            logger.debug("confirmed movement")
+    def load_instruments(self):
+        """Load all available instruments to use later"""
+        pass
 
-        def search_res(self, res, check_counter=None):
-            """search for a res"""
-            logger.debug("searching result")
-            result = self.get_result(0)
-            name = self.get_research_name(result)
-            x = 0
-            while not self.check_name(res, name, counter=check_counter):
-                name = self.get_research_name(self.get_result(x))
-                if name is None:
-                    self.api.css1(path['close']).click()
-                    raise exceptions.ProductNotFound(res)
-                logger.debug(name)
-                if self.check_name(res, name, counter=check_counter):
-                    return self.get_result(x)
-                x += 1
-            logger.debug("found product at position %d" % (x + 1))
-            return result, name
+    def new_cfd_order_window(self, name, order_mode):
+        """Instantiate a OpenCFDPositionWindow for opening invest positions
 
-        def check_name(self, name, string, counter=None):
-            """if both in string return False"""
-            name = name.lower()
-            string = string.lower()
-            if counter is None:
-                if name in string:
-                    return True
-                else:
-                    return False
-            counter = counter.lower()
-            if name in string and counter in string:
-                logger.debug("check_name: counter found in string")
-                return False
-            elif name in string and counter not in string:
-                return True
-            else:
-                return False
+        Args:
+            name (str): Name of the instrument. Should be from available names
+            order_mode (str): Field of CFD_ORDER_MODES namedtuple
 
-        def get_research_name(self, res):
-            """return result name"""
-            if res is None:
-                return None
-            return self.api.css1("span.instrument-name", res).text
+        Returns:
+            (OpenCFDPositionWindow) The window instance
+        """
+        if self.trading_mode != TRADING_MODES.CFD:
+            raise ValueError('Cannot open CFD window unless in CFD mode')
+        return CFDOrderWindow(self, name, order_mode)
 
-        def get_result(self, pos):
-            """get pos result, where 0 is first"""
-            evalxpath = path['res'] + f"[{pos + 1}]"
-            try:
-                res = self.api.xpath(evalxpath)[0]
-                return res
-            except Exception:
-                return None
+    def new_invest_order_window(self, name, order_mode):
+        """Instantiate a OpenInvestPositionWindow for opening invest positions
 
-        def set_limit(self, category, mode, value):
-            """set limit in movement window"""
-            self._check_open()
-            if (mode not in ["unit", "value"] or category
-                    not in ["gain", "loss", "both"]):
-                raise ValueError()
-            if not hasattr(self, 'stop_limit'):
-                self.stop_limit = {'gain': {}, 'loss': {}}
-                logger.debug("initialized stop_limit")
-            if category == 'gain':
-                self.api.xpath(
-                    path['limit-gain-%s' % mode])[0].fill(str(value))
-            elif category == 'loss':
-                self.api.xpath(
-                    path['limit-loss-%s' % mode])[0].fill(str(value))
-            if category != 'both':
-                self.stop_limit[category]['mode'] = mode
-                self.stop_limit[category]['value'] = value
-            elif category == 'both':
-                self.api.xpath(
-                    path['limit-gain-%s' % mode])[0].fill(str(value))
-                self.api.xpath(
-                    path['limit-loss-%s' % mode])[0].fill(str(value))
-                for cat in ['gain', 'loss']:
-                    self.stop_limit[cat]['mode'] = mode
-                    self.stop_limit[cat]['value'] = value
-            logger.debug("set limit")
+        Args:
+            name (str): Name of the instrument. Should be from available names
+            order_mode (str): Field of ORDER_MODES namedtuple
 
-        def decode(self, message):
-            """decode text pop-up"""
-            title = self.api.css1("div.title", message).text
-            text = self.api.css1("div.text", message).text
-            if title == "Insufficient Funds":
-                self.insfu = True
-            elif title == "Maximum Quantity Limit":
-                raise exceptions.MaxQuantLimit(num(text))
-            elif title == "Minimum Quantity Limit":
-                raise exceptions.MinQuantLimit(num(text))
-            logger.debug("decoded message")
+        Returns:
+            (OpenInvestPositionWindow) The window instance
+        """
+        if self.trading_mode != TRADING_MODES.INVEST:
+            raise ValueError('Cannot open CFD window unless in CFD mode')
+        return InvestOrderWindow(self, name, order_mode)
 
-        def decode_update(self, message, value, mult=0.1):
-            """decode and update the value"""
-            try:
-                msg_text = self.api.css1("div.text", message).text
-                return num(msg_text)
-            except Exception:
-                if msg_text.lower().find("higher") != -1:
-                    value += value * mult
-                    return value
-                else:
-                    self.decode(message)
-                    return None
+    def new_pending_orders_tab(self):
+        """
 
-        def get_mov_margin(self):
-            """get the margin of the movement"""
-            self._check_open()
-            return num(self.api.css1("span.cfd-order-info-item-value").text)
-
-        def set_mode(self, mode):
-            """set mode (buy or sell)"""
-            self._check_open()
-            if mode not in ["buy", "sell"]:
-                raise ValueError()
-            self.api.css1(path[mode + '-btn']).click()
-            self.mode = mode
-            logger.debug("mode set")
-
-        def get_quantity(self):
-            """gte current quantity"""
-            self._check_open()
-            quant = int(num(self.api.css1(path['quantity']).value))
-            self.quantity = quant
-            return quant
-
-        def set_quantity(self, quant):
-            """set quantity"""
-            self._check_open()
-            self.api.css1(path['quantity']).fill(str(int(quant)))
-            self.quantity = quant
-            logger.debug("quantity set")
-
-        def get_price(self, mode='buy'):
-            """get current price"""
-            if mode not in ['buy', 'sell']:
-                raise ValueError()
-            self._check_open()
-            price = num(self.api.css1(
-                "div.orderdialog div.tradebox-price-%s" % mode).text)
-            self.price = price
-            return price
-
-        def get_unit_value(self):
-            """get unit value of stock based on margin, memoized"""
-            # find in the collection
-            try:
-                unit_value = Glob().theCollector.collection['unit_value']
-                unit_value_res = unit_value[self.product]
-                logger.debug("unit_value found in the collection")
-                return unit_value_res
-            except KeyError:
-                logger.debug("unit_value not found in the collection")
-            pip = get_pip(mov=self)
-            quant = 1 / pip
-            if hasattr(self, 'quantity'):
-                old_quant == self.quantity
-            self.set_quantity(quant)
-            # update the site
-            time.sleep(0.5)
-            margin = self.get_mov_margin()
-            logger.debug(f"quant: {quant} - pip: {pip} - margin: {margin}")
-            if 'old_quant' in locals():
-                self.set_quantity(old_quant)
-            unit_val = margin / quant
-            self.unit_value = unit_val
-            Glob().unit_valueHandler.add_val({self.product: unit_val})
-            return unit_val
-
-    def new_mov(self, name):
-        """factory method pattern"""
-        return self.MovementWindow(self, name)
-
-    class Position(PurePosition):
-        """position object"""
-        def __init__(self, api, html_div):
-            """initialized from div"""
-            self.api = api
-            if isinstance(html_div, type('')):
-                self.soup_data = BeautifulSoup(html_div, 'html.parser')
-            else:
-                self.soup_data = html_div
-            self.product = self.soup_data.select("td.name")[0].text
-            self.quantity = num(self.soup_data.select("td.quantity")[0].text)
-            if ("direction-label-buy" in
-                    self.soup_data.select("td.direction")[0].span['class']):
-                self.mode = 'buy'
-            else:
-                self.mode = 'sell'
-            self.price = num(self.soup_data.select("td.averagePrice")[0].text)
-            self.margin = num(self.soup_data.select("td.margin")[0].text)
-            self.id = self.find_id()
-
-        def update(self, soup):
-            """update the soup"""
-            self.soup_data = soup
-            return soup
-
-        def find_id(self):
-            """find pos ID with with given data"""
-            pos_id = self.soup_data['id']
-            self.id = pos_id
-            return pos_id
-
-        @property
-        def close_tag(self):
-            """obtain close tag"""
-            return f"#{self.id} div.close-icon"
-
-        def close(self):
-            """close position via tag"""
-            self.api.css1(self.close_tag).click()
-            try:
-                self.api.xpath(path['ok_but'])[0].click()
-            except selenium.common.exceptions.ElementNotInteractableException:
-                if (self.api.css1('.widget_message div.title').text ==
-                        'Market Closed'):
-                    logger.error("market closed, position can't be closed")
-                    raise exceptions.MarketClosed()
-                raise exceptions.WidgetException(
-                    self.api.css1('.widget_message div.text').text)
-                # wait until it's been closed
-            # set a timeout
-            timeout = time.time() + 10
-            while self.api.is_css(self.close_tag):
-                time.sleep(0.1)
-                if time.time() > timeout:
-                    raise TimeoutError("failed to close pos %s" % self.id)
-            logger.debug("closed pos %s" % self.id)
-
-        def get_gain(self):
-            """get current profit"""
-            gain = num(self.soup_data.select("td.ppl")[0].text)
-            self.gain = gain
-            return gain
-
-        def bind_mov(self):
-            """bind the corresponding movement"""
-            logger = logging.getLogger("tradingAPI.low_level.bind_mov")
-            mov_list = [x for x in self.api.movements
-                        if x.product == self.product and
-                        x.quantity == self.quantity and
-                        x.mode == self.mode]
-            if not mov_list:
-                logger.debug("fail: mov not found")
-                return None
-            else:
-                logger.debug("success: found movement")
-            for x in mov_list:
-                # find approximate price
-                max_roof = self.price + self.price * 0.01
-                min_roof = self.price - self.price * 0.01
-                if min_roof < x.price < max_roof:
-                    logger.debug("success: price corresponding")
-                    # bind mov
-                    self.mov = x
-                    return x
-                else:
-                    logger.debug("fail: price %f not corresponding to %f" %
-                                 (self.price, x.price))
-                    continue
-            # if nothing, return None
-            return None
+        Returns:
+            (PendingOrdersTab): The orders window
+        """
+        return PendingOrdersTab(self)
 
     def new_pos(self, html_div):
         """factory method pattern"""

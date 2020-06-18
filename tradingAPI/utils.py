@@ -6,15 +6,36 @@ tradingAPI.utils
 
 This module provides utility functions.
 """
-
+import datetime
+import json
 import time
 import re
+from collections import namedtuple
+
+import numpy as np
+
 from tradingAPI import exceptions
 from .glob import Glob
 
 # logging
 import logging
 logger = logging.getLogger('tradingAPI.utils')
+
+
+# Constants
+CfdOrderTypes = namedtuple('CfdOrderTypes', ['MARKET', 'LIMIT_STOP', 'OCO'])
+CFD_ORDER_TYPES = CfdOrderTypes('MARKET', 'LIMIT_STOP', 'OCO')
+OrderTypes = namedtuple('OrderTypes', ['MARKET', 'LIMIT', 'STOP', 'STOP_LIMIT'])
+ORDER_TYPES = OrderTypes('MARKET', 'LIMIT', 'STOP', 'STOP_LIMIT')
+OrderStatus = namedtuple('OrderStatus', ['PLACING', 'PLACED', 'FILLED',
+                                         'PART_FILLED', 'CANCELLED'])
+ORDER_STATUS = OrderStatus('PLACING', 'PLACED', 'FILLED', 'PART_FILLED',
+                           'CANCELLED')
+TradingModes = namedtuple('TradingModes', ['CFD', 'INVEST', 'ISA'])
+TRADING_MODES = TradingModes('CFD', 'INVEST', 'ISA')
+
+BUY = 'buy'
+SELL = 'sell'
 
 
 def expect(func, args, times=7, sleep_t=0.5):
@@ -69,7 +90,7 @@ def get_pip(mov=None, api=None, name=None):
         if name is None:
             logger.error("need a name")
             raise ValueError()
-        mov = api.new_mov(name)
+        mov = api.new_pos_window(name)
         mov.open()
     if mov is not None:
         mov._check_open()
@@ -115,3 +136,52 @@ def get_pip(mov=None, api=None, name=None):
     pip = get_number_unit(best_price)
     Glob().pipHandler.add_val({mov.product: pip})
     return pip
+
+
+def w_type():
+    """Waits a few ms between each typed character"""
+    time.sleep(np.random.uniform(0.1, 0.15))
+
+
+def w():
+    """Watis a few more ms - between each activity"""
+    time.sleep(np.random.uniform(0.2, 0.3))
+
+
+def send_keys_human(element, string):
+    """Send keys to a WebElement input waiting some time between"""
+    w()
+    element.clear()
+    for ch in string:
+        w_type()
+        element.send_keys(ch)
+
+
+def click(element):
+    """Click an element, waiting before and after
+
+    Args:
+        element (WebElement): DOM element
+    """
+    w()
+    element.click()
+    w()
+
+
+def format_float(text) -> float or None:
+    """Format prices read as text with ccy in front of them
+
+    Args:
+        text (str): String with prices
+
+    Returns:
+        (float): The price as float
+    """
+    text = re.sub(r'[^0-9.]', '', text)
+    if not text:
+        return None
+    return float(text)
+
+
+def get_timestamp():
+    return datetime.datetime.now()
