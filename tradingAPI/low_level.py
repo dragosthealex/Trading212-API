@@ -35,8 +35,8 @@ class LowLevelAPI(object):
     def __init__(self):
         self.positions = []
         self.orders = []
-        self.placed_orders = []
-        self.stocks = []
+        self.placed_orders = [] # List of Order instances loaded
+        self.instruments = pd.DataFrame() # Dataframe with instruments
         self.log = logger
         # init globals
         Glob()
@@ -278,20 +278,23 @@ class LowLevelAPI(object):
             self.css1(dommap['close']).click()
 
     def load_instruments(self, force_reload=False):
+        self.instruments = self.get_all_instruments(force_reload)
+
+    def get_all_instruments(self, force_reload=False):
         """Depending on the trading mode, load instruments available
 
         """
         if self.trading_mode == TRADING_MODES.INVEST:
-            return self._load_refresh_instruments(INVEST_INSTRUMENTS_CSV,
-                                                  force_reload)
+            return self._get_refresh_instruments(INVEST_INSTRUMENTS_CSV,
+                                                 force_reload)
         if self.trading_mode == TRADING_MODES.CFD:
-            return self._load_refresh_instruments(CFD_INSTRUMENTS_CSV,
-                                                  force_reload)
+            return self._get_refresh_instruments(CFD_INSTRUMENTS_CSV,
+                                                 force_reload)
         if self.trading_mode == TRADING_MODES.ISA:
-            return self._load_refresh_instruments(ISA_INSTRUMENTS_CSV,
-                                                  force_reload)
+            return self._get_refresh_instruments(ISA_INSTRUMENTS_CSV,
+                                                 force_reload)
 
-    def _load_refresh_instruments(self, csv_path, force_reload):
+    def _get_refresh_instruments(self, csv_path, force_reload):
         """Loads instruments from csv or forces reload
 
         Args:
@@ -324,15 +327,22 @@ class LowLevelAPI(object):
 
         Raises:
             (ValueError): If nothing passed
+            (ProductNotFound): If not found the instrument
         """
-        # TODO: FIX
+        if not self.instruments or self.instruments.empty:
+            self.load_instruments()
+        instrums = self.instruments
         if short_name:
-            return Instrument(short_name, short_name, short_name)
-        if name:
-            return Instrument(name, name, name)
-        if symbol:
-            return Instrument(symbol, symbol, symbol)
-        raise ValueError('You must pass at least one identifier')
+            instrument = instrums.loc[instrums['short_name'] == short_name]
+        elif name:
+            instrument = instrums.loc[instrums['name'] == name]
+        elif symbol:
+            instrument = instrums.loc[instrums['symbol'] ==symbol]
+        else:
+            raise ValueError('You must pass at least one identifier')
+        if instrument.empty:
+            raise exceptions.ProductNotFound(f'{short_name}/{symbol}/{name}')
+        return Instrument.from_dict(instrument.iloc[0].to_dict())
 
     def scroll_to_bottom(self, css_path):
         """Scrolls element to bottom
