@@ -33,10 +33,26 @@ logger = logging.getLogger('tradingAPI.low_level')
 class LowLevelAPI(object):
     """low level api to interface with the service"""
     def __init__(self):
-        self.positions = []
-        self.orders = []
-        self.placed_orders = []  # List of Order instances loaded
-        self.instruments = pd.DataFrame()  # Dataframe with instruments
+        self.positions = {
+            TRADING_MODES.CFD: pd.DataFrame(),
+            TRADING_MODES.INVEST: pd.DataFrame(),
+            TRADING_MODES.ISA: pd.DataFrame()
+        }
+        self.placed_orders = {
+            TRADING_MODES.CFD: pd.DataFrame(),
+            TRADING_MODES.INVEST: pd.DataFrame(),
+            TRADING_MODES.ISA: pd.DataFrame()
+        }
+        self.placing_orders = {
+            TRADING_MODES.CFD: pd.DataFrame(),
+            TRADING_MODES.INVEST: pd.DataFrame(),
+            TRADING_MODES.ISA: pd.DataFrame()
+        }
+        self.instruments = {
+            TRADING_MODES.CFD: pd.DataFrame(),
+            TRADING_MODES.INVEST: pd.DataFrame(),
+            TRADING_MODES.ISA: pd.DataFrame()
+        }  # Dataframe with instruments
         self.log = logger
         # init globals
         Glob()
@@ -158,8 +174,22 @@ class LowLevelAPI(object):
                 return False
         return self.css1(css_path)
 
+    def wait_for_element_disappear(self, css_path):
+        """Wait for a css path to disappear
+
+        USeful when closing stuff to wait until animation finishes
+
+        Returns:
+            (bool): True if element disappears within timeout, False otherwise
+        """
+        timeout = time.time() + 4
+        while self.is_css(css_path):
+            if time.time() > timeout:
+                return False
+        return True
+
     def login(self, username, password, trading_mode=TRADING_MODES.INVEST,
-              is_live=False):
+              is_live=False, autoload=True):
         """Login onto the platform, navigating to desired mode
 
         Args:
@@ -167,7 +197,8 @@ class LowLevelAPI(object):
             password (str): Plaintext password
             mode (str): 'cfd', 'invest', 'isa'. Default 'invest'
             live (bool): Whether live trading or demo. Default False
-
+            autoload (bool): Whether to autoload positions, instruments and
+                orders
         Returns:
             (bool): True if login successful, otherwise False
         """
@@ -190,11 +221,9 @@ class LowLevelAPI(object):
                     raise CredentialsException(username)
                 time.sleep(1)
             logger.info(f'logged in as {username}')
-
-            # Navigate on corresponding mode
-            self.go_to_mode(trading_mode, is_live)
-
             self._post_login_checks(is_live)
+            # Navigate on corresponding mode
+            self.go_to_mode(trading_mode, is_live, autoload)
         except Exception as e:
             logger.critical("login failed")
             raise BaseExc(e)
@@ -213,7 +242,8 @@ class LowLevelAPI(object):
         if new_acc_modal:
             click(new_acc_modal)
 
-    def go_to_mode(self, trading_mode=TRADING_MODES.INVEST, is_live=False):
+    def go_to_mode(self, trading_mode=TRADING_MODES.INVEST, is_live=False,
+                   autoload=True):
         """Navigate to desired mode of trading
 
         Args:
@@ -246,6 +276,12 @@ class LowLevelAPI(object):
         # Do modal checks again
         self._post_login_checks(is_live)
         self.trading_mode = trading_mode
+        # Autoload
+        # If autoload, reload all pos, instruments
+        if autoload:
+            self.load_instruments()
+            self.load_orders()
+            self.load_positions()
         return True
 
     def get_bottom_info(self, info):
@@ -277,8 +313,51 @@ class LowLevelAPI(object):
         if self.is_css(dommap['close']):
             self.css1(dommap['close']).click()
 
+    def load_orders(self, close=False):
+        """Reload and set pending orders, for current trading mode
+
+        Args:
+            close (bool): Whether to close window after loading. Default False
+        """
+        orders_modal = self.new_pending_orders_tab()
+        orders_modal.open()
+        orders = orders_modal.get_orders(as_df=True)
+        if close:
+            orders_modal.close()
+        new_orders_no = len(orders) - len(self.placed_orders[self.trading_mode])
+        self.placed_orders[self.trading_mode] = orders
+        self.log.debug(f'Reloading orders: {new_orders_no} new, total'
+                       f' {len(orders)}')
+
+    def load_positions(self, close=False):
+        """Reload and set pending orders, for current trading mode
+
+        Args:
+            close (bool): Whether to close window after loading. Default False
+        """
+        pos_modal = self.new_positions_tab()
+        pos_modal.open()
+        pos = pos_modal.get_positions(as_df=True)
+        if close:
+            pos_modal.close()
+        new_pos_no = len(pos) - len(self.positions[self.trading_mode])
+        self.positions[self.trading_mode] = pos
+        self.log.debug(f'Reloading positions: {new_pos_no} new, total'
+                       f' {len(pos)}')
+
     def load_instruments(self, force_reload=False):
-        self.instruments = self.get_all_instruments(force_reload)
+        """Set own instruments list, for the current trading mode
+
+        e.g. if current mode is CFD, will set
+        self.instruments[TRADING_MODES.CFD]
+
+        Args:
+            force_reload (bool): Whether to force the reload instead of using
+                the cahced CSVs
+        """
+        self.instruments[self.trading_mode] = (
+            self.get_all_instruments(force_reload)
+        )
 
     def get_all_instruments(self, force_reload=False):
         """Depending on the trading mode, load instruments available
@@ -331,9 +410,10 @@ class LowLevelAPI(object):
             (ValueError): If nothing passed
             (ProductNotFound): If not found the instrument
         """
-        if self.instruments is None or self.instruments.empty:
+        if (self.instruments[self.trading_mode] is None or
+                self.instruments[self.trading_mode].empty):
             self.load_instruments()
-        instrums = self.instruments
+        instrums = self.instruments[self.trading_mode]
         if short_name:
             instrument = instrums.loc[instrums['short_name'] == short_name]
         elif name:

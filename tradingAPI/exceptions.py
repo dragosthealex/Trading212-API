@@ -45,6 +45,13 @@ class WidgetException(Exception):
         super().__init__(err)
 
 
+class ModalException(Exception):
+    """Modal window exceptions"""
+    def __init__(self, message):
+        logger.error(message)
+        super().__init__(message)
+
+
 class MaxQuantLimit(Exception):
     """in case of maximum quantity exceeding"""
     def __init__(self, quant):

@@ -82,6 +82,7 @@ class Order(Serializable):
         self.order_type = order_type
         self.status = ORDER_STATUS.PLACING
         self.exchange_id = None
+        self.timestamp = timestamp
         self.api_id = self.get_api_id()
 
     def get_api_id(self):
@@ -91,7 +92,7 @@ class Order(Serializable):
             (str): API ID
         """
         return json.dumps([self.direction.upper(), self.instrument.symbol,
-                           self.quantity, self.price])
+                           self.quantity, self.price, self.timestamp])
 
 
 class CFDMarketOrder(Order):

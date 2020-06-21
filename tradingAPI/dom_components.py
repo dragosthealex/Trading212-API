@@ -362,7 +362,6 @@ class InvestOrderWindow(OrderWindow):
         Returns:
             (float): Current quantity
         """
-        print("pula")
         if not self.by_value:
             return super().get_quantity()
             # Calculate the approx quantity and set it
@@ -384,21 +383,39 @@ class BaseModalWindow(metaclass=ABCMeta):
         if self._div and self.is_open:
             return self._div
 
-        if self.is_open and self.api.is_css(self.div_css):
+        if self.api.is_css(self.div_css):
             self._div = self.api.css1(self.div_css)
+            self.is_open = True
             return self._div
+        self.is_open = False
         return False
 
     def open(self):
-        """Open the modal"""
+        """Open the modal if closed"""
+        if self.get():
+            return
         self._open()
+        if not self.api.wait_for_element(self.div_css):
+            self.is_open = False
+            raise exceptions.ModalException(f'{self.__class__.__name__} could '
+                                            f'not be open')
         self.is_open = True
 
     def close(self):
-        """Close the modal"""
-        self._close()
+        """Close the modal if open"""
         self.is_open = False
+        if self.get():
+            return
+        self._close()
+        if not self.api.wait_for_element_disappear(self.div_css):
+            self.is_open = True
+            raise exceptions.ModalException(f'{self.__class__.__name__} could '
+                                            f'not be closed')
         self._div = None
+
+    def check_open(self):
+        if not self.is_open:
+            raise exceptions.ModalException('Modal not open')
 
     @abstractmethod
     def _open(self):
@@ -423,7 +440,6 @@ class PendingOrdersTab(BaseModalWindow):
         self.api.close_all()
         if not self.get():
             self.api.css1('span.tab-item.taborders').click()
-            self.api.wait_for_element(self.div_css)
 
     def _close(self):
         """Deactivate the table tab if activated"""
@@ -440,11 +456,12 @@ class PendingOrdersTab(BaseModalWindow):
         Returns:
             (mixed): Either list of Order objects or pandas DataFrame
         """
+        self.check_open()
         orders = []
         for order_element in self.api.css('tbody tr', self.get()):
             try:
                 orders.append(self._decode_order_element(order_element, as_df))
-            except (RuntimeError, IndexError)as e:
+            except (RuntimeError, IndexError, ValueError)as e:
                 raise ParsingException('Order', e)
         if as_df:
             return pd.DataFrame(orders)
@@ -546,7 +563,6 @@ class PositionsTab(BaseModalWindow):
         self.api.close_all()
         if not self.get():
             self.api.css1('span.tab-item.tabpositions').click()
-            self.api.wait_for_element(self.div_css)
 
     def _close(self):
         """Deactivate table if activated"""
@@ -560,12 +576,14 @@ class PositionsTab(BaseModalWindow):
             as_df (bool): If true, return pandas DataFrame, otherwise return
                 list of Position objects. Default False
         """
+        self.check_open()
         positions = []
         for pos_element in self.api.css('tbody tr', self.get()):
             try:
                 positions.append(self._decode_pos_element(pos_element, as_df))
-            except (RuntimeError, IndexError)as e:
-                raise ParsingException('Position', e)
+            except (RuntimeError, IndexError, ValueError)as e:
+                # raise ParsingException('Position', e)
+                continue
         if as_df:
             return pd.DataFrame(positions)
         return positions
@@ -628,8 +646,7 @@ class SearchInstrumentsModal(BaseModalWindow):
         for instrument_elem in self.api.css('div.search-results-instrument'):
             try:
                 instrument = self._decode_instrument_element(instrument_elem)
-                # self.api.log.debug(f'{len(instruments)}, {instrument}')
-                print(f'{len(instruments)}, {instrument}')
+                self.api.log.debug(f'{len(instruments)}, {instrument}')
             except (RuntimeError, IndexError) as e:
                 raise ParsingException('Instrument', e)
             instruments.append(instrument)
