@@ -2,14 +2,10 @@ from abc import ABCMeta, abstractmethod
 
 import logging
 
-import time
-
-import selenium
-from bs4 import BeautifulSoup
-
+import pandas as pd
 from tradingAPI import exceptions
 from tradingAPI.base import CFDMarketOrder, InvestMarketOrder, ORDER_CLASS_MAP, \
-    Instrument
+    Instrument, Position
 from tradingAPI.exceptions import ParsingException
 from tradingAPI.links import dommap
 from tradingAPI.utils import (click, CFD_ORDER_TYPES, format_float,
@@ -434,46 +430,56 @@ class PendingOrdersTab(BaseModalWindow):
         if self.get():
             self.api.css1('span.tab-item.taborders').click()
 
-    def load_orders(self) -> list:
-        """Load all the orders into Order objects"""
+    def get_orders(self, as_df=False) -> list or pd.DataFrame:
+        """Load all the orders into Order objects
 
+        Args:
+            as_df (bool): If True, get a pandas DataFrame instead of list of
+                Order objects
+
+        Returns:
+            (mixed): Either list of Order objects or pandas DataFrame
+        """
         orders = []
         for order_element in self.api.css('tbody tr', self.get()):
             try:
-                orders.append(self._decode_order_element(order_element))
+                orders.append(self._decode_order_element(order_element, as_df))
             except (RuntimeError, IndexError)as e:
                 raise ParsingException('Order', e)
-        return orders
+        if as_df:
+            return pd.DataFrame(orders)
 
-    def _decode_order_element(self, el):
+    def _decode_order_element(self, el, as_dict=False):
         """Decode an order WebElement into corresponding order
 
         Args:
             el (selenium.WebElement): The <tr> order element
+            as_dict (bool): If True, get a dict instead of Order object
 
         Returns:
-            (Order): Order instance
+            (mixed): Order instance or dict
         """
         # Get the instrument from short name
         short_name = self.api.css1('td.name', el).text
         instrument = self.api.get_instrument(short_name=short_name)
         # Get the Exchange ID
-        exchange_id = self.api.css1('td.humanId').text
-        direction = self.api.css1('td.direction').text
-        order_type = self._parse_order_type(self.api.css1('td.type').text)
-        quantity = format_float(self.api.css1('td.quantity').text)
-        cost = format_float(self.api.css1('td.value').text)
-        price = format_float(self.api.css1('td.currentPrice').text)
-        timestamp = self.api.css1('td.created').text
+        exchange_id = self.api.css1('td.humanId', el).text
+        direction = self.api.css1('td.direction', el).text
+        order_type = self._parse_order_type(self.api.css1('td.type', el).text)
+        quantity = format_float(self.api.css1('td.quantity', el).text)
+        cost = format_float(self.api.css1('td.value', el).text)
+        price = format_float(self.api.css1('td.currentPrice', el).text)
+        timestamp = self.api.css1('td.created', el).text
         # stop limit
         limit = stop = None
-        if self.api.is_css('span.stop-limit-order-data-limit-price'):
+        if self.api.is_css('span.stop-limit-order-data-limit-price', el):
             limit = format_float(self.api.css1('span.stop-limit-order-'
-                                               'data-limit-price').text)
+                                               'data-limit-price', el).text)
             stop = format_float(self.api.css1('span.stop-limit-order-'
-                                              'data-limit-price').text)
+                                              'data-limit-price', el).text)
         else:
-            target_price = format_float(self.api.css1('td.targetPrice').text)
+            target_price = format_float(self.api.css1('td.targetPrice', el)
+                                        .text)
             if order_type == ORDER_TYPES.LIMIT:
                 limit = target_price
             else:
@@ -497,6 +503,9 @@ class PendingOrdersTab(BaseModalWindow):
             order.cost = order.quantity * order.limit
         if stop:
             order.stop = stop
+        if as_dict:
+            order.instrument = order.instrument.symbol
+            return order.to_dict()
         return order
 
     def _parse_order_type(self, exchange_order_type):
@@ -522,6 +531,71 @@ class PendingOrdersTab(BaseModalWindow):
             'OCO': CFD_ORDER_TYPES.OCO
         }
         return mapping[exchange_order_type]
+
+
+class PositionsTab(BaseModalWindow):
+
+    def __init__(self, api):
+        super().__init__(api, '#positionsTable')
+
+    def open_all_cols(self):
+        pass
+
+    def _open(self):
+        """Activate table if not open already"""
+        self.api.close_all()
+        if not self.get():
+            self.api.css1('span.tab-item.tabpositions').click()
+            self.api.wait_for_element(self.div_css)
+
+    def _close(self):
+        """Deactivate table if activated"""
+        if self.get():
+            self.api.css1('span.tab-item.tabpositions').click()
+
+    def get_positions(self, as_df=False) -> list or pd.DataFrame:
+        """Load positions from table
+
+        Args:
+            as_df (bool): If true, return pandas DataFrame, otherwise return
+                list of Position objects. Default False
+        """
+        positions = []
+        for pos_element in self.api.css('tbody tr', self.get()):
+            try:
+                positions.append(self._decode_pos_element(pos_element, as_df))
+            except (RuntimeError, IndexError)as e:
+                raise ParsingException('Position', e)
+        if as_df:
+            return pd.DataFrame(positions)
+        return positions
+
+    def _decode_pos_element(self, el, as_dict=False):
+        """Decode a position WebElement into corresponding position
+
+        Args:
+            el (selenium.WebElement): The <tr> position element
+            as_dict (bool): If True, get a dict instead of Position object
+
+        Returns:
+            (mixed): Order instance or dict
+        """
+        instrument = self.api.get_instrument(short_name=self.api
+                                             .css1('td.name', el).text)
+        exchange_id = self.api.css1('td.humanId', el).text
+        quantity = format_float(self.api.css1('td.quantity', el).text)
+        price = format_float(self.api.css1('td.averagePrice', el).text)
+        timestamp = self.api.css1('td.created', el).text
+        direction = BUY
+        if self.api.trading_mode == TRADING_MODES.CFD:
+            direction = self.api.css1('td.direction', el).text
+        position = Position(instrument=instrument, quantity=quantity,
+                            direction=direction, price=price,
+                            timestamp=timestamp, exchange_id=exchange_id)
+        if as_dict:
+            position.instrument = position.instrument.symbol
+            return position.to_dict()
+        return position
 
 
 class SearchInstrumentsModal(BaseModalWindow):
@@ -568,7 +642,7 @@ class SearchInstrumentsModal(BaseModalWindow):
             (Instrument): with set attributes
         """
         short_name = self.api.css1('div.ticker', instrument_elem).text
-        short_name = short_name.split(' ')[0]
+        short_name = short_name.split('(')[0].strip()
         ticker = short_name
         if self.api.is_css('div.ticker span', instrument_elem):
             ticker = self.api.css1('div.ticker span', instrument_elem).text

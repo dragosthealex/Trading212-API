@@ -1,6 +1,6 @@
 import json
 
-from tradingAPI.utils import ORDER_STATUS, ORDER_TYPES, CFD_ORDER_TYPES
+from tradingAPI.utils import ORDER_STATUS, ORDER_TYPES, CFD_ORDER_TYPES, BUY
 
 
 class Serializable(object):
@@ -18,9 +18,9 @@ class Serializable(object):
 
         return json.dumps(data, default=json_func)
 
-    @staticmethod
-    def from_dict(dict_data, class_name):
-        return class_name(**dict_data)
+    @classmethod
+    def from_dict(cls, dict_data):
+        return cls(**dict_data)
 
     def to_dict(self):
         return self.__dict__
@@ -136,14 +136,13 @@ ORDER_CLASS_MAP = {
 }
 
 
-class PurePosition(object):
+class Position(Serializable):
     """class-storing position"""
-    def __init__(self, product, quantity, direction, price):
-        self.product = product
+    def __init__(self, instrument, quantity, price, timestamp,
+                 exchange_id=None, direction=BUY):
+        self.instrument = instrument
         self.quantity = quantity
-        self.direction = direction
         self.price = price
-
-    def __repr__(self):
-        return ' - '.join([str(self.product), str(self.quantity),
-                           str(self.direction), str(self.price)])
+        self.timestamp = timestamp
+        self.exchange_id = exchange_id
+        self.direction = direction

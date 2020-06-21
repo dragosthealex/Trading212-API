@@ -14,7 +14,7 @@ from datetime import datetime
 import pandas as pd
 from tradingAPI.base import Instrument
 from tradingAPI.dom_components import InvestOrderWindow, \
-    CFDOrderWindow, PendingOrdersTab, SearchInstrumentsModal
+    CFDOrderWindow, PendingOrdersTab, SearchInstrumentsModal, PositionsTab
 from tradingAPI.exceptions import CredentialsException, BaseExc
 from .glob import Glob
 from .links import dommap, urls
@@ -35,8 +35,8 @@ class LowLevelAPI(object):
     def __init__(self):
         self.positions = []
         self.orders = []
-        self.placed_orders = [] # List of Order instances loaded
-        self.instruments = pd.DataFrame() # Dataframe with instruments
+        self.placed_orders = []  # List of Order instances loaded
+        self.instruments = pd.DataFrame()  # Dataframe with instruments
         self.log = logger
         # init globals
         Glob()
@@ -308,10 +308,12 @@ class LowLevelAPI(object):
             return pd.read_csv(csv_path)
         # Perform a new search of instruments
         instruments_modal = self.new_search_instruments_modal()
+        instruments_modal.open()
         instruments = instruments_modal.load_all_instruments()
         # Convert to list of dicts
         instruments = pd.DataFrame([i.to_dict() for i in instruments])
         instruments.to_csv(csv_path, index=False)
+        instruments_modal.close()
         return instruments
 
     def get_instrument(self, short_name=None, symbol=None, name=None):
@@ -329,7 +331,7 @@ class LowLevelAPI(object):
             (ValueError): If nothing passed
             (ProductNotFound): If not found the instrument
         """
-        if not self.instruments or self.instruments.empty:
+        if self.instruments is None or self.instruments.empty:
             self.load_instruments()
         instrums = self.instruments
         if short_name:
@@ -337,7 +339,7 @@ class LowLevelAPI(object):
         elif name:
             instrument = instrums.loc[instrums['name'] == name]
         elif symbol:
-            instrument = instrums.loc[instrums['symbol'] ==symbol]
+            instrument = instrums.loc[instrums['symbol'] == symbol]
         else:
             raise ValueError('You must pass at least one identifier')
         if instrument.empty:
@@ -401,6 +403,14 @@ class LowLevelAPI(object):
             (PendingOrdersTab): The orders window
         """
         return PendingOrdersTab(self)
+
+    def new_positions_tab(self):
+        """
+
+        Returns:
+            (PositionsTab): The positions window
+        """
+        return PositionsTab(self)
 
     def new_pos(self, html_div):
         """factory method pattern"""
